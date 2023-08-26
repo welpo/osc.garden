@@ -1,0 +1,281 @@
+base_url = "https://osc.garden"
+theme = "tabi"
+
+title = "~/osc"
+description = "Óscar is data scientist and clinical psychologist aiming to leverage his positive impact in the world."
+author = "Óscar Fernández"
+
+generate_feed = true
+compile_sass = true
+minify_html = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+default_language = "en"
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+external_links_target_blank = true
+external_links_no_referrer = true
+smart_punctuation = true
+render_emoji = true
+
+[languages.es]
+title = "~/osc"
+description = "Óscar es un científico de datos y psicólogo clínico intentando potenciar su impacto positivo en el mundo."
+generate_feed = true
+compile_sass = true
+minify_html = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[languages.ca]
+title = "~/osc"
+description = "Óscar és un científic de dades i psicòleg clínic intentant potenciar el seu impact positiu al món."
+generate_feed = true
+compile_sass = true
+minify_html = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[languages.es.translations]
+language_name = "Español"
+date_locale = "es_ES"
+# Menu items.
+blog = "blog"
+archive = "archivo"
+tags = "etiquetas"
+words = "palabras"
+projects = "proyectos"
+# Other text.
+tags_title = "Todas las etiquetas"
+404_error = "La página que has solicitado parece no existir o aún no se ha traducido a tu idioma. Revisa la URL en busca de errores o"
+go_home = "regresa a la página de inicio"
+read_more = "Leer más"
+all_posts = "Todas las entradas"
+all_tags = "Todas las etiquetas"
+min_read = "min de lectura"
+powered_by = "Impulsado por"
+and = "y"
+post = "entrada"
+posts = "entradas"
+prev = "Anterior"
+next = "Siguiente"
+of = "de"
+draft = "BORRADOR"
+table_of_contents = "Tabla de contenido"
+last_updated_on = "Última actualización el"
+show_original_quote = "Mostrar cita original"
+show_translation = "Mostrar traducción"
+load_comments = "Cargar comentarios"
+see_changes = "Ver cambios"
+site_source = "Código del sitio"
+# Quotation marks for multilingual quote shortcode.
+open_quotation_mark = "«"
+close_quotation_mark = "»"
+# Translations for stylised Atom feed.
+this_is_a_web_feed = "Esta es una fuente web"
+also_known_as_an_Atom_feed = "también conocida como fuente Atom"
+subscribe = "Suscríbete"
+by_copying_the_URL_from_the_address_bar_into_your_newsreader = "copiando la URL de la barra de direcciones en tu lector de noticias"
+visit = "Visita"
+to_learn_more_and_get_started = "para aprender más y empezar"
+it_s_free = "Es gratis"
+website = "la web"
+recent_posts = "Publicaciones recientes"
+
+[languages.ca.translations]
+language_name = "Català"
+date_locale = "ca_ES"
+# Menu items.
+blog = "blog"
+archive = "arxiu"
+tags = "etiquetes"
+words = "paraules"
+projects = "projectes"
+# Other text.
+tags_title = "Totes les etiquetes"
+404_error = "La pàgina que has sol·licitat sembla que no existeix o encara no s'ha traduït al teu idioma. Comprova l'URL per detectar errors o"
+go_home = "torna a la pàgina d'inici"
+read_more = "Llegir més"
+all_posts = "Totes les entrades"
+all_tags = "Totes les etiquetes"
+min_read = "min de lectura"
+powered_by = "Propulsat per"
+and = "i"
+post = "entrada"
+posts = "entrades"
+prev = "Anterior"
+next = "Següent"
+of = "de"
+draft = "ESBORRANY"
+table_of_contents = "Taula de contingut"
+last_updated_on = "Última actualizació el"
+show_original_quote = "Mostra la cita original"
+show_translation = "Mostra la traducció"
+load_comments = "Carregar comentaris"
+see_changes = "Veure canvis"
+site_source = "Codi del lloc"
+# Quotation marks for multilingual quote shortcode.
+open_quotation_mark = "«"
+close_quotation_mark = "»"
+# Translations for stylised Atom feed.
+this_is_a_web_feed = "Aquest és un canal web"
+also_known_as_an_Atom_feed = "també conegut com a canal Atom"
+subscribe = "Subscriu-te"
+by_copying_the_URL_from_the_address_bar_into_your_newsreader = "copiant l'URL de la barra d'adreces al teu lector de notícies"
+visit = "Visita"
+to_learn_more_and_get_started = "per aprendre més i començar"
+it_s_free = "És gratuït"
+website = "la web"
+recent_posts = "Publicacions recents"
+
+[extra]
+
+language_name.ca = "Català"
+language_name.en = "English"
+language_name.es = "Español"
+
+# Remote repository for your Zola site.
+# Only used to link to the commit history of updated posts, right next to the updated date.
+# Supports GitHub, GitLab, Gitea, and Codeberg.
+remote_repository_url = "https://github.com/welpo/osc.garden"
+# Set this to "auto" to try and auto-detect the platform based on the repository URL.
+# Accepted values are "github", "gitlab", "gitea", and "codeberg".
+remote_repository_git_platform = "auto"  # Defaults to "auto".
+# Branch in the repo hosting the Zola site.
+remote_repository_branch = "main"  # Defaults to "main".
+# Show a link to the commit history of updated posts, right next to the last updated date.
+show_remote_changes = true  # Defaults to true.
+# Show a link to the repository of the site, right next to the "Powered by Zola & tabi" text.
+show_remote_source = true  # Defaults to true.
+
+# Enable JavaScript theme toggler to allow users to switch between dark/light mode.
+# Also enables automatic switching based on user's OS-level theme settings.
+# If disabled, your site will only use the theme specified in the `default_theme` variable.
+theme_switcher = true
+
+# This setting determines the default theme ("light" or "dark").
+# If you wish to use only a dark or light theme, disable the `theme_switcher` above and set this variable.
+# If `theme_switcher` is enabled, this will be the theme that is visible to users who have JavaScript disabled.
+# Defaults to "light", if unset.
+default_theme = "light"
+
+# Choose the colourscheme (skin) for the theme. Default is "teal".
+# Skin available: blue, lavender, mint, red, sakura, teal, monochrome, lowcontrast_orange, lowcontrast_peach, lowcontrast_pink, indigo_ingot, evangelion
+# See them live and learn how to create your own: https://welpo.github.io/tabi/blog/customise-tabi/#skins
+# WARNING! "lowcontrast" skins, while aesthetically pleasing, may not provide optimal
+# contrast (in light theme) for readability and might not be suitable for all users.
+# Furthermore, low contrasting elements will affect your Google Lighthouse rating.
+# All other skins have optimal contrast.
+skin = ""
+
+# List additional stylesheets to load site-wide.
+# These stylesheets should be located in your site's `static` directory.
+# Example: stylesheets = ["extra1.css", "path/extra2.css"]
+# You can load a stylesheet for a single post by adding it to the [extra] section of the post's front matter, following this same format.
+stylesheets = []
+
+# Add a "copy" button to codeblocks (loads ~700 bytes of JavaScript).
+copy_button = true
+
+# Adds backlinks to footnotes (loads ~500 bytes of JavaScripts).
+footnote_backlinks = false
+
+# Enable KaTeX for all posts.
+katex = false
+
+# Date format used when listing posts (main page, /blog section, tag posts list…)
+# Default is "6th July 2049" in English and "%d %B %Y" in other languages.
+long_date_format = "%d %B %Y"
+
+# Date format used for blog posts.
+# Default is "31st Dec 2011".
+short_date_format = ""
+
+# Custom separator used in title tag and posts metadata (between date, time to read, and tags).
+separator = "•"
+
+# Full path after the base URL required. So if you were to place it in "static" it would be "/favicon.ico"
+favicon = ""
+
+# Add an emoji here to use it as favicon.
+# Compatibility: https://caniuse.com/link-icon-svg
+favicon_emoji = "🌱"
+
+# This header image is used for SEO. For example if you were to share an image via Messenger/Instagram/Twitter a preview picture is also presented
+headerImage = ""
+
+menu = [
+    { name = "blog", url = "blog/" },
+    { name = "archive", url = "archive/" },
+    { name = "projects", url = "projects/" },
+]
+
+# The RSS icon will be shown if (1) it's enabled and (2) the following variable is set to true.
+feed_icon = true
+
+# Email address for footer's social section.
+# Protect against spambots:
+# 1. Use base64 for email (convert at https://www.base64encode.org/ or `printf 'your@email.com' | base64`).
+# 2. Or, set 'encode_plaintext_email' to true for auto-encoding (only protects on site, not in public repos).
+email = ""  # base64 encoded version of "mail@example.com"
+# Decoding requires ~400 bytes of JavaScript. If JS is disabled, the email won't be displayed.
+encode_plaintext_email = true  # Setting is ignored if email is already encoded.
+
+# The icons available can be found in "social_icons" in the "static" folder
+socials = [
+    { name = "github", url = "https://github.com/welpo/", icon = "github" },
+    { name = "soundcloud", url = "https://soundcloud.com/oskerwyld", icon = "soundcloud" },
+    { name = "instagram", url = "https://instagram.com/oskerwyld", icon = "instagram" },
+    { name = "youtube", url = "https://youtube.com/@oskerwyld", icon = "youtube" },
+    { name = "spotify", url = "https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE", icon = "spotify" },
+]
+
+# Custom security headers. What urls should your website be able to connect to?
+# You need to specify the CSP and the URLs associated with the directive.
+# Useful if you want to load remote content safely (embed YouTube videos, which needs frame-src, for example).
+# Default directive is self.
+# Default config, allows for https remote images and embedding YouTube and Vimeo content.
+# This configuration (along with the right webserver settings) gets an A+ in Mozilla's Observatory: https://observatory.mozilla.org
+allowed_domains = [
+    { directive = "font-src", domains = ["'self'", "data:"] },
+    { directive = "img-src", domains = ["'self'", "https://*", "data:"] },
+    { directive = "script-src", domains = ["'self'"] },
+    { directive = "style-src", domains = ["'self'"] },
+    { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
+]
+
+# Custom subset of characters for the header.
+# If set to true, the `static/custom_subset.css` file will be loaded first.
+# This avoids a flashing text issue in Firefox.
+# Please see https://welpo.github.io/tabi/blog/custom-font-subset/ to learn how to create this file.
+custom_subset = true
+
+# Quick navigation buttons.
+# Adds "go up" and "go to comments" buttons on the bottom right (hidden for mobile).
+# Can also be enabled on individual posts in the front matter's [extra].
+quick_navigation_buttons = true
+
+# Isso support for comments. https://isso-comments.de/
+# You need to self-host the backend first: https://blog.phusion.nl/2018/08/16/isso-simple-self-hosted-commenting-system/
+# More info on some settings: https://isso-comments.de/docs/reference/client-config/
+[extra.isso]
+enabled_for_all_posts = true  # Enables Isso on all posts. It can be enabled on individual posts by setting `isso = true` in the [extra] section of a post's front matter.
+automatic_loading = true  # If set to false, a "Load comments" button will be shown.
+endpoint_url = "https://osc.garden/comments/"  # Accepts relative paths like "/comments/" or "/isso/", as well as full urls like "https://example.com/comments/". Include the trailing slash.
+page_id_is_slug = true  # If true, it will use the post's filename (slug) as id; this is the only way to share comments between languages. If false, it will use the entire url as id.
+lang = ""  # Leave blank to match the page's language.
+max_comments_top = "inf"  # Number of top level comments to show by default. If some comments are not shown, an “X Hidden” link is shown.
+max_comments_nested = "5"  # Number of nested comments to show by default. If some comments are not shown, an “X Hidden” link is shown.
+avatar = false
+voting = true
+page_author_hashes = ""  # hash (or list of hashes) of the author.
+lazy_loading = true  # Loads when the comments are in the viewport (using the Intersection Observer API).
