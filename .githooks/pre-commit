@@ -5,7 +5,7 @@
 # To use it, copy it to .git/hooks/pre-commit and make it executable.             #
 # Alternatively, run the following command from the root of the repo:             #
 # git config core.hooksPath .githooks                                             #
-#                                                                                 # 
+#                                                                                 #
 #                                  FEATURES                                       #
 # Updates the "updated" field in the front matter of .md files.                   #
 # Compresses PNG files with either oxipng or optipng if available.                #
@@ -29,7 +29,7 @@ function extract_date() {
 # Function to check if the .md file is a draft.
 function is_draft() {
     local file="$1"
-    awk '/^\+\+\+$/,/^\+\+\+$/ { if(/draft = true/) exit 0 } END { exit 1 }' "$file"
+    grep -q "draft = true" "$file"
 }
 
 # Check if the file contains "TODO".
@@ -59,10 +59,16 @@ fi
 ##################################################################
 
 # Get the newly added and modified files.
-all_changed_files=$(git diff --cached --name-only --diff-filter=AM)
+all_changed_files=$(git diff --cached --name-only)
+# The command above gets all the files that have been added or modified, 
 
 # Loop through each newly added or modified .md or .png file for PNG optimization and draft checking.
 for file in $all_changed_files; do
+    # Ignore this script.
+    if [[ "$file" == "$0" ]]; then
+        continue
+    fi
+
     # If the file is a PNG and png_compressor is set, compress it and add it to the commit.
     if [[ "$file" == *.png ]] && [[ -n "$png_compressor" ]]; then
         $png_compressor "$file" || error_exit "Failed to compress PNG file $file"
@@ -77,10 +83,8 @@ for file in $all_changed_files; do
         fi
     fi
 
-    # If the file contains "TODO", abort the commit.
-    # Only as long as the file is not the one running this script.
-
-    if contains_todo "$file" && [[ ! "$file" == "$0" ]]; then
+    # If the file contains "TODO", abort the commit (unless it's this script).
+    if contains_todo "$file"; then
         error_exit "File $file contains TODO! Remove or complete the TODO before committing."
     fi
 done
