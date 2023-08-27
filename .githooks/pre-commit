@@ -13,6 +13,11 @@
 # Aborts the commit if a draft .md file or a file with "TODO" is being committed. #
 ###################################################################################
 
+# Check if the script is being run from the root of the repo.
+if [[ ! $(git rev-parse --show-toplevel) == $(pwd) ]]; then
+    error_exit "This script must be run from the root of the repo."
+fi
+
 # Function to exit the script with an error message.
 function error_exit() {
     echo "ERROR: $1" >&2
@@ -38,10 +43,28 @@ function contains_todo() {
     grep -q "TODO" "$file"
 }
 
-# Check if the script is being run from the root of the repo.
-if [[ ! $(git rev-parse --show-toplevel) == $(pwd) ]]; then
-    error_exit "This script must be run from the root of the repo."
-fi
+# Check for changes outside of the front matter.
+function has_body_changes() {
+    local file="$1"
+    local in_front_matter=1
+    local triple_plus_count=0
+
+    diff_output=$(git diff --unified=999 --cached "$file")
+
+    while read -r line; do
+        if [[ "$line" =~ ^\+\+\+$ ]]; then
+            triple_plus_count=$((triple_plus_count + 1))
+            if [[ $triple_plus_count -eq 2 ]]; then
+                in_front_matter=0
+            fi
+        elif [[ $in_front_matter -eq 0 ]]; then
+            if [[ "$line" =~ ^[+-] ]]; then
+                return 0
+            fi
+        fi
+    done <<< "$diff_output"
+    return 1
+}
 
 # Check if oxipng is installed.
 png_compressor=""
@@ -94,6 +117,11 @@ modified_files=$(git diff --cached --name-only --diff-filter=M | grep -E '\.md$'
 
 # Loop through each modified .md file.
 for file in $modified_files; do
+    # If changes are only in the front matter, skip the file.
+    if ! has_body_changes "$file"; then
+        continue
+    fi
+
     # Get the last modified date from the filesystem.
     last_modified_date=$(date -r "$file" +'%Y-%m-%d')
 
