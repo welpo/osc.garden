@@ -184,7 +184,7 @@ skin = ""
 stylesheets = []
 
 # Add a "copy" button to codeblocks (loads ~700 bytes of JavaScript).
-copy_button = true
+copy_button = false
 
 # Adds backlinks to footnotes (loads ~500 bytes of JavaScripts).
 footnote_backlinks = false
