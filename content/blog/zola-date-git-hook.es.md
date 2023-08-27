@@ -3,7 +3,7 @@ title = "Zola Git Hook: actualizando las fechas de las publicaciones"
 date = 2023-04-17
 
 [taxonomies]
-tags = ["aprendizaje del día"]
+tags = ["aprendizaje del día", "Zola", "Git"]
 
 [extra]
 copy_button = true

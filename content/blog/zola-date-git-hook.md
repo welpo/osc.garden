@@ -3,7 +3,7 @@ title = "Zola Git Pre-Commit Hook: Updating Post Dates"
 date = 2023-04-17
 
 [taxonomies]
-tags = ["TIL"]
+tags = ["TIL", "Zola", "Git"]
 
 [extra]
 copy_button = true
