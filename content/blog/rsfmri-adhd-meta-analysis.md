@@ -1,5 +1,5 @@
 +++
-title = "Resting-state functional magnetic resonance imaging (rsfMRI) in attention deficit hyperactivity disorder: meta-analysis"
+title = "Resting-State Functional Magnetic Resonance Imaging (rsfMRI) in Attention Deficit Hyperactivity Disorder: Meta-Analysis"
 date = 2021-06-10
 description = "My Master's Thesis in General Health Psychology. A comprehensive meta-analysis of whole-brain rsfMRI studies comparing people with attention deficit hyperactivity disorder to neurotypical people."
 
