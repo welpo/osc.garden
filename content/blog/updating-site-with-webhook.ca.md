@@ -3,7 +3,7 @@ title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
 
 [taxonomies]
-tags = ["aprenentatge del dia", "Git", "Zola"]
+tags = ["aprenentatge del dia", "Zola"]
 
 [extra]
 copy_button = true

@@ -3,7 +3,7 @@ title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
 
 [taxonomies]
-tags = ["aprendizaje del día", "Git", "Zola"]
+tags = ["aprendizaje del día", "Zola"]
 
 [extra]
 copy_button = true
@@ -307,6 +307,6 @@ trap_cleanup success
 
 ## Extra: Sobre las notificaciones push y los webhooks
 
-Tras aprender sobre la magia negra de los webhooks, investigué un poco sobre las notificaciones push —efectivamente hay similitudes. Sin embargo, en lugar de escuchar en un puerto, los teléfonos dependen de conexiones duraderas a un servicio de notificaciones. Utilizan un mecanismo de *keep-alive* para mantener la conexión abierta y cuando el servidor tiene algo que notificar, manda la notificación a través de esta conexión preexistente.
+Tras aprender sobre la magia negra de los webhooks, investigué un poco sobre las notificaciones push —efectivamente, hay similitudes. Sin embargo, en lugar de escuchar en un puerto, los teléfonos dependen de conexiones duraderas a un servicio de notificaciones. Utilizan un mecanismo de *keep-alive* para mantener la conexión abierta y cuando el servidor tiene algo que notificar, manda la notificación a través de esta conexión preexistente.
 
 He aquí una analogía: los webhooks son como tus amigos enviándote un mensaje de texto (una nueva conexión cada vez) para decirte algo. Las notificaciones push, en contraposición, son como estar en una larga llamada de voz con un amigo —incluso cuando nadie habla, la conexión persiste. Cuando alguien tiene algo que decir, lo hace a través de la llamada existente en lugar de establecer una nueva conexión. El mecanismo de *keep-alive* —que mantiene la conexión abierta— sería como preguntar, después de unos minutos de silencio, «¿Sigues ahí?». «Sigo aquí».

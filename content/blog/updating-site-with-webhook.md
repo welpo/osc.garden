@@ -4,7 +4,7 @@ date = 2023-08-28
 updated = 2023-08-28
 
 [taxonomies]
-tags = ["TIL", "Git", "Zola"]
+tags = ["TIL", "Zola"]
 
 [extra]
 copy_button = true
