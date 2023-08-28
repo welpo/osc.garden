@@ -46,7 +46,7 @@ Webhooks sounded like black magic, kind of like push notifications. Time to lear
 
 ## Webhooks
 
-A webhook is a way to tell a server "Hey! It happened! The thing you care about happened! Do your thing!". In other words, whenever I push to my site's repository, GitHub will poke the webhook, triggering the site update.
+A webhook is a way to tell a server "Hey! It happened! The thing you care about happened! Do your thing!". In other words, whenever I push to my site's repository, GitHub will poke the webhook server, triggering the site update.
 
 I installed a [lightweight Go webhook server](https://github.com/adnanh/webhook) with `sudo apt install webhook`.
 
@@ -64,7 +64,7 @@ Now I can run the webhook server with `webhook -hooks hooks.yaml -verbose`. Howe
 
 ### Local Firewall
 
-I'm using [ufw](https://wiki.debian.org/Uncomplicated%20Firewall%20(ufw)) to manage my firewall. So I ran `sudo ufw allow 9000/tcp`.
+I'm using [ufw](https://wiki.debian.org/Uncomplicated%20Firewall%20(ufw)) to manage my firewall. So I ran `sudo ufw allow 9000/tcp` to allow TCP connections on port 9000.
 
 That wasn't enough, though—Oracle has its own firewall. I always forget how to open its ports, so this time I wrote it down, for my future self:
 
@@ -81,7 +81,7 @@ That wasn't enough, though—Oracle has its own firewall. I always forget how to
 5. Click on "Add Ingress Rules" and fill in the form. Here's what I used:
 
     - **Source Type**: CIDR
-    - **Source CIDR**: 140.82.112.0/20 (I added one Ingress Rule per CIDR IP block in the `hooks` section of [GitHub IP addresses](https://api.github.com/meta)[^1])
+    - **Source CIDR**: 140.82.112.0/20 (I added one Ingress Rule per CIDR IP block in the `hooks` section of [GitHub IP addresses](https://api.github.com/meta))
     - **Source Port Range**: All
     - **Destination Port Range**: 9000
     - **Description**: GitHub webhook
@@ -134,7 +134,7 @@ Let's update the YAML file to add a "trigger-rule" so that only authorised reque
 
 This rule matches a `secret`, which is a password I created.
 
-Now, if I try to trigger the webhook like before, webhook complains: `Hook rules were not satisfied.` Great—only requests with the hashed secret will be accepted.
+Now, if I try to trigger it like before, `webhook` complains: `Hook rules were not satisfied.` Great—only requests with the hashed secret will be accepted.
 
 Time to set up the GitHub webhook.
 
@@ -150,13 +150,13 @@ I went to my repository → Settings → Webhooks → Add webhook, and entered:
 
 I clicked "Add webhook" and pushed a change to the repo. It worked! GitHub notified my webhook server and my site was rebuilt with the changes. Pretty cool.
 
-Almost done! Let's run this webhook as non-root and create a service for it, so that it's always running.
+Almost done! Let's run this webhook server as non-root and create a service for it, so that it's always running.
 
-## Webhook Service
+## Webhook Server Service
 
 ### Isolation and Permissions
 
-It's not a good idea to run the webhook as root, so I created a new user to run the webhook with `sudo adduser webhookuser`. Next, I added this user to a new `sslcerts` group, and set the necessary permissions:
+It's not a good idea to run the webhook server as root, so I created a new user to run it with `sudo adduser webhookuser`. Next, I added this user to a new `sslcerts` group, and set the necessary permissions:
 
 ```bash
 # Set webhookuser as owner for project and web directories.
@@ -175,7 +175,7 @@ sudo chmod 750 /etc/letsencrypt/archive /etc/letsencrypt/archive/osc.garden
 sudo chmod o+x /etc/letsencrypt /etc/letsencrypt/live /etc/letsencrypt/live/osc.garden
 ```
 
-The idea is to minimise the webhook's permissions, reducing potential damage from a misconfiguration or security vulnerability.
+The idea is to minimise the permissions, reducing potential damage from a misconfiguration or security vulnerability.
 
 Here I encountered a problem when running the script as `webhookuser`: Zola tries to remove the directory before building the site—the permissions above are not enough.
 
@@ -208,7 +208,9 @@ rsync -a --delete "$temp_dir/" "$live_dir/"
 
 ### Systemd Service
 
-Next, I created a "hardened" service file with `sudo vim /etc/systemd/system/webhook.service`:
+[Systemd](https://systemd.io/) is the first process that runs on Debian, initialising system settings and managing background tasks ("services" or "daemons"). I decided to use a systemd service file to automate the startup of the webhook server, add logging, further control its privileges, and restart it on failure.
+
+I created this service file with minimal permissions with `sudo vim /etc/systemd/system/webhook.service`:
 
 ```toml
 [Unit]
