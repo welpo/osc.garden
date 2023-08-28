@@ -9,7 +9,7 @@ tags = ["TIL", "Git", "Zola"]
 copy_button = true
 +++
 
-Since this site's files are on [GitHub](https://github.com/welpo/osc.garden/), I thought it would be nice idea to automatically update it whenever the repository is modified.<!-- more -->
+Since this site's files are on [GitHub](https://github.com/welpo/osc.garden/), I thought it would be a nice idea to automatically update it whenever the repository is modified.<!-- more -->
 
 ## My Setup
 
