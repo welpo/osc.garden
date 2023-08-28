@@ -9,7 +9,7 @@ tags = ["aprendizaje del día", "Git", "Zola"]
 copy_button = true
 +++
 
-Como los archivos de esta web están en [GitHub](https://github.com/welpo/osc.garden/), pensé que sería buena idea automatizar el proceso de actualización cada vez que se modifique el repositorio.<!-- more -->
+Como los archivos de esta web están en [GitHub](https://github.com/welpo/osc.garden/), pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio.<!-- more -->
 
 ## Mi sistema
 
@@ -38,9 +38,9 @@ Podría ejecutar este script manualmente cada vez que hiciera cambios en la web,
 
 Mi primera idea fue usar [`cron`](https://wiki.debian.org/cron) para programar una tarea que ejecutase el script cada pocos minutos. Bastante aburrido y poco eficiente —¿para qué reconstruir la web si no hay nada que actualizar?
 
-Le pedí ideas a GPT-4. Sugirió: GitHub Actions, webhooks, cron, SFTP manual y servicios de "continuous deployment".
+Le pedí ideas a GPT-4. Sugirió: GitHub Actions, webhooks, cron, SFTP manual y servicios de «continuous deployment».
 
-Cron ya estaba descartado. SFTP es incluso peor que cron, y no puedo usar servicios de "continuous deployment" o GitHub Actions porque alojo la web en un servidor propio.
+Cron ya estaba descartado. SFTP es incluso peor que cron, y no puedo usar servicios de «continuous deployment» o GitHub Actions porque alojo la web en un servidor propio.
 
 Los webhooks sonaban a magia negra, un poco como las notificaciones push. ¡A aprender!
 
