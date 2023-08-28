@@ -1,6 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
+updated = 2023-08-28
 
 [taxonomies]
 tags = ["TIL", "Git", "Zola"]
@@ -254,7 +255,7 @@ After confirming it worked, I set the service to auto-start on boot with `sudo s
 
 ## The Final Script
 
-I added logging, error messages, and a "trap" to ensure temporary files are always removed:
+I added logging and error messages:
 
 ```bash
 #!/usr/bin/env bash
