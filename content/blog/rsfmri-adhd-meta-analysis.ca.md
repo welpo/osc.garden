@@ -1,15 +1,16 @@
 +++
 title = "Ressonància magnètica funcional en repòs (rsfMRI) del trastorn per dèficit d'atenció i hiperactivitat: metaanàlisi"
 date = 2021-06-10
+description = "El meu Treball Fi de Màster de Psicologia General Sanitària. Una metaanàlisi exhaustiva d'estudis de rsfMRI de tot el cervell comparant persones amb trastorn per dèficit d'atenció i hiperactivitat amb persones neurotípiques."
 
 [taxonomies]
-tags = ["treball final de màster", "psicologia", "recerca"]
+tags = ["treball fi de màster", "psicologia", "recerca"]
 
 [extra]
 toc_ignore_pattern = "(?i)^(Taula|Figura|Taula de contingut)"
 +++
 
-Aquest és el meu Treball Final de Màster del Màster de Psicologia General Sanitària de la Universitat de Barcelona (Curs 2019-2021), tutoritzat per Joan Guàrdia Olmos. Traduït de l'[original en castellà](@/blog/rsfmri-adhd-meta-analysis.es.md).
+Aquest és el meu Treball Fi de Màster del Màster de Psicologia General Sanitària de la Universitat de Barcelona (Curs 2019-2021), tutoritzat per Joan Guàrdia Olmos. Traduït de l'[original en castellà](@/blog/rsfmri-adhd-meta-analysis.es.md).
 
 **Autors i autores**: Óscar Fernández-Vázquez<sup> a</sup>, Silvia Ruiz-Torras<sup> d</sup>, Maribel Peró-Cebollero<sup> abc</sup>, Joan Guàrdia-Olmos<sup> abc</sup>.
 

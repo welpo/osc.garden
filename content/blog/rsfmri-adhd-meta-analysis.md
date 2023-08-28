@@ -1,6 +1,7 @@
 +++
 title = "Resting-state functional magnetic resonance imaging (rsfMRI) in attention deficit hyperactivity disorder: meta-analysis"
 date = 2021-06-10
+description = "My Master's Thesis in General Health Psychology. A comprehensive meta-analysis of whole-brain rsfMRI studies comparing people with attention deficit hyperactivity disorder to neurotypical people."
 
 [taxonomies]
 tags = ["master's thesis", "psychology", "research"]

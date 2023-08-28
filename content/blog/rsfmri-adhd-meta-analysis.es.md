@@ -1,6 +1,7 @@
 +++
 title = "Resonancia magnética funcional en reposo (rsfMRI) del trastorno por déficit de atención e hiperactividad: metaanálisis"
 date = 2021-06-10
+description = "Mi Trabajo Fin de Máster de Psicología General Sanitaria. Un metaanálisis exhaustivo de estudios de rsfMRI de todo el cerebro comparando personas con trastorno por déficit de atención e hiperactividad con personas neurotípicas."
 
 [taxonomies]
 tags = ["trabajo fin de máster", "psicología", "investigación"]
