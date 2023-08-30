@@ -1,6 +1,7 @@
 +++
 title = "Zola Git Hook: actualizando las fechas de las publicaciones"
 date = 2023-04-17
+updated = 2023-08-30
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola", "Git"]
@@ -106,7 +107,9 @@ fi
 
 Con estas líneas adicionales, si un compresor de PNG está instalado, el script buscará entre los archivos PNG confirmados y los comprimirá sin pérdida de calidad.
 
-Ahora puedo mantener fácilmente fechas de «Última actualización» precisas para las entradas de Zola y optimizar las imágenes PNG para tiempos de carga más rápidos.
+Ahora puedo mantener al día las fechas de «Última actualización» de las entradas de Zola y optimizar las imágenes PNG para reducir los tiempos de carga.
+
+Con el tiempo, he añadido otras funcionalidades, como evitar commits de borradores o de archivos que contengan «TODO», y ejecutar scripts de optimización. Puedes echar un vistazo al hook que estoy utilizando actualmente [aquí](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
 
 <hr>
 

@@ -1,6 +1,7 @@
 +++
 title = "Zola Git Pre-Commit Hook: Updating Post Dates"
 date = 2023-04-17
+updated = 2023-08-30
 
 [taxonomies]
 tags = ["TIL", "Zola", "Git"]
@@ -110,6 +111,8 @@ fi
 With these extra lines, if a PNG compressor is installed, the script will look through the commited PNG files and losslessly compress them.
 
 Now I can easily maintain accurate "Last updated" dates for Zola posts and optimise PNG images for faster loading times.
+
+Over time, I've added other features like preventing commits of drafts and files that include "TODO", and running optimisation scripts. You can take a look at the hook I'm currently using [here](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
 
 <hr>
 
