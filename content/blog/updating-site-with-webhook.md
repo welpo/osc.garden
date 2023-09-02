@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2023-08-28
+updated = 2023-09-02
 
 [taxonomies]
 tags = ["TIL", "Zola"]
@@ -255,7 +255,7 @@ After confirming it worked, I set the service to auto-start on boot with `sudo s
 
 ## The Final Script
 
-I added logging and error messages:
+I added logging, error messages, and my favourite: push notifications to my phone with [`ntfy`](https://ntfy.sh/):
 
 ```bash
 #!/usr/bin/env bash
@@ -264,15 +264,28 @@ set -eo pipefail
 repo="/opt/osc.garden/repo"
 live_dir="/var/www/osc.garden"
 
+ntfy_url="ntfy.osc.garden/builds"
+ntfy_token="my-ntfy-access-token"
+
+send_notification() {
+    local tag="$1"
+    local title="$2"
+    local message="$3"
+    ntfy pub -T "$tag" -t "$title" -m "$message" -k "$ntfy_token" "$ntfy_url"
+}
+
 trap_cleanup() {
-  echo "Removing temporary directory $temp_dir"
-  rm -rf "$temp_dir"
-  if [ "$1" == "success" ]; then
-    echo "osc.garden updated."
-  fi
+    echo "Removing temporary directory $temp_dir"
+    rm -rf "$temp_dir"
+    if [ "$1" == "success" ]; then
+        hash=$(git rev-parse --short HEAD)
+        send_notification "seedling" "osc.garden updated" "Last commit: $hash"
+        echo "osc.garden updated."
+    fi
 }
 
 notify_failure() {
+    send_notification "bangbang" "osc.garden failed to update" "$1"
     echo "Error: $1" >&2
     exit 1
 }
@@ -290,7 +303,7 @@ git pull --force || notify_failure "Git pull failed"
 git submodule update || notify_failure "Git submodule update failed"
 
 # Build site in temporary directory.
-echo "Runnin Zola build…"
+echo "Running Zola build…"
 zola build --output-dir "$temp_dir" --force || notify_failure "Zola build failed"
 
 # Sync files to the live directory.
@@ -302,9 +315,13 @@ trap - EXIT
 trap_cleanup success
 ```
 
+The notifications look like this (click to swap between success and failure):
+
+{{ image_toggler(default_src="img/ntfy_success.webp", toggled_src="img/ntfy_fail.webp", default_alt="ntfy success notification", toggled_alt="ntfy fail notification") }}
+
 And that's it! After tinkering with some new tools, a lot of troubleshooting (damn permissions!), and a good amount of learning, now my website is automatically redeployed whenever its repository is updated. Wonderful!
 
-<hr>
+---
 
 ## Extra: On Push Notifications and Webhooks
 

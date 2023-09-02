@@ -1,6 +1,7 @@
 +++
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
+updated = 2023-09-02
 
 [taxonomies]
 tags = ["aprenentatge del dia", "Zola"]
@@ -254,7 +255,7 @@ Després de comprovar que funcionava, vaig configurar el servei perquè s'inici�
 
 ## L'script final
 
-Vaig afegir registres i missatges d'error:
+Vaig afegir registres, missatges d'error i la meva funcionalitat preferida: notificacions push pel mòbil amb [`ntfy`](https://ntfy.sh/):
 
 ```bash
 #!/usr/bin/env bash
@@ -263,15 +264,28 @@ set -eo pipefail
 repo="/opt/osc.garden/repo"
 live_dir="/var/www/osc.garden"
 
+ntfy_url="ntfy.osc.garden/builds"
+ntfy_token="my-ntfy-access-token"
+
+send_notification() {
+    local tag="$1"
+    local title="$2"
+    local message="$3"
+    ntfy pub -T "$tag" -t "$title" -m "$message" -k "$ntfy_token" "$ntfy_url"
+}
+
 trap_cleanup() {
-  echo "Eliminant directori temporal $temp_dir"
-  rm -rf "$temp_dir"
-  if [ "$1" == "success" ]; then
-    echo "osc.garden actualitzat."
-  fi
+    echo "Eliminant directori temporal $temp_dir"
+    rm -rf "$temp_dir"
+    if [ "$1" == "success" ]; then
+        hash=$(git rev-parse --short HEAD)
+        send_notification "seedling" "osc.garden actualitzat" "Últim commit: $hash"
+        echo "osc.garden actualitzat."
+    fi
 }
 
 notify_failure() {
+    send_notification "bangbang" "osc.garden no s'ha pogut actualitzar" "$1"
     echo "Error: $1" >&2
     exit 1
 }
@@ -301,9 +315,13 @@ trap - EXIT
 trap_cleanup success
 ```
 
+Les notificacions es veuen així (fes clic per alternar entre èxit i error):
+
+{{ image_toggler(default_src="img/ntfy_success.webp", toggled_src="img/ntfy_fail.webp", default_alt="Notificació d'èxit de ntfy", toggled_alt="Notificació d'error de ntfy") }}
+
 Això és tot! Després d'experimentar amb noves eines, barallar-me amb els permisos i aprendre força, la meva web s'actualitza automàgicament cada cop que el repositori canvia. 🎉🥳
 
-<hr>
+---
 
 ## Extra: Sobre les notificacions push i els webhooks
 
