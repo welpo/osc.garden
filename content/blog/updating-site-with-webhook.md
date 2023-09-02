@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2023-09-02
+updated = 2023-09-03
 
 [taxonomies]
 tags = ["TIL", "Zola"]
@@ -278,8 +278,8 @@ trap_cleanup() {
     echo "Removing temporary directory $temp_dir"
     rm -rf "$temp_dir"
     if [ "$1" == "success" ]; then
-        hash=$(git rev-parse --short HEAD)
-        send_notification "seedling" "osc.garden updated" "Last commit: $hash"
+        last_commit_msg=$(git log -1 --pretty=%B)
+        send_notification "seedling" "osc.garden updated" "Last commit: $last_commit_msg"
         echo "osc.garden updated."
     fi
 }

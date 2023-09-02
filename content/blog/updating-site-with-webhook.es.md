@@ -1,7 +1,7 @@
 +++
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
-updated = 2023-09-02
+updated = 2023-09-03
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola"]
@@ -278,8 +278,8 @@ trap_cleanup() {
     echo "Eliminando directorio temporal $temp_dir"
     rm -rf "$temp_dir"
     if [ "$1" == "success" ]; then
-        hash=$(git rev-parse --short HEAD)
-        send_notification "seedling" "osc.garden actualizado" "Último commit: $hash"
+        last_commit_msg=$(git log -1 --pretty=%B)
+        send_notification "seedling" "osc.garden actualizado" "Último commit: $last_commit_msg"
         echo "osc.garden actualizado."
     fi
 }
