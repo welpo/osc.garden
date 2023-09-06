@@ -4,11 +4,12 @@ date = 2023-04-17
 updated = 2023-08-30
 
 [taxonomies]
-tags = ["aprenentatge del dia", "Zola", "Git"]
+tags = ["aprenentatge del dia", "Zola", "automatització", "Git"]
 
 [extra]
 copy_button = true
 footnote_backlinks = true
+social_media_card = "img/social_cards/ca_blog_zola_date_git_hook.jpg"
 +++
 
 Per tal de mantenir l'atribut «Última actualització» de les publicacions sempre precís, he automatitzat la seva modificació amb un hook pre-commit de Git.<!-- more -->

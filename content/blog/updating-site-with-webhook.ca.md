@@ -4,10 +4,11 @@ date = 2023-08-28
 updated = 2023-09-03
 
 [taxonomies]
-tags = ["aprenentatge del dia", "Zola"]
+tags = ["aprenentatge del dia", "Zola", "automatització"]
 
 [extra]
 copy_button = true
+social_media_card = "img/social_cards/ca_blog_updating_site_with_webhook.jpg"
 +++
 
 Com que els fitxers d'aquesta web estan a [GitHub](https://github.com/welpo/osc.garden/), vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori.<!-- more -->

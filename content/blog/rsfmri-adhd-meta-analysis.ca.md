@@ -8,6 +8,7 @@ tags = ["treball fi de màster", "psicologia", "recerca"]
 
 [extra]
 toc_ignore_pattern = "(?i)^(Taula|Figura|Taula de contingut)"
+social_media_card = "img/social_cards/ca_blog_rsfmri_adhd_meta_analysis.jpg"
 +++
 
 Aquest és el meu Treball Fi de Màster del Màster de Psicologia General Sanitària de la Universitat de Barcelona (Curs 2019-2021), tutoritzat per Joan Guàrdia Olmos. Traduït de l'[original en castellà](@/blog/rsfmri-adhd-meta-analysis.es.md).

@@ -8,6 +8,7 @@ tags = ["trabajo fin de máster", "psicología", "investigación"]
 
 [extra]
 toc_ignore_pattern = "(?i)^(Tabla|Figura|Table de contenido)"
+social_media_card = "img/social_cards/es_blog_rsfmri_adhd_meta_analysis.jpg"
 +++
 
 Este es mi Trabajo Fin de Máster del Máster de Psicología General Sanitaria de la Universitat de Barcelona (Curso 2019-2021), tutorizado por Joan Guàrdia Olmos.

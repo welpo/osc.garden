@@ -4,11 +4,12 @@ date = 2023-04-17
 updated = 2023-08-30
 
 [taxonomies]
-tags = ["TIL", "Zola", "Git"]
+tags = ["TIL", "Zola", "automation", "Git"]
 
 [extra]
 copy_button = true
 footnote_backlinks = true
+social_media_card = "img/social_cards/blog_zola_date_git_hook.jpg"
 +++
 
 In order to keep the "Last updated" field of posts always accurate, I automated its modification with a custom Git pre-commit hook.<!-- more -->

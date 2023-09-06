@@ -4,10 +4,11 @@ date = 2023-08-28
 updated = 2023-09-03
 
 [taxonomies]
-tags = ["aprendizaje del día", "Zola"]
+tags = ["aprendizaje del día", "Zola", "automatización"]
 
 [extra]
 copy_button = true
+social_media_card = "img/social_cards/es_blog_updating_site_with_webhook.jpg"
 +++
 
 Como los archivos de esta web están en [GitHub](https://github.com/welpo/osc.garden/), pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio.<!-- more -->

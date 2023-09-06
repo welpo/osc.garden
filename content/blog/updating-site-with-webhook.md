@@ -4,10 +4,11 @@ date = 2023-08-28
 updated = 2023-09-03
 
 [taxonomies]
-tags = ["TIL", "Zola"]
+tags = ["TIL", "automation", "Zola"]
 
 [extra]
 copy_button = true
+social_media_card = "img/social_cards/blog_updating_site_with_webhook.jpg"
 +++
 
 Since this site's files are on [GitHub](https://github.com/welpo/osc.garden/), I thought it would be a nice idea to automatically update it whenever the repository is modified.<!-- more -->
