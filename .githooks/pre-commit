@@ -50,7 +50,7 @@ function has_body_changes() {
     local in_front_matter=1
     local triple_plus_count=0
 
-        diff_output=$(git diff --unified=999 --cached --output-indicator-new='%' --output-indicator-old='&' "$file")
+    diff_output=$(git diff --unified=999 --cached --output-indicator-new='%' --output-indicator-old='&' "$file")
 
     while read -r line; do
         if [[ "$line" =~ ^\+\+\+$ ]]; then
