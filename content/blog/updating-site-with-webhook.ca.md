@@ -1,7 +1,7 @@
 +++
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
-updated = 2023-09-03
+updated = 2023-09-06
 
 [taxonomies]
 tags = ["aprenentatge del dia", "Zola", "automatització"]
@@ -27,7 +27,7 @@ repo="/opt/osc.garden/repo"
 out_dir="/var/www/osc.garden"
 
 cd "$repo"
-git pull --force
+git pull
 git submodule update
 zola build --output-dir "$out_dir" --force
 ```
@@ -198,7 +198,7 @@ trap "rm -rf $temp_dir" EXIT
 
 # Actualitza el repositori i els submòduls.
 cd "$repo"
-git pull --force
+git pull
 git submodule update
 
 # Construeix el lloc al directori temporal.
@@ -300,7 +300,9 @@ trap 'trap_cleanup' EXIT
 # Actualitza el repositori i els submòduls.
 echo "Actualitzant el repositori…"
 cd "$repo"
-git pull --force || notify_failure "Git pull ha fallat"
+git fetch || notify_failure "Git fetch ha fallat"
+git reset --hard origin || notify_failure "Git reset ha fallat" 
+git pull || notify_failure "Git pull ha fallat" 
 git submodule update || notify_failure "Git submodule update ha fallat"
 
 # Construeix el lloc en el directori temporal.

@@ -1,7 +1,7 @@
 +++
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
-updated = 2023-09-03
+updated = 2023-09-06
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola", "automatización"]
@@ -27,7 +27,7 @@ repo="/opt/osc.garden/repo"
 out_dir="/var/www/osc.garden"
 
 cd "$repo"
-git pull --force
+git pull
 git submodule update
 zola build --output-dir "$out_dir" --force
 ```
@@ -198,7 +198,7 @@ trap "rm -rf $temp_dir" EXIT
 
 # Actualiza el repositorio y los submódulos.
 cd "$repo"
-git pull --force
+git pull
 git submodule update
 
 # Construye el sitio en el directorio temporal.
@@ -300,7 +300,9 @@ trap 'trap_cleanup' EXIT
 # Actualiza el repositorio y los submódulos.
 echo "Actualizando el repositorio…"
 cd "$repo"
-git pull --force || notify_failure "Git pull ha fallado"
+git fetch || notify_failure "Git fetch ha fallado"
+git reset --hard origin || notify_failure "Git reset ha fallado" 
+git pull || notify_failure "Git pull ha fallado" 
 git submodule update || notify_failure "Git submodule update ha fallado"
 
 # Build site in temporary directory.
