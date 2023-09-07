@@ -155,6 +155,8 @@ function convert_filename_to_url() {
 
 Así es como `convert_filename_to_url` maneja diferentes archivos:
 
+{% wide_container() %}
+
 | Entrada                        | Salida              |
 | ------------------------------ | --------------------|
 | `content/_index.es.md`         | `es/`               |
@@ -162,6 +164,8 @@ Así es como `convert_filename_to_url` maneja diferentes archivos:
 | `content/blog/comments.md`     | `blog/comments/`    |
 | `content/archive/_index.md`    | `archive/`          |
 | `content/archive/_index.ca.md` | `ca/archive/`       |
+
+{% end %}
 
 Si añadimos la URL base antes de cada salida, obtenemos el enlace completo.
 

@@ -155,6 +155,8 @@ function convert_filename_to_url() {
 
 Així és com `convert_filename_to_url` gestiona diferents fitxers:
 
+{% wide_container() %}
+
 | Entrada                        | Sortida             |
 | ------------------------------ | --------------------|
 | `content/_index.es.md`         | `es/`               |
@@ -162,6 +164,8 @@ Així és com `convert_filename_to_url` gestiona diferents fitxers:
 | `content/blog/comments.md`     | `blog/comments/`    |
 | `content/archive/_index.md`    | `archive/`          |
 | `content/archive/_index.ca.md` | `ca/archive/`       |
+
+{% end %}
 
 Si afegim l'URL base abans de cada sortida, obtenim l'enllaç complet.
 
