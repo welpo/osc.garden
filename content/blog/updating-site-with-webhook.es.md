@@ -214,7 +214,7 @@ rsync -a --delete "$temp_dir/" "$live_dir/"
 
 Creé el archivo de servicio con permisos mínimos con `sudo vim /etc/systemd/system/webhook.service`:
 
-```toml
+```.gitconfig
 [Unit]
 Description=Webhook para actualizar osc.garden
 Documentation=https://github.com/adnanh/webhook/
