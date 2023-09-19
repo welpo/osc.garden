@@ -1,6 +1,7 @@
 +++
 title = "De reservat a rei de les xarxes: automatitzant les vistes prèvies dels enllaços amb Zola"
 date = 2023-09-06
+updated = 2023-09-20
 description = "Amb l'objectiu de fer els llocs web de Zola més compatibles amb les xarxes socials, he desxifrat el codi per automatitzar la generació de les previsualitzacions d'enllaços."
 
 [taxonomies]
@@ -12,9 +13,11 @@ footnote_backlinks = true
 social_media_card = "img/social_cards/ca_blog_automating_social_media_cards_zola.jpg"
 +++
 
-Les miniatures per a xarxes socials afegeixen un toc interessant als enllaços compartits en WhatsApp, Telegram, Mastodon… Fes clic a la imatge per veure a què em refereixo.
+T'has preguntat alguna vegada com aplicacions com WhatsApp, Telegram o Mastodon mostren una vista prèvia d'un enllaç? A continuació, trobaràs la captura de pantalla d'un link compartit a WhatsApp sense vista prèvia. Fes clic a la imatge per veure com canvia en afegir la imatge:
 
 {{ image_toggler(default_src="img/without_social_media_card.webp", toggled_src="img/with_social_media_card.webp", default_alt="Enllaç sense miniatura", toggled_alt="Enllaç amb miniatura") }}
+
+Molt millor, oi? Aquestes imatges s'obtenen d'etiquetes HTML, concretament `og:image` i `twitter:image`. Pots assignar qualsevol imatge a aquestes etiquetes.
 
 Mentre desenvolupava el tema del meu lloc web —[tabi](https://github.com/welpo/tabi)—, em vaig topar amb [un article de Simon Wilson](https://til.simonwillison.net/shot-scraper/social-media-cards) que explica com utilitzar la seva eina [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) per generar aquestes imatges.
 
