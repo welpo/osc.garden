@@ -70,14 +70,14 @@ Espero que al menos una imagen o cita te haga sentir algo.
 
 ## Rafael Lechowski — Quarcissus
 
-> Pero me miento,
-> me digo que la soledad es superior a la unión,
-> en mi pobre convencimiento,
-> y que sólo hay un amor eterno: el propio.
-> Pero no basta el amor propio:
-> ¡igual que hay partes del cuerpo
-> que no puede rascar uno mismo,
-> hay lugares del alma que sólo puede acariciar otro!
+> Pero me miento,<br>
+> me digo que la soledad es superior a la unión,<br>
+> en mi pobre convencimiento,<br>
+> y que sólo hay un amor eterno: el propio.<br>
+> Pero no basta el amor propio:<br>
+> ¡igual que hay partes del cuerpo<br>
+> que no puede rascar uno mismo,<br>
+> hay lugares del alma que sólo puede acariciar otro!<br>
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/quarcissus.webp") }}
 
