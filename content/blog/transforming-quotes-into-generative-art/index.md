@@ -85,7 +85,7 @@ and that there is only one eternal love: one's own.<br>
 But self-love is not enough:<br>
 just as there are parts of the body<br>
 that one cannot scratch oneself,<br>
-there are places of the soul that only another can caress!", author="Rafael Lechowski") }}
+there are places of the soul that only another can caress!") }}
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/quarcissus.webp") }}
 
@@ -101,7 +101,7 @@ there are places of the soul that only another can caress!", author="Rafael Lech
 
 ## Francisco Umbral — Mortal y Rosa
 
-{{ multilingual_quote(original="Vidas que arden ante mi vida, tiempo que se consume y corre. ¿Asisten ellos al espectáculo de mi tiempo, a la hoguera de mi vida? Damos una luz, al extinguirnos, que sólo ven los demás. Nosotros no la vemos. Vamos en llamas por la vida, y nadie nos avisa del incendio, por no asustarnos. Pero cómo nos ven arder. Como yo veo arder al escritor, al amigo. Vamos entre luces, entre noches, hacia no sé dónde, por la ciudad, hablando, soñando, dentro del coche, lentamente, contra el hielo, el miedo, la sombra, pasando huecos inmensos de tiempo, calles dormidas, multitudes.", translated="Lives burning before my life, time consumed and running. Are they watching the spectacle of my time, the bonfire of my life? We give a light, when we are extinguished, that only others see. We do not see it. We go through life in flames, and no one warns us of the fire, so as not to frighten us. But how they see us burn. As I see the writer, the friend burning. We go between lights, between nights, towards I don't know where, through the city, talking, dreaming, inside the car, slowly, against the ice, the fear, the shadow, passing immense gaps of time, sleeping streets, crowds.", author="Francisco Umbral") }}
+{{ multilingual_quote(original="Vidas que arden ante mi vida, tiempo que se consume y corre. ¿Asisten ellos al espectáculo de mi tiempo, a la hoguera de mi vida? Damos una luz, al extinguirnos, que sólo ven los demás. Nosotros no la vemos. Vamos en llamas por la vida, y nadie nos avisa del incendio, por no asustarnos. Pero cómo nos ven arder. Como yo veo arder al escritor, al amigo. Vamos entre luces, entre noches, hacia no sé dónde, por la ciudad, hablando, soñando, dentro del coche, lentamente, contra el hielo, el miedo, la sombra, pasando huecos inmensos de tiempo, calles dormidas, multitudes.", translated="Lives burning before my life, time consumed and running. Are they watching the spectacle of my time, the bonfire of my life? We give a light, when we are extinguished, that only others see. We do not see it. We go through life in flames, and no one warns us of the fire, so as not to frighten us. But how they see us burn. As I see the writer, the friend burning. We go between lights, between nights, towards I don't know where, through the city, talking, dreaming, inside the car, slowly, against the ice, the fear, the shadow, passing immense gaps of time, sleeping streets, crowds.") }}
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/fire.webp") }}
 
