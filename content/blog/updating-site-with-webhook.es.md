@@ -1,7 +1,7 @@
 +++
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
-updated = 2023-09-06
+updated = 2023-10-19
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola", "automatización"]
@@ -175,6 +175,10 @@ sudo chmod 750 /etc/letsencrypt/archive /etc/letsencrypt/archive/osc.garden
 
 # Habilita el recorrido de directorios para 'otros' en los directorios de certificados.
 sudo chmod o+x /etc/letsencrypt /etc/letsencrypt/live /etc/letsencrypt/live/osc.garden
+
+# Configura los permisos y el grupo para los archivos de certificados SSL.
+sudo chmod 640 /etc/letsencrypt/live/osc.garden/privkey.pem
+sudo chgrp sslcerts /etc/letsencrypt/live/osc.garden/privkey.pem
 ```
 
 La idea es minimizar los permisos, reduciendo el daño potencial de una mala configuración o una vulnerabilidad de seguridad.

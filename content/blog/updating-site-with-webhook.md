@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2023-09-06
+updated = 2023-10-19
 
 [taxonomies]
 tags = ["TIL", "automation", "Zola"]
@@ -161,7 +161,7 @@ Almost done! Let's run this webhook server as non-root and create a service for 
 It's not a good idea to run the webhook server as root, so I created a new user to run it with `sudo adduser webhookuser`. Next, I added this user to a new `sslcerts` group, and set the necessary permissions:
 
 ```bash
-# Set webhookuser as owner for project and web directories.
+# Set 'webhookuser' as owner for project and web directories.
 sudo chown -R webhookuser:webhookuser /opt/osc.garden
 sudo chown -R webhookuser:webhookuser /var/www/osc.garden
 
@@ -175,6 +175,10 @@ sudo chmod 750 /etc/letsencrypt/archive /etc/letsencrypt/archive/osc.garden
 
 # Enable directory traversal for 'others' on SSL certificate directories.
 sudo chmod o+x /etc/letsencrypt /etc/letsencrypt/live /etc/letsencrypt/live/osc.garden
+
+# Set the file permissions and group for the actual SSL cert files.
+sudo chmod 640 /etc/letsencrypt/live/osc.garden/privkey.pem
+sudo chgrp sslcerts /etc/letsencrypt/live/osc.garden/privkey.pem
 ```
 
 The idea is to minimise the permissions, reducing potential damage from a misconfiguration or security vulnerability.

@@ -1,7 +1,7 @@
 +++
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
-updated = 2023-09-06
+updated = 2023-10-19
 
 [taxonomies]
 tags = ["aprenentatge del dia", "Zola", "automatització"]
@@ -175,6 +175,10 @@ sudo chmod 750 /etc/letsencrypt/archive /etc/letsencrypt/archive/osc.garden
 
 # Habilita el recorregut de directoris per a 'altres' en els directoris de certificats.
 sudo chmod o+x /etc/letsencrypt /etc/letsencrypt/live /etc/letsencrypt/live/osc.garden
+
+# Configura els permisos dels fitxers i el grup per als certificats SSL.
+sudo chmod 640 /etc/letsencrypt/live/osc.garden/privkey.pem
+sudo chgrp sslcerts /etc/letsencrypt/live/osc.garden/privkey.pem
 ```
 
 La idea és minimitzar els permisos per reduir el dany potencial d'una mala configuració o una vulnerabilitat de seguretat.
@@ -301,8 +305,8 @@ trap 'trap_cleanup' EXIT
 echo "Actualitzant el repositori…"
 cd "$repo"
 git fetch || notify_failure "Git fetch ha fallat"
-git reset --hard origin || notify_failure "Git reset ha fallat" 
-git pull || notify_failure "Git pull ha fallat" 
+git reset --hard origin || notify_failure "Git reset ha fallat"
+git pull || notify_failure "Git pull ha fallat"
 git submodule update || notify_failure "Git submodule update ha fallat"
 
 # Construeix el lloc en el directori temporal.
