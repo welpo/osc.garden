@@ -7,7 +7,7 @@ description = "Explorando la intersección entre literatura y el aprendizaje pro
 tags = ["experimento", "IA generativa"]
 
 [extra]
-social_media_card = "img/social_cards/blog_transforming_quotes_into_generative_art.jpg"
+social_media_card = "img/social_cards/es_blog_transforming_quotes_into_generative_art.jpg"
 +++
 
 Llevo más de 7 años coleccionando citas que me han impactado de algún modo.

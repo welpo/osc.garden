@@ -7,7 +7,7 @@ description = "Explorant la intersecció entre literatura i aprenentatge profund
 tags = ["experiment", "IA generativa"]
 
 [extra]
-social_media_card = "img/social_cards/blog_transforming_quotes_into_generative_art.jpg"
+social_media_card = "img/social_cards/ca_blog_transforming_quotes_into_generative_art.jpg"
 +++
 
 Porto més de 7 anys recol·lectant frases que m'han impactat d'alguna forma.
