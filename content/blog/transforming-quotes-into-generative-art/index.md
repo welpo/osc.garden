@@ -52,7 +52,7 @@ I hope at least one quote or image strikes a chord with you as well.
 
 <br>
 
-## Hiromi Kawakami — The Briefcase
+## Hiromi Kawakami — The Briefcase aka Strange Weather in Tokyo
 
 > I've come a long way, the cold seeps through my worn clothes. This afternoon the sky is clear, oh how my heart aches!
 
