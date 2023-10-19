@@ -20,7 +20,7 @@ The process was simple: add the entire quote to SD, plus a few style-related wor
 
 I hope at least one quote or image strikes a chord with you as well.
 
-## Blade Runner — David Peoples & Rutger Hauer
+## David Peoples & Rutger Hauer — Blade Runner
 
 > All those moments will be lost in time, like tears in rain… Time to die.
 
