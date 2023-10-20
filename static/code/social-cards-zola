@@ -46,6 +46,11 @@ function convert_filename_to_url() {
         url="${url%.*}"  # Remove the language code from the URL.
     fi
 
+    # Handle co-located index.md by stripping it and using the directory as the URL.
+    if [[ "$url" == */index ]]; then
+        url="${url%/*}"  # Remove the /index suffix.
+    fi
+
     # Remove "_index" suffix.
     if [[ "$url" == *"_index"* ]]; then
         url="${url%%_index*}"
