@@ -2,6 +2,7 @@
 title = "Privacy Policy"
 path = "privacy"
 date = 2023-10-28
+updated = 2023-11-07
 
 [extra]
 isso = false
@@ -37,8 +38,9 @@ For website improvement, the following non-personal data is collected:
 - **Language**: the language your browser is set to.
 - **Screen size**: the dimensions of your device's screen.
 - **Time**: when you accessed the site.
+- **Browsing session**: a temporary identification code generated from your IP address, browser information, and a random number. This is used to recognise a browsing session for 8 hours. After that time, the code is deleted from memory and is not stored anywhere.
 
-I do not track unique visitors, and I do not track how long you stay on the site or where you go after you leave.
+I do not track unique visitors across sessions, and I do not track how long you stay on the site or where you go after you leave.
 
 ## How do I collect this data?
 
@@ -56,7 +58,7 @@ The optional personal data is used to display your comment on the site. The IP a
 
 The non personal data is used to generate statistics about the site, such as the number of visitors per day, or the most popular pages and referrers. This data is used to improve the site. You can see the statistics generated from this data on the [public stats page](https://stats.osc.garden/).
 
-All data collected is publically available on the site, either in the form of comments or statistics.
+All data collected is publicly available on the site, either in the form of comments or statistics.
 
 I am not using the data for any other purpose.
 
@@ -95,7 +97,7 @@ This website contains links to other websites. My privacy policy applies only to
 
 ## Changes to the privacy policy
 
-I keep this privacy policy under regular review and place any updates on this web page. This privacy policy was last updated on 2023-10-28.
+I keep this privacy policy under regular review and place any updates on this web page. You can check the date this privacy policy was updated, as well as the history of changes under the page title.
 
 ## How to contact me
 

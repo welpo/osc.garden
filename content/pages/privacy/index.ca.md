@@ -2,6 +2,7 @@
 title = "Política de privacitat"
 path = "/ca/privacy"
 date = 2023-10-28
+updated = 2023-11-07
 
 [extra]
 isso = false
@@ -37,8 +38,9 @@ Per a la millora del lloc web, es recullen les dades no personals següents:
 - **Idioma**: l'idioma configurat al teu navegador.
 - **Mida de pantalla**: les dimensions de la pantalla del teu dispositiu.
 - **Data i hora**: quan accedeixes al lloc.
+- **Sessió de navegació**: un codi d'identificació temporal generat a partir de la adreça IP, informació del navegador i un número aleatori. Aquest s'utilitza per reconèixer la sessió de navegació durant 8 hores. Passat aquest temps, el codi s'esborra de la memòria i no s'emmagatzema enlloc.
 
-No rastrejo visitants únics, i no segueixo el temps que estàs en el lloc ni on navegues quan surts del lloc.
+No rastrejo visitants únics a través de sessions, i no segueixo el temps que estàs en el lloc ni on navegues quan surts del lloc.
 
 ## Com recopilo aquestes dades?
 
@@ -95,7 +97,7 @@ Aquest lloc web conté enllaços a altres llocs web. La meva política de privad
 
 ## Canvis en la política de privadesa
 
-Reviso regularment aquesta política de privadesa i col·loco qualsevol actualització en aquesta pàgina. Aquesta política de privadesa es va actualitzar per última vegada el 28 d'octubre de 2023.
+Reviso regularment aquesta política de privadesa i col·loco qualsevol actualització en aquesta pàgina. Pots veure l'última data d'actualització d'aquesta política de privadesa, així com l'historial de canvis sota el títol d'aquesta pàgina.
 
 ## Com contactar amb mi
 
