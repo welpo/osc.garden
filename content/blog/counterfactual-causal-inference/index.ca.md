@@ -1,6 +1,7 @@
 +++
 title = "Les 8 idees estadístiques més importants: inferència causal contrafactual"
 date = 2023-10-23
+updated = 2023-11-27
 description = "Explorant més enllà del mantra \"la correlació no implica causalitat\", aquesta entrada introdueix com els contrafactuals serveixen de fonament per entendre relacions causa-efecte."
 
 [taxonomies]
@@ -90,7 +91,7 @@ La inferència causal contrafactual s'utilitza en l'atenció sanitària (per est
 
 Aquesta cita de Virgili (29 aC) ens recorda que la recerca de les "causes de les coses" no és només un exercici acadèmic; és una antiga cerca humana que pot acostar-nos a una comprensió harmònica del món i el nostre lloc en ell.
 
-Això és tot per avui! En el pròxim article aprendrem sobre **bootstrapping i la inferència basada en la simulació**.
+Això és tot per avui! En el pròxim article aprendrem sobre **[bootstrapping i la inferència basada en la simulació](/ca/blog/bootstrapping-and-simulation-based-inference/)**.
 
 ## Recursos d'aprenentatge
 

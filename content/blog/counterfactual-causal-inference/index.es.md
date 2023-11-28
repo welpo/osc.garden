@@ -1,6 +1,7 @@
 +++
 title = "Las 8 ideas estadísticas más importantes: inferencia causal contrafactual"
 date = 2023-10-23
+updated = 2023-11-27
 description = "Explorando más allá del mantra \"la correlación no implica causalidad\", esta entrada introduce cómo los contrafactuales sirven de piedra angular para entender relaciones causa-efecto."
 
 [taxonomies]
@@ -90,7 +91,7 @@ La inferencia causal contrafactual se utiliza en la atención sanitaria (para es
 
 Esta cita de Virgilio (29 a.C.) nos recuerda que la búsqueda de las «causas de las cosas» no es sólo un ejercicio académico; es una antigua búsqueda humana que puede acercarnos a una comprensión armoniosa del mundo y nuestro lugar en él.
 
-¡Eso es todo por hoy! En el próximo artículo aprenderemos sobre **bootstrapping y la inferencia basada en la simulación**.
+¡Eso es todo por hoy! En el próximo artículo aprenderemos sobre **[bootstrapping y la inferencia basada en la simulación](/es/blog/bootstrapping-and-simulation-based-inference/)**.
 
 ## Recursos de aprendizaje
 

@@ -1,0 +1,214 @@
+section #simulation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#last-bootstrapped-sample {
+    margin-bottom: 1rem;
+    min-height: 50px;
+}
+
+#original-sample,
+#last-bootstrapped-sample {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-circle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: inline-block;
+    margin: 0.2rem;
+    border-radius: 50%;
+    background-image: url('../img/capsule.webp');
+    background-size: cover;
+    background-blend-mode: multiply;
+    aspect-ratio: 1;
+    height: 50px;
+    color: black;
+    font-size: 24px;
+    line-height: 50px;
+    user-select: none;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+#buttons {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+button {
+    margin: 3px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-color);
+    padding: 12px 20px;
+    color: var(--background-color);
+    font-size: 0.85rem;
+}
+
+#reset-samples {
+    background-color: var(--complementary-color);
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+/* Text highlights */
+span:not(#ci-text):not(.colour-name):not(.nombre-del-color) {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-family: var(--sans-serif-font);
+}
+
+#ci-text {
+    display: none;
+}
+
+/* Histogram */
+#histogram {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 6rem;
+}
+
+#bars-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.mean-label {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.histogram-bar {
+    position: relative;
+    margin-right: 1px;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--primary-color);
+    width: 20px;
+}
+
+.histogram-bar.active,
+.histogram-bar:hover {
+    background-color: salmon !important;
+}
+
+.histogram-bar:hover::after {
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    content: "Mean: " attr(data-mean) " • Count: " attr(data-count);
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+html[lang='es'] .histogram-bar:hover::after {
+    content: "Media: " attr(data-mean) " • Frecuencia: " attr(data-count);
+}
+
+html[lang='ca'] .histogram-bar:hover::after {
+    content: "Mitjana: " attr(data-mean) " • Freqüència: " attr(data-count);
+}
+
+/* Different colour for the bar matching the original sample's mean and the reset button */
+:root {
+    --complementary-color: #960a7e;
+    .colour-name::before, .nombre-del-color::before {
+        content: "magenta";
+    }
+}
+
+[data-theme='dark'] {
+    --complementary-color: #f493be;
+    .colour-name::before{ content: "pink";}
+    .nombre-del-color::before{ content: "rosa";}
+}
+
+.colour-name, .nombre-del-color {
+    color: var(--complementary-color);
+    font-weight: 620;
+    font-family: var(--serif-font);
+}
+
+/* Animation for the capsules */
+#original-sample .number-circle {
+    animation: roll-in-right 0.8s ease;
+}
+
+#last-bootstrapped-sample .number-circle {
+    animation: roll-in-left 0.8s ease;
+}
+
+@keyframes roll-in-left {
+    0% {
+        transform: translateX(-100%) rotate(-120deg);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateX(5%) rotate(10deg);
+    }
+
+    70% {
+        transform: translateX(-3%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-right {
+    0% {
+        transform: translateX(100%) rotate(120deg);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translateX(-5%) rotate(-10deg);
+    }
+
+    70% {
+        transform: translateX(3%) rotate(5deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/* If the user prefers reduced motion, override the animation */
+@media (prefers-reduced-motion) {
+    .number-circle {
+        transform: none !important;
+        opacity: 1 !important;
+        animation: none !important;
+    }
+}

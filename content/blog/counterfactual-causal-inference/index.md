@@ -1,6 +1,7 @@
 +++
 title = "The 8 Most Important Statistical Ideas: Counterfactual Causal Inference"
 date = 2023-10-23
+updated = 2023-11-27
 description = "Exploring beyond the mantra \"correlation doesn't imply causation\", this post introduces how counterfactuals serve as the cornerstone for determining cause-and-effect relationships."
 
 [taxonomies]
@@ -92,7 +93,7 @@ Counterfactual causal inference is used in healthcare (to estimate the effect of
 
 This quote from Virgil (29 BCE) reminds us that the quest to understand the "causes of things" is not just an academic exercise; it's an ancient human pursuit that can bring us closer to a harmonious understanding of our world and our place in it.
 
-That's it for today! In the next article, we'll learn about **bootstrapping and simulation-based inference**.
+That's it for today! In the next article, we'll learn about **[bootstrapping and simulation-based inference](/blog/bootstrapping-and-simulation-based-inference/)**.
 
 ## Learning Resources
 
