@@ -4,7 +4,7 @@ description = "Aplicació Flask per pujar arxius de manera segura, amb eliminaci
 weight = 2
 
 [extra]
-local_image = "img/chu.webp"
+local_image = "projects/chu/chu.webp"
 social_media_card = "img/social_cards/ca_projects_chu.jpg"
 +++
 

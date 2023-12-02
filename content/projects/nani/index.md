@@ -4,7 +4,7 @@ description = "Bash script to create public URLs from files or text on remote se
 weight = 3
 
 [extra]
-local_image = "img/nani.webp"
+local_image = "projects/nani/nani.webp"
 social_media_card = "img/social_cards/projects_nani.jpg"
 +++
 

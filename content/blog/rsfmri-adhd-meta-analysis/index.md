@@ -11,7 +11,7 @@ toc_ignore_pattern = "(?i)^(Table|Figure|Table of Contents)"
 social_media_card = "img/social_cards/blog_rsfmri_adhd_meta_analysis.jpg"
 +++
 
-This is my Master's Thesis from the Master's Program in General Health Psychology at the University of Barcelona (2019-2021 academic year), supervised by Joan Guàrdia Olmos. Translated from the [original in Spanish](@/blog/rsfmri-adhd-meta-analysis.es.md).
+This is my Master's Thesis from the Master's Program in General Health Psychology at the University of Barcelona (2019-2021 academic year), supervised by Joan Guàrdia Olmos. Translated from the [original in Spanish](@/blog/rsfmri-adhd-meta-analysis/index.es.md).
 
 **Authors**: Óscar Fernández-Vázquez<sup> a</sup>, Silvia Ruiz-Torras<sup> d</sup>, Maribel Peró-Cebollero<sup> abc</sup>, Joan Guàrdia-Olmos<sup> abc</sup>.
 
@@ -206,7 +206,7 @@ The initial search yielded 843 records (see [Figure 1](#figure-1)). After removi
 
 ##### **Figure 1**. *PRISMA flowchart for the search and selection/exclusion of studies.* {#figure-1 .full-width}
 
-{{ invertible_image(src="img/tfm/prisma.en.webp", alt="PRISMA Flowchart", full_width=true) }}
+{{ invertible_image(src="img/prisma.en.webp", alt="PRISMA Flowchart", full_width=true) }}
 
 ### Characteristics of the included studies
 
@@ -285,7 +285,7 @@ All the studies reported at least four significant peaks when comparing the ADHD
 
 ##### **Figure 2**. *Forest plot of the meta-analysed articles. The horizontal axis represents Cohen's d effect size.* {#figure-2 .full-width}
 
-{{ invertible_image(src="img/tfm/forest_plot.en.png", alt="Forest plot", full_width=true) }}
+{{ invertible_image(src="img/forest_plot.en.png", alt="Forest plot", full_width=true) }}
 
 The heterogeneity values of the positive peaks were moderate (I<sup>2</sup> = 46.99; Q = 13.20; df = 7), while those of the negative peaks were low (I<sup>2</sup> = 32.45; Q = 11.84; df = 8). Due to the limited number of studies found, we couldn't conduct sub-analyses with enough power to explore the effects of variables such as age, gender, or comorbidities.
 
@@ -307,21 +307,21 @@ The meta-analysis was conducted in SDM. Using an uncorrected p-threshold < .05, 
 
 ##### **Figure 3**. *Representation of the significant negative peak in the right cerebellum.* {#figure-3 .full-width}
 
-{{ invertible_image(src="img/tfm/figure3.webp", alt="Representation of the significant negative peak in the right cerebellum", full_width=true) }}
+{{ invertible_image(src="img/figure3.webp", alt="Representation of the significant negative peak in the right cerebellum", full_width=true) }}
 
 ##### **Figure 4**. *Lateral, medial, and dorsal views of the two significant positive peaks based on their size.* {#figure-4 .full-width}
 
-{{ invertible_image(src="img/tfm/figure4.webp", alt="Lateral, medial, and dorsal views of the two significant positive peaks based on their size", full_width=true) }}
+{{ invertible_image(src="img/figure4.webp", alt="Lateral, medial, and dorsal views of the two significant positive peaks based on their size", full_width=true) }}
 
 ##### **Figure 5**. *Coronal, sagittal, and axial cuts of the hypoactivated area (left) and hyperactivated areas (right).* {#figure-5 .full-width}
 
-{{ dimmable_image(src="img/tfm/figure5.webp", alt="Funnel plot", full_width=true) }}
+{{ dimmable_image(src="img/figure5.webp", alt="Funnel plot", full_width=true) }}
 
 A visual inspection of the funnel plot ([Figure 6](#figure-6)) associated with the statistically significant cerebellar coordinate does not suggest evidence of publication bias.
 
 ##### **Figure 6**. *Funnel plot for the statistically significant cluster of reduced activation in the cerebellum.* {#figure-6 .full-width}
 
-{{ invertible_image(src="img/tfm/funnel_plot.png", alt="Funnel plot", full_width=true) }}
+{{ invertible_image(src="img/funnel_plot.png", alt="Funnel plot", full_width=true) }}
 
 ### Quality assessment {#results-quality-assessment}
 

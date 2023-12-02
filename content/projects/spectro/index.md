@@ -4,13 +4,13 @@ description = "Bash script to generate spectrograms, compare them, upload them t
 weight = 4
 
 [extra]
-local_image = "img/spectro.webp"
+local_image = "projects/spectro/spectro.webp"
 social_media_card = "img/social_cards/projects_spectro.jpg"
 +++
 
 Transform audio files into BBCode-formatted spectrograms effortlessly with `spectro`. This Bash script supports a wide array of audio formats such as Ogg, MP3, FLAC, AAC, and more.
 
-{{ full_width_image(src="img/spectrogram.webp", alt="Spectrogram of Jardin du Sommeil Chant d'Amour Sur La Nuit Grandissante, by Tourette") }}
+{{ full_width_image(src="spectrogram.webp", alt="Spectrogram of Jardin du Sommeil Chant d'Amour Sur La Nuit Grandissante, by Tourette") }}
 
 #### [View on GitHub](https://github.com/welpo/spectro) {.centered-text}
 

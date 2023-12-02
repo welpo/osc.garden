@@ -216,7 +216,7 @@ La búsqueda inicial produjo 843 registros (ver [Figura 1](#figura-1)). Tras rem
 
 ##### **Figura 1**. *Diagrama de flujo PRISMA de la búsqueda y selección/exclusión de estudios.* {#figura-1 .full-width}
 
-{{ invertible_image(src="img/tfm/prisma.es.webp", alt="Diagrama de flujo PRISMA", full_width=true) }}
+{{ invertible_image(src="img/prisma.es.webp", alt="Diagrama de flujo PRISMA", full_width=true) }}
 
 ### Características de los estudios incluidos
 
@@ -295,7 +295,7 @@ Todos los estudios reportaron al menos cuatro picos significativos (ver [Tabla 5
 
 ##### **Figura 2**. *Forest plot de los artículos metaanalizados. El eje horizontal es el tamaño del efecto (d de Cohen).* {#figura-2 .full-width}
 
-{{ invertible_image(src="img/tfm/forest_plot.es.png", alt="Forest plot", full_width=true) }}
+{{ invertible_image(src="img/forest_plot.es.png", alt="Forest plot", full_width=true) }}
 
 Los valores de heterogeneidad de los picos positivos fueron moderados (I<sup>2</sup> = 46,99; Q = 13,20; df = 7) y los de los picos negativos fueron bajos (I<sup>2</sup> = 32,45; Q = 11,84; df = 8). Dados los pocos estudios encontrados, no se pudieron llevar a cabo subanálisis con potencia suficiente explorando el efecto de variables como la edad, el sexo o las comorbilidades.
 
@@ -317,21 +317,21 @@ Llevamos a cabo el metaanálisis en SDM. El umbral p sin corregir \< .05 result�
 
 ##### **Figura 3**. *Representación del pico negativo significativo en el cerebelo derecho.* {#figura-3 .full-width}
 
-{{ invertible_image(src="img/tfm/figure3.webp", alt="Representación del pico negativo significativo en el cerebelo derecho", full_width=true) }}
+{{ invertible_image(src="img/figure3.webp", alt="Representación del pico negativo significativo en el cerebelo derecho", full_width=true) }}
 
 ##### **Figura 4**. *Vista lateral, medial y dorsal de los dos picos positivos significativos en función de su tamaño.* {#figura-4 .full-width}
 
-{{ invertible_image(src="img/tfm/figure4.webp", alt="Vista lateral, medial y dorsal de los dos picos positivos significativos en función de su tamaño", full_width=true) }}
+{{ invertible_image(src="img/figure4.webp", alt="Vista lateral, medial y dorsal de los dos picos positivos significativos en función de su tamaño", full_width=true) }}
 
 ##### **Figura 5**. *Corte coronal, sagital y axial del área hipoactivada (izquierda) e hiperactivadas (derecha).* {#figura-5 .full-width}
 
-{{ dimmable_image(src="img/tfm/figure5.webp", alt="Funnel plot", full_width=true) }}
+{{ dimmable_image(src="img/figure5.webp", alt="Funnel plot", full_width=true) }}
 
 La inspección visual del *funnel plot* (Figura 6) asociado a la coordenada del cerebelo estadísticamente significativa no sugiere evidencia de sesgo de publicación.
 
 ##### **Figura 6**. *Funnel plot para el clúster estadísticamente significativo de menor activación en el cerebelo.* {#figura-6 .full-width}
 
-{{ invertible_image(src="img/tfm/funnel_plot.png", alt="Funnel plot", full_width=true) }}
+{{ invertible_image(src="img/funnel_plot.png", alt="Funnel plot", full_width=true) }}
 
 ### Evaluación de calidad
 

@@ -11,7 +11,7 @@ toc_ignore_pattern = "(?i)^(Taula|Figura|Taula de contingut)"
 social_media_card = "img/social_cards/ca_blog_rsfmri_adhd_meta_analysis.jpg"
 +++
 
-Aquest és el meu Treball Fi de Màster del Màster de Psicologia General Sanitària de la Universitat de Barcelona (Curs 2019-2021), tutoritzat per Joan Guàrdia Olmos. Traduït de l'[original en castellà](@/blog/rsfmri-adhd-meta-analysis.es.md).
+Aquest és el meu Treball Fi de Màster del Màster de Psicologia General Sanitària de la Universitat de Barcelona (Curs 2019-2021), tutoritzat per Joan Guàrdia Olmos. Traduït de l'[original en castellà](@/blog/rsfmri-adhd-meta-analysis/index.es.md).
 
 **Autors i autores**: Óscar Fernández-Vázquez<sup> a</sup>, Silvia Ruiz-Torras<sup> d</sup>, Maribel Peró-Cebollero<sup> abc</sup>, Joan Guàrdia-Olmos<sup> abc</sup>.
 
@@ -216,7 +216,7 @@ La recerca inicial va produir 843 registres (vegeu [Figura 1](#figura-1)). Despr
 
 ##### **Figura 1**. *Diagrama de flux PRISMA de la cerca i selecció/exclusió d'estudis.* {#figura-1 .full-width}
 
-{{ invertible_image(src="img/tfm/prisma.ca.webp", alt="Diagrama de flux PRISMA", full_width=true) }}
+{{ invertible_image(src="img/prisma.ca.webp", alt="Diagrama de flux PRISMA", full_width=true) }}
 
 ### Característiques dels estudis inclosos
 
@@ -295,7 +295,7 @@ Tots els estudis van informar d'almenys quatre pics significatius (vegeu [Taula 
 
 ##### **Figura 2**. *Forest plot dels articles metaanalitzats. L'eix horitzontal és la grandària de l'efecte (d de Cohen).* {#figura-2 .full-width}
 
-{{ invertible_image(src="img/tfm/forest_plot.ca.png", alt="Forest plot", full_width=true) }}
+{{ invertible_image(src="img/forest_plot.ca.png", alt="Forest plot", full_width=true) }}
 
 Els valors d'heterogeneïtat dels pics positius van ser moderats (I<sup>2</sup> = 46,99; Q = 13,20; df = 7) i els dels pics negatius van ser baixos (I<sup>2</sup> = 32,45; Q = 11,84; df = 8). Donats els pocs estudis trobats, no es van poder realitzar subanàlisis amb potència suficient explorant l'efecte de variables com l'edat, el sexe o les comorbiditats.
 
@@ -319,21 +319,21 @@ b El descobriment al cerebel dret és l'únic que va sobreviure amb p=.0469 desp
 
 ##### **Figura 3**. *Representació del pic negatiu significatiu al cerebel dret.* {#figura-3 .full-width}
 
-{{ invertible_image(src="img/tfm/figure3.webp", alt="Representació del pic negatiu significatiu al cerebel dret", full_width=true) }}
+{{ invertible_image(src="img/figure3.webp", alt="Representació del pic negatiu significatiu al cerebel dret", full_width=true) }}
 
 ##### **Figura 4**. *Vista lateral, medial i dorsal dels dos pics positius significatius en funció de la seva mida.* {#figura-4 .full-width}
 
-{{ invertible_image(src="img/tfm/figure4.webp", alt="Vista lateral, medial i dorsal dels dos pics positius significatius en funció de la seva mida", full_width=true) }}
+{{ invertible_image(src="img/figure4.webp", alt="Vista lateral, medial i dorsal dels dos pics positius significatius en funció de la seva mida", full_width=true) }}
 
 ##### **Figura 5**. *Tall coronal, sagital i axial de l'àrea hipoactivada (esquerra) i hiperactivades (dreta).* {#figura-5 .full-width}
 
-{{ dimmable_image(src="img/tfm/figure5.webp", alt="Funnel plot", full_width=true) }}
+{{ dimmable_image(src="img/figure5.webp", alt="Funnel plot", full_width=true) }}
 
 La inspecció visual del *funnel plot* (Figura 6) associat a la coordenada del cerebel estadísticament significativa no suggereix evidència de biaix de publicació.
 
 ##### **Figura 6**. *Funnel plot pel clúster estadísticament significatiu de menor activació al cerebel.* {#figura-6 .full-width}
 
-{{ invertible_image(src="img/tfm/funnel_plot.png", alt="Funnel plot", full_width=true) }}
+{{ invertible_image(src="img/funnel_plot.png", alt="Funnel plot", full_width=true) }}
 
 ### Avaluació de qualitat
 

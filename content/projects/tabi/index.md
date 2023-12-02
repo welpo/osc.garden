@@ -4,13 +4,13 @@ description = "A fast, lightweight, and modern Zola theme with multi-language su
 weight = 1
 
 [extra]
-local_image = "img/tabi.webp"
+local_image = "projects/tabi/tabi.webp"
 social_media_card = "img/social_cards/projects_tabi.jpg"
 +++
 
 [**tabi**](https://github.com/welpo/tabi) is a modern, feature-rich theme for [Zola](https://www.getzola.org/), a fast static site generator.
 
-{{ full_width_image(src="img/light_dark_tabi.webp", alt="tabi light and dark mode") }}
+{{ full_width_image(src="light_dark_tabi.webp", alt="tabi light and dark mode") }}
 
 #### [View on GitHub](https://github.com/welpo/tabi) {.centered-text}
 

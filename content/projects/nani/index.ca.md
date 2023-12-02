@@ -1,47 +1,48 @@
 +++
 title = "nani"
-description = "Script Bash para crear URLs públicas a partir de archivos o texto en servidores remotos."
+description = "Script Bash per crear URLs públiques a partir d'arxius o text en servidors remots."
 weight = 3
 
 [extra]
-local_image = "img/nani.webp"
-social_media_card = "img/social_cards/es_projects_nani.jpg"
+local_image = "projects/nani/nani.webp"
+social_media_card = "img/social_cards/ca_projects_nani.jpg"
 +++
 
-Si trabajas en un servidor remoto, sabrás que compartir archivos con otras personas puede ser un proceso tedioso. `nani` es un script en Bash diseñado para simplificar esta tarea. Con un solo comando, puedes convertir archivos locales en enlaces públicos, facilitando el proceso de compartir directamente desde tu servidor.
+Si treballes en un servidor remot, saps que compartir arxius amb altres persones pot ser un procés feixuc. `nani` és un script en Bash dissenyat per simplificar aquesta tasca. Amb una sola comanda, pots convertir arxius locals o URLs en enllaços accessibles, facilitant el procés de compartir directament des del teu servidor.
 
-#### [Ver en GitHub](https://github.com/welpo/nani) {.centered-text}
+#### [Veure a GitHub](https://github.com/welpo/nani) {.centered-text}
 
-## Características clave
+## Característiques clau
 
-- **Todo tipo de archivos**: maneja directorios, archivos FLAC, archivos de texto e incluso URLs a vídeos.
+- **Tot tipus d'arxius**: gestiona directoris, arxius FLAC, arxius de text i fins i tot URLs a vídeos.
 
-- **Personalizable**: adapta los ajustes editando el script o un archivo de configuración.
+- **Personalitzable**: adapta els ajustos editant l'script o un arxiu de configuració.
 
-- **Notificaciones**: notificaciones en el escritorio e integración con el portapapeles para una mejor experiencia.
+- **Notificacions**: notificacions a l'escriptori i integració amb el portaretrats per a una millor experiència.
 
-## Inicio rápido
+## Inici ràpid
 
-1. Coloca `nani` en un directorio dentro de tu PATH.
-2. Haz el script ejecutable.
+1. Col·loca `nani` en un directori dins del teu PATH.
+2. Fes que l'script sigui executable.
 
-Para pasos de instalación más detallados, [consulta la documentación completa](https://github.com/welpo/nani#install).
+Per a passos d'instal·lació més detallats, [consulta la documentació completa](https://github.com/welpo/nani#install).
 
-## Uso
+## Ús
 
 ```bash
 nani Ruta/A/foto.png
 https://example.com/nani/hjRGLZB.png
 ```
 
-Compartir un directorio manteniendo su nombre original:
+Compartir un directori mantenint el seu nom original:
 
 ```bash
-nani -o Ruta/A/Directorio
-https://example.com/nani/Directorio.zip
+nani -o Ruta/A/Directori
+https://example.com/nani/Directori.zip
 ```
 
-Puedes configurar varias opciones a través de los parámetros. Aquí tienes la salida de `nani` --help:
+Pots configurar diverses opcions a través dels paràmetres. Aquí tens la sortida de `nani --help`:
+
 {% wide_container() %}
 
 ```

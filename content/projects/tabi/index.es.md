@@ -4,13 +4,13 @@ description = "Un tema de Zola rápido, ligero y moderno con soporte multilingü
 weight = 1
 
 [extra]
-local_image = "img/tabi.webp"
+local_image = "projects/tabi/tabi.webp"
 social_media_card = "img/social_cards/es_projects_tabi.jpg"
 +++
 
 [**tabi**](https://github.com/welpo/tabi) es un tema moderno y rico en funcionalidad para [Zola](https://www.getzola.org/), un generador de sitios web estáticos muy rápido.
 
-{{ full_width_image(src="img/light_dark_tabi.webp", alt="Modos claro y oscuro de tabi") }}
+{{ full_width_image(src="light_dark_tabi.webp", alt="Modos claro y oscuro de tabi") }}
 
 #### [Ver en GitHub](https://github.com/welpo/tabi) {.centered-text}
 

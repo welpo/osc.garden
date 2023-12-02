@@ -4,7 +4,7 @@ description = "Python-based file uploader using Flask and uWSGI, focused on effi
 weight = 2
 
 [extra]
-local_image = "img/chu.webp"
+local_image = "projects/chu/chu.webp"
 social_media_card = "img/social_cards/projects_chu.jpg"
 +++
 
