@@ -2,7 +2,7 @@
 title = "Política de privacitat"
 path = "/ca/privacy"
 date = 2023-10-28
-updated = 2023-11-07
+updated = 2023-12-07
 
 [extra]
 isso = false
@@ -64,7 +64,7 @@ No utilitzo les dades per a cap altre propòsit.
 
 ## Com emmagatzemo les dades?
 
-Les dades s'emmagatzemen en un servidor allotjat per [Oracle Cloud](https://cloud.oracle.com/). El servidor està ubicat a Amsterdam, Països Baixos.
+Les dades s'emmagatzemen en un servidor allotjat per [Vultr](https://www.vultr.com/). El servidor es troba a París, França.
 
 El servidor segueix les millors pràctiques de la indústria per a la seguretat, incloent-hi actualitzacions de seguretat automàtiques, una estricta Política de Seguretat del Contingut, un tallafoc, accés SSH basat en claus, etc.
 

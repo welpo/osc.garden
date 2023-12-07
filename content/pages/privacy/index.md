@@ -2,7 +2,7 @@
 title = "Privacy Policy"
 path = "privacy"
 date = 2023-10-28
-updated = 2023-11-07
+updated = 2023-12-07
 
 [extra]
 isso = false
@@ -64,7 +64,7 @@ I am not using the data for any other purpose.
 
 ## How do I store the data?
 
-The data is stored on a server hosted by [Oracle Cloud](https://cloud.oracle.com/). The server is located in Amsterdam, The Netherlands.
+The data is stored on a server hosted by [Vultr](https://www.vultr.com/). The server is located in Paris, France.
 
 The server follows industry best practices for security, including automatic security updates, a strict Content Security Policy, a firewall, key-based SSH access, etc.
 

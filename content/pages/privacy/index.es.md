@@ -2,7 +2,7 @@
 title = "Política de privacidad"
 path = "/es/privacy"
 date = 2023-10-28
-updated = 2023-11-07
+updated = 2023-12-07
 
 [extra]
 isso = false
@@ -64,7 +64,8 @@ No utilizo los datos para ningún otro propósito.
 
 ## ¿Cómo almaceno los datos?
 
-Los datos se almacenan en un servidor alojado por [Oracle Cloud](https://cloud.oracle.com/). El servidor está ubicado en Ámsterdam, Países Bajos.
+Los datos se almacenan en un servidor alojado por [Vultr](https://www.vultr.com/). El servidor está ubicado en París, Francia.
+
 
 El servidor sigue las mejores prácticas de la industria para la seguridad, incluidas actualizaciones de seguridad automáticas, una estricta Política de Seguridad del Contenido, un cortafuegos, acceso SSH basado en claves, etc.
 
