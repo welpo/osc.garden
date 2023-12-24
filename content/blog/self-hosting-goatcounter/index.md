@@ -1,6 +1,7 @@
 +++
 title = "Self-Hosting GoatCounter with an nginx Reverse Proxy and SSL"
 date = 2023-12-14
+updated = 2023-12-24
 description = "Learn how to self-host GoatCounter, a lightweight, privacy-friendly web analytics tool, with an nginx reverse proxy and an SSL certificate."
 
 [taxonomies]
@@ -181,6 +182,12 @@ systemctl start goatcounter
 ```
 
 At this point, you should be able to access your dashboard on the URL you chose. You can check the service status with `systemctl status goatcounter`. To see the logs, use `journalctl -fu goatcounter`.
+
+Finally, enable the service to start on boot:
+
+```bash
+systemctl enable goatcounter
+```
 
 That's it! Now `goatcounter` will start on boot and restart if it fails. Happy analytics!
 

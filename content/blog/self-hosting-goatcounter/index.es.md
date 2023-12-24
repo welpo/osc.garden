@@ -1,6 +1,7 @@
 +++
 title = "Autoalojamiento de GoatCounter con un proxy inverso nginx y SSL"
 date = 2023-12-14
+updated = 2023-12-24
 description = "Aprende a autogestionar GoatCounter —una herramienta de análisis web ligera y respetuosa con la privacidad— con un proxy inverso nginx y un certificado SSL."
 
 [taxonomies]
@@ -185,6 +186,12 @@ systemctl start goatcounter
 ```
 
 En este punto, deberías poder acceder a tu panel en la URL que elegiste. Puedes verificar el estado del servicio con `systemctl status goatcounter`. Para ver los registros, usa `journalctl -fu goatcounter`.
+
+Sólo falta hacer que el servicio se inicie automáticamente al arrancar:
+
+```bash
+systemctl enable goatcounter
+```
 
 ¡Eso es todo! Ahora `goatcounter` se iniciará al arrancar y se reiniciará si falla.
 

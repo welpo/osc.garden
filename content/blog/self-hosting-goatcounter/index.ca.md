@@ -1,6 +1,7 @@
 +++
 title = "Autoallotjament de GoatCounter amb un proxy invers nginx i SSL"
 date = 2023-12-14
+updated = 2023-12-24
 description = "Aprèn a autoallotjar GoatCounter —una eina d'anàlisi web lleugera i respectuosa amb la privadesa— amb un proxy invers nginx i un certificat SSL."
 
 [taxonomies]
@@ -181,6 +182,12 @@ systemctl start goatcounter
 ```
 
 En aquest punt, hauries de poder accedir al teu panell de control a l'URL que has triat. Pots verificar l'estat del servei amb `systemctl status goatcounter`. Per veure els registres, utilitza `journalctl -fu goatcounter`.
+
+Només queda configurar el servei perquè s'iniciï automàticament en l'arrencada:
+
+```bash
+systemctl enable goatcounter
+```
 
 Això és tot! Ara `goatcounter` s'iniciarà en l'arrencada i es reiniciarà en cas de fallada.
 
