@@ -16,7 +16,7 @@ social_media_card = "img/social_cards/es_projects_tabi.jpg"
 
 ## Características
 
-- [Establece cualquier idioma como predeterminado](https://welpo.github.io/tabi/es/blog/faq-languages/#como-establezco-el-idioma-predeterminado-de-mi-sitio). Configura tu sitio en chino, español, francés, hindi… o cualquier [otro idioma compatible](https://github.com/welpo/tabi/tree/main/i18n). La interfaz del tema se traducirá en consecuencia.
+- [Establece cualquier idioma como predeterminado](https://welpo.github.io/tabi/es/blog/faq-languages/#como-establezco-el-idioma-predeterminado-de-mi-sitio). Configura tu sitio en chino, español, francés, hindi… o cualquier [otro idioma compatible](https://welpo.github.io/tabi/es/blog/faq-languages/#que-idiomas-admite-tabi). La interfaz del tema se traducirá en consecuencia.
 - [Integración con repositorios remotos](https://welpo.github.io/tabi/es/mastering-tabi-settings/#integracion-con-repositorios-git) en GitHub, GitLab, Gitea y Codeberg para el historial de commits y mostrar el código fuente del sitio.
 - [Soporte multilingüe completo](https://welpo.github.io/tabi/es/blog/faq-languages/#como-gestiona-tabi-el-soporte-multilingue). Añade tantos idiomas como desees y deja que tus usuarios elijan con un selector de idioma.
 - Temas claros y oscuros. Se adapta a la configuración del sistema operativo, con un interruptor en la barra de navegación.
@@ -24,6 +24,7 @@ social_media_card = "img/social_cards/es_projects_tabi.jpg"
 - Resaltado de sintaxis de código con colores basados en [Catppuccin](https://github.com/catppuccin/catppuccin) Frappé.
 - Soporte para [comentarios usando giscus, utterances, Hyvor Talk o Isso](https://welpo.github.io/tabi/es/blog/comments/).
 - Todo el JavaScript se puede [deshabilitar completamente](https://welpo.github.io/tabi/es/blog/javascript/).
+- [Búsqueda local](https://welpo.github.io/tabi/es/blog/mastering-tabi-settings/#busqueda) con una interfaz accesible y multilingüe.
 - [Codificación de correo](https://welpo.github.io/tabi/es/blog/mastering-tabi-settings/#encoded-email) para protección contra spam.
 - [Mapa de sitio web estilizado y legible por humanos](https://welpo.github.io/tabi/sitemap.xml).
 - [Feed de Atom estilizado y legible por humanos](https://welpo.github.io/tabi/es/atom.xml).

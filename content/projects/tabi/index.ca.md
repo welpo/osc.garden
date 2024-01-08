@@ -16,18 +16,19 @@ social_media_card = "img/social_cards/ca_projects_tabi.jpg"
 
 ## Característiques
 
-- [Estableix qualsevol idioma com a predeterminat](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-estableixo-la-llengua-predeterminada-del-meu-lloc). Configura el teu lloc en xinès, espanyol, francès, hindi… o qualsevol [altre idioma compatible](https://github.com/welpo/tabi/tree/main/i18n). La interfície del tema es traduirà en conseqüència.
+- [Estableix qualsevol idioma com a predeterminat](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-estableixo-la-llengua-predeterminada-del-meu-lloc). Configura el teu lloc en xinès, espanyol, francès, hindi… o qualsevol [altre idioma compatible](https://welpo.github.io/tabi/ca/blog/faq-languages/#quines-llengues-admet-tabi). La interfície del tema es traduirà en conseqüència.
 - [Integració amb repositoris remots](https://welpo.github.io/tabi/ca/mastering-tabi-settings/#integracio-amb-repositoris-git) a GitHub, GitLab, Gitea i Codeberg per a l'historial de commits i mostrar el codi font del lloc.
 - Temes clars i foscos. S'adapta a la configuració del sistema operatiu, amb un interruptor a la barra de navegació.
 - [Suport multilingüe complet](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-gestiona-tabi-el-suport-multilingue). Afegeix tants idiomes com vulguis i deixa que els teus usuaris triin amb el selector d'idioma.
 - Puntuació perfecta en Lighthouse (Rendiment, Accessibilitat, Millors Pràctiques i SEO).
 - Ressaltat de sintaxi de codi amb colors basats en [Catppuccin](https://github.com/catppuccin/catppuccin) Frappé.
 - Suport per a [comentaris usant giscus, utterances, Hyvor Talk o Isso](https://welpo.github.io/tabi/ca/blog/comments/).
+- [Cerca local](https://welpo.github.io/tabi/ca/blog/mastering-tabi-settings/#cerca) amb una interfície accessible i multilingüe.
 - Tot el JavaScript es pot [deshabilitar completament](https://welpo.github.io/tabi/ca/blog/javascript/).
 - [Codificació de correu](https://welpo.github.io/tabi/ca/blog/mastering-tabi-settings/#correu-electronic-codificat) per a protecció contra spam.
 - [Mapa del lloc estilitzat i llegible per humans](https://welpo.github.io/tabi/sitemap.xml).
 - [Capçaleres de seguretat personalitzables](https://welpo.github.io/tabi/ca/blog/security/).
-- [Feed atom estilitzat i llegible per humans](https://welpo.github.io/tabi/ca/atom.xml).
+- [Feed Atom estilitzat i llegible per humans](https://welpo.github.io/tabi/ca/atom.xml).
 - [Enllaços de retrocés per a notes al peu](https://welpo.github.io/tabi/ca/blog/mastering-tabi-settings/#enllacos-de-retorn-a-les-notes-a-peu-de-pagina).
 - [Taula de continguts personalitzable](https://welpo.github.io/tabi/ca/blog/toc/).
 - [Avís de drets d'autor personalitzat](https://welpo.github.io/tabi/ca/blog/mastering-tabi-settings/#copyright).

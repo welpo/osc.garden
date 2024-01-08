@@ -11,7 +11,20 @@ minify_html = false
 
 taxonomies = [{name = "tags", feed = true}]
 
+build_search_index = true
 default_language = "en"
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+# At which character to truncate the content to. Useful if you have a lot of pages and the index would
+# become too big to load on the site. Defaults to not being set.
+# truncate_content_length = 100
+# Wether to produce the search index as a javascript file or as a JSON file.
+# Accepted value "elasticlunr_javascript" or "elasticlunr_json".
+index_format = "elasticlunr_json"
 
 [markdown]
 highlight_code = true
@@ -25,6 +38,7 @@ description = "Óscar es un científico de datos y psicólogo clínico intentand
 generate_feed = true
 compile_sass = true
 minify_html = true
+build_search_index = true
 
 taxonomies = [{name = "tags", feed = true}]
 
@@ -55,7 +69,7 @@ default_theme = ""
 # All other skins have optimal contrast.
 skin = ""
 
-# Set browser theme colour. Can be a single colour or [light, dark]. 
+# Set browser theme colour. Can be a single colour or [light, dark].
 # Note: Bright colors may be ignored in dark mode.
 # More details: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 browser_theme_color = "#087e96"
