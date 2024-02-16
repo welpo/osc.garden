@@ -1,7 +1,7 @@
 +++
 title = "tabi"
 description = "Un tema de Zola rápido, ligero y moderno con soporte multilingüe."
-weight = 1
+weight = 30
 
 [extra]
 local_image = "projects/tabi/tabi.webp"
@@ -12,7 +12,7 @@ social_media_card = "img/social_cards/es_projects_tabi.jpg"
 
 {{ full_width_image(src="light_dark_tabi.webp", alt="Modos claro y oscuro de tabi") }}
 
-#### [Ver en GitHub](https://github.com/welpo/tabi) {.centered-text}
+#### [Ver en GitHub](https://github.com/welpo/tabi) • [Demo y documentación](https://welpo.github.io/tabi/es/) {.centered-text}
 
 ## Características
 
@@ -48,11 +48,8 @@ social_media_card = "img/social_cards/es_projects_tabi.jpg"
 ## Prácticas de desarrollo
 
 - **[Conventional Commits](https://www.conventionalcommits.org) y [Gitmoji](https://gitmoji.dev/)**: los mensajes de commit siguen formatos estandarizados para mejorar la legibilidad.
-
 - **Seguimiento de problemas**: cada error o nueva funcionalidad tiene su propio ticket, que se vincula a los commits de código y PRs o problemas relacionados.
-
 - **Comentarios detallados**: los tickets se documentan con imágenes, vídeos y descripciones detalladas para facilitar una comunicación y resolución de problemas efectivas.
-
 - **Referencias cruzadas**: enlazamos todos los tickets con los commits de código, pull requests o problemas relacionados para una rastreabilidad completa.
 
 ## Evolución del proyecto
