@@ -32,6 +32,11 @@ highlight_theme = "css"
 smart_punctuation = true
 render_emoji = true
 
+[link_checker]
+skip_anchor_prefixes = [
+    "https://github.com/",
+]
+
 [languages.es]
 title = "~/osc"
 description = "Óscar es un científico de datos y psicólogo clínico intentando potenciar su impacto positivo en el mundo."
