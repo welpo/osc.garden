@@ -1,0 +1,212 @@
+/* Colours to identify each service */
+.service {
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-weight: 480;
+  font-size: 0.9rem;
+  font-family: var(--sans-serif-font);
+}
+
+.Amazon {
+  background-color: #FF9900;
+  color: black;
+}
+
+.AppleMusic {
+  background-color: #fc3c44;
+  color: white;
+}
+
+.Deezer {
+  background-color: #A139FF;
+  color: white;
+}
+
+.Google {
+  background-color: #F55B42;
+  color: white;
+}
+
+.Meta {
+  background-color: #176CF0;
+  color: white;
+}
+
+.NetEase {
+  background-color: #DD001B;
+  color: white;
+}
+
+.Saavn {
+  background-color: #1CC5A6;
+  color: black;
+}
+
+.Snapchat {
+  background-color: #FFFC00;
+  color: black;
+}
+
+.Spotify {
+  background-color: #23D760;
+  color: black;
+}
+
+.Tencent {
+  background-color: #0D73F9;
+  color: white;
+}
+
+.Tidal {
+  background-color: black;
+  color: white;
+}
+
+.TikTok {
+  background-color: #ff0050;
+  color: white;
+}
+
+.kkbox {
+  background-color: #09CEF6;
+}
+
+/* Graph headers */
+.graph-title {
+  font-weight: 550;
+  font-size: 1.2rem;
+  font-family: var(--sans-serif-font);
+}
+
+.graph-subtitle p,
+.vega-bind span {
+  margin-top: -0.6rem;
+  margin-bottom: -0.1rem;
+  color: var(--meta-color);
+  font-size: 0.9rem;
+  font-family: var(--sans-serif-font);
+}
+
+/* Vega elements */
+.vega-embed {
+  display: flex;
+  width: 100%;
+}
+
+.vega-embed details,
+.vega-embed details summary {
+  position: relative;
+}
+
+canvas .marks {
+  width: 100%;
+}
+
+.vega-bind label,
+.vega-bind input[type="range"],
+.vega-bind span {
+  margin-left: 0.15rem;
+  white-space: nowrap;
+}
+
+.vega-bindings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Tooltip */
+.vg-tooltip {
+  margin: 0;
+  padding: 0;
+}
+
+#vg-tooltip-element {
+  margin: 0;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  padding: 0rem;
+  color: var(--text-color-high-contrast);
+}
+
+#vg-tooltip-element table tr td.key {
+  color: var(--text-color);
+}
+
+.vg-tooltip table {
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.vg-tooltip td {
+  border: none;
+  font-size: 0.7rem;
+}
+
+.vg-tooltip td.key {
+  padding-right: 10px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Range slider */
+input[type="range"]::-moz-range-thumb {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary-color);
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+input[type="range"]::-moz-range-track {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: var(--divider-color);
+  height: 0.3rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-top: -4px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary-color);
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: var(--divider-color);
+  height: 0.3rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 0 0.4rem;
+  outline: none;
+  width: 18vmin;
+}
+
+/* Smaller text for the "Click to view code" */
+details summary {
+  color: var(--meta-color);
+  font-size: 0.8rem;
+  font-family: var(--sans-serif-font);
+}
+
+/* Hack to reduce empty space in map graph on mobile */
+@media only screen and (max-width: 768px) {
+  #worldmap {
+    margin-top: -5.8rem;}
+}

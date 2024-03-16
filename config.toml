@@ -63,7 +63,7 @@ theme_switcher = true
 
 # This setting determines the default theme on load ("light" or "dark").
 # To default to the user's OS-level theme, leave it empty or unset.
-default_theme = ""
+default_theme = "light"
 
 # Choose the colourscheme (skin) for the theme. Default is "teal".
 # Skin available: blue, lavender, mint, red, sakura, teal, monochrome, lowcontrast_orange, lowcontrast_peach, lowcontrast_pink, indigo_ingot, evangelion
@@ -202,6 +202,10 @@ allowed_domains = [
     { directive = "style-src", domains = ["'self'"] },
     { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
 ]
+
+# Enable the CSP directives configured (or default).
+# Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
+enable_csp = true
 
 # Custom subset of characters for the header.
 # If set to true, the `static/custom_subset.css` file will be loaded first.
