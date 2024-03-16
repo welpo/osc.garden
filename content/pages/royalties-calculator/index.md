@@ -67,4 +67,4 @@ These factors change over time.
 
 ## How much does Spotify pay per stream?
 
-In 2023, Spotify paid me between $0.0025 and $0.0072 per stream. The mean was $0.0025 and the median $0.0023.
+In 2023, Spotify paid me between $0.000003 and $0.0072 per stream. The mean was $0.0025 and the median $0.0023.
