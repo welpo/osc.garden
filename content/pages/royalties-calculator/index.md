@@ -1,6 +1,6 @@
 +++
 title = "Streaming Royalties Calculator"
-updated = 2024-03-15
+updated = 2024-03-16
 description = "See how much Spotify, Apple Music, TikTok, Instagram, Facebook, Tidal, etc. pay per stream. Or calculate how many streams you need on each platform to earn a specific amount. Based on my own royalties data from 2023."
 path = "royalties-calculator"
 
@@ -44,7 +44,7 @@ This calculator requires JavaScript to function. Please enable JavaScript in you
 
 ## Where do you get the data from?
 
-The pay rate of each service is comes from [an analysis of my own royalties data](/blog/data-analysis-music-streaming/), filtered to the last year (2023).
+The pay rate of each service comes from [an analysis of my own royalties data](/blog/data-analysis-music-streaming/), filtered to the last year (2023).
 
 ## How accurate is this calculator?
 
