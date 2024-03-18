@@ -183,7 +183,9 @@ done
 # See https://osc.garden/blog/automating-social-media-cards-zola/ for context.
 changed_md_files=$(echo "$all_changed_files" | grep '\.md$')
 # Use parallel to create the social media cards in parallel and commit them.
-echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
+if [[ -n "$changed_md_files" ]]; then
+    echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
+fi
 
 #########################################################
 # Run subset_font if config.toml has been modified.     #
