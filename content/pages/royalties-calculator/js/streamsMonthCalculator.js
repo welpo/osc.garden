@@ -32,7 +32,7 @@ function createElementForStore(data) {
     const storeDisplayName =
       store.Store === "Meta" ? "Instagram & Facebook" : store.Store;
     const storeBoxHTML = `<div class="store-box">
-      <img src="/img/streaming_logos/${sanitizedStoreName}.png" alt="" class="store-logo${
+      <img src="img/streaming_logos/${sanitizedStoreName}.png" alt="" class="store-logo${
       store.Store.toLowerCase() === "tidal" ? " invertible-image" : ""
     }">
       <div class="streams-needed" tabindex="0" id="${sanitizedStoreName}-streams-label">0</div>
