@@ -1,7 +1,7 @@
 +++
 title = "From Bashful to Social Butterfly: Automating Link Previews for Zola Sites"
 date = 2023-09-06
-updated = 2023-09-20
+updated = 2024-03-18
 description = "In a quest to make Zola websites more social media-friendly, I've cracked the code for automating the creation of social media cards."
 
 [taxonomies]
@@ -259,7 +259,9 @@ export -f generate_and_commit_card
 
 # Create/update the social media card for each modified Markdown file.
 changed_md_files=$(git diff --cached --name-only | grep '\.md$')
-echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
+if [[ -n "$changed_md_files" ]]; then
+    echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
+fi
 ```
 
 You can see how this is integrated in the [full pre-commit hook](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).

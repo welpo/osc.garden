@@ -1,7 +1,7 @@
 +++
 title = "De reservado a rey de las redes: automatizando las vistas previas de los enlaces con Zola"
 date = 2023-09-06
-updated = 2023-09-20
+updated = 2024-03-18
 description = "Con el objetivo de hacer los sitios web de Zola más compatibles con las redes sociales, he descifrado el código para automatizar la generación de las previsualizaciones de enlaces."
 
 [taxonomies]
@@ -259,7 +259,9 @@ export -f generate_and_commit_card
 
 # Crear/actualizar la miniatura para redes sociales para cada archivo Markdown modificado.
 archivos_md_modificados=$(git diff --cached --name-only | grep '\.md$')
-echo "$archivos_md_modificados" | parallel -j 8 generate_and_commit_card
+if [[ -n "$archivos_md_modificados" ]]; then
+    echo "$archivos_md_modificados" | parallel -j 8 generate_and_commit_card
+fi
 ```
 
 Puedes ver cómo queda integrado en el [gancho pre-commit completo](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
