@@ -36,7 +36,7 @@ function createElementForStore(data) {
       store.Store.toLowerCase() === "tidal" ? " invertible-image" : ""
     }">
       <div class="streams-needed" tabindex="0" id="${sanitizedStoreName}-streams-label">0</div>
-      <input class="streams-for-store ${hiddenClass}" id="${sanitizedStoreName}-streams-needed" type="number" inputmode="numeric" value="0" aria-label="Streams from ${storeDisplayName}">
+      <input class="streams-for-store ${hiddenClass}" id="${sanitizedStoreName}-streams-needed" type="number" inputmode="numeric" value="0" aria-label="${storeDisplayName} streams">
       <div class="store-name" aria-hidden="true">${storeDisplayName}</div>
      </div>`;
 
