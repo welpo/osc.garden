@@ -1,5 +1,5 @@
 let streamingPayRatesData;
-const calculationTypeSelect = document.getElementById('calculation-type');
+const calculationTypeSelect = document.getElementById("calculation-type");
 const calculatorElement = document.getElementById("calculator");
 const decimalPrecision = 2;
 const earningsAmountSpan = document.getElementById("earnings-amount");
@@ -29,22 +29,26 @@ function createElementForStore(data) {
 
   data.forEach((store) => {
     const sanitizedStoreName = normalizeStoreName(store.Store);
-    const storeDisplayName = store.Store === "Meta" ? "Instagram & Facebook" : store.Store;
-    resultsDiv.insertAdjacentHTML(
-      "beforeend",
-      `<div class="store-box">
-        <img src="/img/streaming_logos/${sanitizedStoreName}.png" alt="" class="store-logo${store.Store.toLowerCase() === "tidal" ? " invertible-image" : ""}">
-        <div class="streams-needed">0</div>
-        <input class="streams-for-store ${hiddenClass}" id="${sanitizedStoreName}-streams-needed" type="number" inputmode="numeric" value="0" aria-label="Streams from ${storeDisplayName}">
-        <div class="store-name" aria-hidden="true">${storeDisplayName}</div>
-       </div>`
-    );
+    const storeDisplayName =
+      store.Store === "Meta" ? "Instagram & Facebook" : store.Store;
+    const storeBoxHTML = `<div class="store-box">
+      <img src="/img/streaming_logos/${sanitizedStoreName}.png" alt="" class="store-logo${
+      store.Store.toLowerCase() === "tidal" ? " invertible-image" : ""
+    }">
+      <div class="streams-needed" tabindex="0" id="${sanitizedStoreName}-streams-label">0</div>
+      <input class="streams-for-store ${hiddenClass}" id="${sanitizedStoreName}-streams-needed" type="number" inputmode="numeric" value="0" aria-label="Streams from ${storeDisplayName}">
+      <div class="store-name" aria-hidden="true">${storeDisplayName}</div>
+     </div>`;
+
+    resultsDiv.insertAdjacentHTML("beforeend", storeBoxHTML);
 
     const storeBoxElement = resultsDiv.lastElementChild;
-    const inputElement = storeBoxElement.querySelector(`#${sanitizedStoreName}-streams-needed`);
+    const inputElement = storeBoxElement.querySelector(
+      `#${sanitizedStoreName}-streams-needed`
+    );
 
     // Focus input on store-box click.
-    storeBoxElement.addEventListener('click', () => {
+    storeBoxElement.addEventListener("click", () => {
       inputElement.focus();
       inputElement.select();
     });
@@ -61,9 +65,8 @@ function applyValidationToInput(inputElement) {
   inputElement.style.borderBottom = isValidInput
     ? "2px solid var(--primary-color)"
     : "2px solid red";
-  inputElement.setAttribute('aria-invalid', !isValidInput);
+  inputElement.setAttribute("aria-invalid", !isValidInput);
 }
-
 
 function isValidNumber(value) {
   return /^-?\d*\.?\d+(e\d+)?$/.test(value) && parseFloat(value) >= 0;
@@ -117,23 +120,31 @@ function toggleCalculatorMode() {
   document
     .querySelectorAll(".streams-needed")
     .forEach((div) => div.classList.toggle(hiddenClass, isCalculatingEarnings));
-  const streamInputs = document
-    .querySelectorAll(".streams-for-store")
-    .forEach((input) => {
-      input.classList.toggle(hiddenClass, !isCalculatingEarnings);
-      const storeBox = input.closest('.store-box');
-      if(storeBox) {
-        if (isCalculatingEarnings) {
-          storeBox.classList.add('clickable');
-        } else {
-          storeBox.classList.remove('clickable');
-        }
+  document.querySelectorAll(".streams-for-store").forEach((input) => {
+    input.classList.toggle(hiddenClass, !isCalculatingEarnings);
+    const storeBox = input.closest(".store-box");
+    if (storeBox) {
+      if (isCalculatingEarnings) {
+        storeBox.classList.add("clickable");
+        storeBox.setAttribute("aria-disabled", "false");
+      } else {
+        storeBox.classList.remove("clickable");
+        storeBox.setAttribute("aria-disabled", "true");
       }
-    });
+    }
+  });
+
+  document.querySelectorAll(".store-name").forEach((element) => {
+    // The input labels have the aria-label attribute.
+    element.setAttribute("aria-hidden", isCalculatingEarnings);
+  });
 }
 
 function updateEarningsResults() {
-  if (document.querySelector('input[name="mode"]:checked').value === "CalculateEarnings") {
+  if (
+    document.querySelector('input[name="mode"]:checked').value ===
+    "CalculateEarnings"
+  ) {
     const earnings = calculateEarnings();
     const formattedEarnings = earnings.toFixed(decimalPrecision);
     const newEarnings = parseFloat(formattedEarnings).toLocaleString();
@@ -144,30 +155,35 @@ function updateEarningsResults() {
 function calculateEarnings() {
   const calculationType = calculationTypeSelect.value;
 
-  return Array.from(document.querySelectorAll(".streams-for-store"))
-    .reduce((total, input) => {
+  return Array.from(document.querySelectorAll(".streams-for-store")).reduce(
+    (total, input) => {
       const streamCount = parseFloat(input.value);
       if (!isNaN(streamCount) && streamCount > 0) {
         const storeName = input.id.split("-")[0];
         const payPerStream = streamingPayRatesData.find(
-          store => normalizeStoreName(store.Store) === storeName
+          (store) => normalizeStoreName(store.Store) === storeName
         )[calculationType];
         return total + streamCount * payPerStream;
       }
       return total;
-    }, 0);
+    },
+    0
+  );
 }
-
 
 function reorderServices() {
   const calculationType = calculationTypeSelect.value;
-  const sortedData = [...streamingPayRatesData].sort((a, b) => b[calculationType] - a[calculationType]);
+  const sortedData = [...streamingPayRatesData].sort(
+    (a, b) => b[calculationType] - a[calculationType]
+  );
   const docFragment = document.createDocumentFragment();
 
-  sortedData.forEach(store => {
+  sortedData.forEach((store) => {
     const sanitizedStoreName = normalizeStoreName(store.Store);
     const elementId = `${sanitizedStoreName}-streams-needed`;
-    const storeBoxElement = document.getElementById(elementId).closest('.store-box');
+    const storeBoxElement = document
+      .getElementById(elementId)
+      .closest(".store-box");
     if (storeBoxElement) {
       docFragment.appendChild(storeBoxElement);
     }

@@ -1,6 +1,6 @@
 +++
 title = "Streaming Royalties Calculator"
-updated = 2024-03-16
+updated = 2024-03-18
 description = "See how much Spotify, Apple Music, TikTok, Instagram, Facebook, Tidal, etc. pay per stream. Or calculate how many streams you need on each platform to earn a specific amount. Based on my own royalties data from 2023."
 path = "royalties-calculator"
 
@@ -22,9 +22,9 @@ This calculator requires JavaScript to function. Please enable JavaScript in you
     </div>
     <div id="calculator-content">
         <div id="question">How many streams are necessary to earn <div class="target-amount">
-            <input type="number" id="target-amount" min="1" title="target amount to calculate streams necessary" inputmode="numeric" value=1250>
+            <input type="number" id="target-amount" min="1" title="Target earnings amount in US dollars" inputmode="numeric" value=1250>
         </div> USD?</div>
-        <div id="earnings-results" class="hidden">Total earnings: <span id="earnings-amount">0</span></div>
+        <div id="earnings-results" class="hidden">Total earnings: <span id="earnings-amount" aria-live="polite">0</span></div>
         <div id="results" class="results-grid"></div>
         <div>
             Base calculations on
@@ -37,7 +37,7 @@ This calculator requires JavaScript to function. Please enable JavaScript in you
             pay rate.
         </div>
     </div>
-<script src="/js/streamsMonthCalculator.min.js"></script>
+<script src="js/streamsMonthCalculator.min.js"></script>
 </form>
 
 ---
