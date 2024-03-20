@@ -1,6 +1,7 @@
 +++
 title = "Notes on Notes: Analysing Seven Years of Music Streaming Data"
 date = 2024-03-15
+updated = 2024-03-21
 description = "From a childhood keyboard to streaming in over 170 countries. I've analysed and visualised seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and much more."
 
 [taxonomies]
@@ -34,7 +35,7 @@ That was seven years ago today. Seven years of data: streaming numbers, royaltie
 
 ## The data
 
-My music is available (almost) everywhere, from region-specific streaming services like JioSaavn (India) or NetEase Cloud Music (China) to [Amazon Music](https://music.amazon.com/artists/B06W9JTC4G/osker-wyld), [Apple Music](https://itunes.apple.com/artist/osker-wyld/id1206134590?mt=1&app=music), [Spotify](https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE), [Tidal](https://tidal.com/browse/artist/8522682)… It can even be added to videos on TikTok and Instagram/Facebook.
+My music is available (almost) everywhere, from regional streaming services like JioSaavn (India) or NetEase Cloud Music (China) to [Amazon Music](https://music.amazon.com/artists/B06W9JTC4G/osker-wyld), [Apple Music](https://itunes.apple.com/artist/osker-wyld/id1206134590?mt=1&app=music), [Spotify](https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE), [Tidal](https://tidal.com/browse/artist/8522682)… It can even be added to videos on TikTok and Instagram/Facebook.
 
 I distribute my music through [DistroKid](https://distrokid.com/vip/seven/648434) (referral link), which lets me keep 100% of the royalties.
 
@@ -44,10 +45,10 @@ Every two or three months, the services provide an earnings report to the distri
 
 | Reporting Month | Sale Month | Store             | Artist     | Title              | Quantity | Song/Album | Country Of Sale | Earnings (USD)    |
 |-----------------|------------|-------------------|------------|--------------------|----------|------------|-----------------|-------------------|
-| Mar 2024        | Jan 2024   | Instagram/Facebook| osker wyld | krakkar            | 704      | Song       | OU              | $0.007483664425   |
-| Mar 2024        | Jan 2024   | Instagram/Facebook| osker wyld | fimmtánda          | 9,608    | Song       | OU              | $0.102135011213   |
-| Mar 2024        | Jan 2024   | Tidal             | osker wyld | tólfta (fyrir ömmu)| 27       | Song       | MY              | $0.121330264483   |
-| Mar 2024        | Dec 2023   | iTunes Match      | osker wyld | fyrir Olivia       | 1        | Song       | TW              | $0.000313712922   |
+| Mar 2024        | Jan 2024   | Instagram/Facebook| osker wyld | krakkar            | 704      | Song       | OU              | 0.007483664425   |
+| Mar 2024        | Jan 2024   | Instagram/Facebook| osker wyld | fimmtánda          | 9,608    | Song       | OU              | 0.102135011213   |
+| Mar 2024        | Jan 2024   | Tidal             | osker wyld | tólfta (fyrir ömmu)| 27       | Song       | MY              | 0.121330264483   |
+| Mar 2024        | Dec 2023   | iTunes Match      | osker wyld | fyrir Olivia       | 1        | Song       | TW              | 0.000313712922   |
 
 {% end %}
 
@@ -62,6 +63,7 @@ However, I was excited to try [polars](https://pola.rs/), a “Blazingly Fast Da
 The data was clean! No missing or invalid values meant I could jump straight into preparing the data for analysis.
 
 The dataset underwent minor transformations: dropping and renaming columns, adjusting store names, and setting column datatypes.
+
 <details>
 <summary>Click to view code</summary>
 
@@ -93,7 +95,7 @@ df = df.rename(
 
 # Rename stores.
 print(f"Before: {df["Store"].unique().to_list()}")
-# Rename "Amazon $SERVICE" (Streaming) to "Amazon $SERVICE"
+# Rename "Amazon $SERVICE (Streaming)" to "Amazon $SERVICE"
 df = df.with_columns(col("Store").str.replace(" (Streaming)", "", literal=True))
 # Rename Facebook to Meta (as it's really FB and IG).
 df = df.with_columns(col("Store").str.replace("Facebook", "Meta"))
@@ -110,6 +112,7 @@ df = df.with_columns(
 </details>
 
 If a row pertained to a service with less than 20 total datapoints, I removed it.
+
 <details>
 <summary>Click to view code</summary>
 
@@ -125,6 +128,7 @@ df = df.filter(~col("Store").is_in(stores_to_drop))
 </details>
 
 In terms of feature engineering—creating new variables from existing data—, I added a “Year” column, retrieved the country codes from another dataset, and calculated the earnings per stream.
+
 <details>
 <summary>Click to view code</summary>
 
@@ -392,7 +396,7 @@ That’s a far more colourful map than I expected. I like to imagine a person in
 
 ## What’s the best (and worst) paying service?
 
-**Note**: my data may not be representative of the whole streaming industry. Although a big—likely the main—factor in determining the pay rate is the decisions made by top executives, other variables play a role, including the country, number of paying users, and total number of streams for a month. Further, I have limited data from services like <span class="service Tidal">Tidal</span>, <span class="service Snapchat">Snapchat</span>, or <span class="service Amazon">Amazon Prime</span>. Refer to the last graph for details on the streams per service.
+{{ admonition(type="note", title="NOTE", text='My data may not be representative of the whole streaming industry. Although a big—likely the main—factor in determining the pay rate is the decisions made by top executives, other variables play a role, including the country, number of paying users, and total number of streams for a month. Further, I have limited data from services like <span class="service Tidal">Tidal</span>, <span class="service Snapchat">Snapchat</span>, or <span class="service Amazon">Amazon Prime</span>. Refer to the last graph for details on the streams per service.') }}
 
 <details>
 <summary>Click to view code</summary>
@@ -908,7 +912,7 @@ df.select(pl.corr("Duration", "USD per stream", method="pearson"))
 
 Nope. In my data, the length of the song does not correlate with the pay rate.
 
-**Caveat**: my entire catalog is full of short improvisations; there’s not much range in terms of duration. My shortest song, [tíunda](https://soundcloud.com/oskerwyld/tiunda?in=oskerwyld/sets/ii_album), spans 44 seconds, and the longest one, [sextánda](https://soundcloud.com/oskerwyld/improvisation-27-march-2016?in=oskerwyld/sets/ii_album), is 3 minutes and 19 seconds “long”.
+{{ admonition(type="warning", title="CAVEAT", text='My catalog consists of short improvisations; there’s not much range in terms of duration. My shortest song, [tíunda](https://soundcloud.com/oskerwyld/tiunda?in=oskerwyld/sets/ii_album), spans 44 seconds, and the longest one, [sextánda](https://soundcloud.com/oskerwyld/improvisation-27-march-2016?in=oskerwyld/sets/ii_album), is 3 minutes and 19 seconds “long”') }}
 
 ## Is there a relationship between number of plays and pay rate, in social media?
 
@@ -1018,7 +1022,7 @@ Five countries with **lowest** average payout:
 
 Other factors such as the service might be affecting the results: what if the majority of users from the top paying countries happen to be using a top paying service, and vice-versa?
 
-It would be nice to build a [multilevel model](https://en.wikipedia.org/wiki/Multilevel_model) to account for the variability at each level (service and country). That’s an idea for a future post.
+It would be nice to build a [hierarchical linear model](https://en.wikipedia.org/wiki/Multilevel_model) to account for the variability at each level (service and country). That’s an idea for a future post.
 
 For now, stratification will suffice. I grouped the data by service **and** country, giving me the top and bottom five combinations of country-service.
 <details>
@@ -1207,7 +1211,7 @@ That’s a lot of colours! You can filter the services shown by clicking on the 
 
 I find it interesting that, starting in July 2019, <span class="service Meta">Meta</span> starts to dominate in terms of plays, but not in earnings. For a few months, despite consistently representing over 97% of streams, it generates less than 5% of the revenue. It’s not until April 2022 that it starts to even out.
 
-By filtering out social media data (<span class="service Meta">Facebook</span>, <span class="service Meta">Instagram</span>, <span class="service TikTok">TikTok</span> and <span class="service Snapchat">Snapchat</span>) using the checkbox below the graphs, we see a similar but less obvious pattern with NetEase starting in mid-2020.
+By filtering out social media data (<span class="service Meta">Facebook</span>, <span class="service Meta">Instagram</span>, <span class="service TikTok">TikTok</span> and <span class="service Snapchat">Snapchat</span>) using the checkbox below the graphs, we see a similar but less obvious pattern with <span class="service NetEase">NetEase</span> starting in mid-2020.
 
 ## How have total streams and earnings changed across the services over time?
 
@@ -1748,7 +1752,7 @@ total_streams_earnings_pareto_stacked.display()
 </details>
 
 <div class="vega-chart full-width">
-    <div class="graph-title">Distribution of plays and earnings: a Pareto analysis </div>
+    <div class="graph-title">Distribution of plays and earnings: a Pareto analysis</div>
     <div class="graph-subtitle">
         <p>Logarithmic scale.</p>
     </div>
