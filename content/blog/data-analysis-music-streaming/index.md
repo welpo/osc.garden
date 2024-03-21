@@ -1,7 +1,7 @@
 +++
 title = "Notes on Notes: Analysing Seven Years of Music Streaming Data"
 date = 2024-03-15
-updated = 2024-03-21
+updated = 2024-03-22
 description = "From a childhood keyboard to streaming in over 170 countries. I've analysed and visualised seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and much more."
 
 [taxonomies]
@@ -384,9 +384,11 @@ map_with_bars.display()
 
 </details>
 
-<div class="graph-title">Evolution of streams per country over time</div>
-<div class="graph-subtitle">
-    <p>The interactive bars at the bottom show the number of countries with listeners per year.</p>
+<div class="full-width">
+    <div class="graph-title">Evolution of streams per country over time</div>
+    <div class="graph-subtitle">
+        <p>The interactive bars at the bottom show the number of countries with listeners per year.</p>
+    </div>
 </div>
 <div class="vega-chart full-width">
     <div id="worldmap">Loading chart…</div>
