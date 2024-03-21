@@ -16,9 +16,9 @@ Aquesta calculadora requereix JavaScript per funcionar. Si us plau, activa JavaS
 <form id="calculator" class="js">
     <div class="mode-selection">
         <input type="radio" id="calculateStreams" name="mode" value="CalculateStreams" checked>
-        <label for="calculateStreams">Streams per guany</label>
+        <label for="calculateStreams">Streams per ingressos</label>
         <input type="radio" id="calculateEarnings" name="mode" value="CalculateEarnings">
-        <label for="calculateEarnings">Guany per streams</label>
+        <label for="calculateEarnings">Ingressos per streams</label>
     </div>
     <div id="calculator-content">
         <div id="question">Quants streams son necessaris per aconseguir <div class="target-amount">
@@ -43,7 +43,7 @@ Aquesta calculadora requereix JavaScript per funcionar. Si us plau, activa JavaS
 
 ## D'on surten les dades?
 
-Les taxes de pagament de cada servei provenen d'[una anàlisi de les meves pròpies dades de royalties](/blog/data-analysis-music-streaming/), filtrades a l'últim any (2023).
+Les taxes de pagament de cada servei provenen d'[una anàlisi de les meves pròpies dades de royalties](/ca/blog/data-analysis-music-streaming/), filtrades a l'últim any (2023).
 
 ## És precisa aquesta calculadora?
 

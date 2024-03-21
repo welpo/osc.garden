@@ -43,7 +43,7 @@ Esta calculadora requiere JavaScript para funcionar. Por favor, activa JavaScrip
 
 ## ¿De dónde salen los datos?
 
-Las tasas de pago de cada servicio vienen de [un análisis de mis propios datos de royalties](/blog/data-analysis-music-streaming/), filtrados al último año (2023).
+Las tasas de pago de cada servicio vienen de [un análisis de mis propios datos de royalties](/es/blog/data-analysis-music-streaming/), filtrados al último año (2023).
 
 ## ¿Es precisa esta calculadora?
 
@@ -65,4 +65,4 @@ Estos factores cambian con el tiempo.
 
 ## ¿Cuánto paga Spotify por transmisión?
 
-Durante 2023, Spotify me pagó entre 0,000003 y 0,0072 dólares por stream. La media fue de 0,0025$ y la mediana de 0,0023$.
+Durante 2023, Spotify me pagó entre 0,000003 y 0,0072 dólares por stream. La media fue de 0,0025 $ y la mediana de 0,0023 $.
