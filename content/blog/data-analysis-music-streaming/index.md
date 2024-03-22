@@ -1761,9 +1761,9 @@ total_streams_earnings_pareto_stacked.display()
     <div id="total_streams_earnings_pareto">Loading chart…</div>
 </div>
 
-Previous visualisations gave us a clue, but this reinforces the imbalance in pay rates. Even if it’s in the first spot for both charts, <span class="service Meta">Meta</span> has a massive advantage in terms of number of streams (>99%), but not in earnings (~52%). Similarly, <span class="service AppleMusic">Apple Music</span> ranks fourth in plays, but second in revenue.
-
 Ticking the “Pareto chart” checkbox overlays lines representing the cumulative percentage of total streams and earnings. This allows us to see at a glance which services account for the majority of outcomes.
+
+Previous visualisations gave us a clue, but this reinforces the imbalance in pay rates. Even if it’s in the first spot for both charts, <span class="service Meta">Meta</span> has a massive advantage in terms of number of streams (>99%), but not in earnings (~52%). Similarly, <span class="service AppleMusic">Apple Music</span> ranks fourth in plays, but second in revenue.
 
 A single service, <span class="service Meta">Meta</span>, is responsible for over 99% of the streams. In terms of earnings, ~20% of the stores (<span class="service Meta">Meta</span>, <span class="service AppleMusic">Apple Music</span> and <span class="service Spotify">Spotify</span>) generate ~90% of the revenue, more closely following the [Pareto principle or 80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle).
 

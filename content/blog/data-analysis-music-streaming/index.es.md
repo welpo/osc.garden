@@ -1765,9 +1765,9 @@ total_streams_earnings_pareto_stacked.display()
     <div id="total_streams_earnings_pareto">Cargando visualización…</div>
 </div>
 
-Las visualizaciones anteriores nos daban una pista, pero esta refuerza el desequilibrio entre las tasas de pago. Pese a estar primera posición en ambos gráficos, <span class="service Meta">Meta</span> tiene una ventaja importantísima en términos de número de reproducciones (>99%), pero no en pagos (~52%). En contraposición, <span class="service AppleMusic">Apple Music</span> ocupa el cuarto lugar en reproducciones, pero el segundo en ingresos.
-
 Marcar la casilla de "Diagrama de Pareto" superpone líneas correspondientes al porcentaje acumulado de reproducciones e ingresos totales. Esto nos permite ver qué servicios generan la mayoría de los resultados.
+
+Las visualizaciones anteriores nos daban una pista, pero esta refuerza el desequilibrio entre las tasas de pago. Pese a estar primera posición en ambos gráficos, <span class="service Meta">Meta</span> tiene una ventaja importantísima en términos de número de reproducciones (>99%), pero no en pagos (~52%). En contraposición, <span class="service AppleMusic">Apple Music</span> ocupa el cuarto lugar en reproducciones, pero el segundo en ingresos.
 
 Un único servicio, <span class="service Meta">Meta</span>, es responsable de más del 99% de las reproducciones. En términos de pagos, aproximadamente el 20% de las tiendas (<span class="service Meta">Meta</span>, <span class="service AppleMusic">Apple Music</span> y <span class="service Spotify">Spotify</span>) generan aproximadamente el 90% de los ingresos, acercándose más al [principio de Pareto o regla de los «pocos vitales, muchos triviales»](https://es.wikipedia.org/wiki/Principio_de_Pareto).
 
