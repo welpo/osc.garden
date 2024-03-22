@@ -924,7 +924,7 @@ Recuerdo leer que el modelo de pago de TikTok recompensaba más generosamente el
 
 Para comprobar si esto era así en TikTok y Meta, calculé la correlación entre dos pares de variables: número de reproducciones y tasa de pago, y número de reproducciones y ganancias totales.
 
-Si lo que leí es cierto, lo esperable es que la tasa de pago decrezca a medida que aumenta el número de visualizaciones (correlación negativa), y una baja correlación entre el total de reproducciones y las ganancias.
+Si lo que leí es cierto, lo esperable es que la tasa de pago decrezca a medida que aumenta el número de visualizaciones (correlación negativa), y que haya una baja correlación entre el total de reproducciones y las ganancias.
 
 <details>
 <summary>Haz clic para ver el código and correlation coefficients</summary>
@@ -1220,7 +1220,7 @@ Al filtrar los datos de redes sociales (<span class="service Meta">Facebook</spa
 
 ## ¿Cómo han evolucionado las reproducciones e ingresos totales por servicio a lo largo del tiempo?
 
-Centrémonos ahora en los números brutos. Aquí tenemos un par de gráficos de barras clásicos análogos a los gráficos de áreas de la sección anterior.
+Centrémonos ahora en los números brutos. Aquí tenemos un par de gráficos de barras clásicos análogos a los gráficos de área de la sección anterior.
 
 <details>
 <summary>Haz clic para ver el código</summary>
