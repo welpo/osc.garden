@@ -1,7 +1,7 @@
 +++
 title = "Notes on Notes: Analysing Seven Years of Music Streaming Data"
 date = 2024-03-15
-updated = 2024-03-22
+updated = 2024-03-27
 description = "From a childhood keyboard to streaming in over 170 countries. I've analysed and visualised seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and much more."
 
 [taxonomies]
@@ -17,6 +17,8 @@ enable_csp = false
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5" defer></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6" defer></script>
 <script type="text/javascript" src="js/embedCharts.min.js" defer></script>
+
+{{ admonition(type="note", title="Key insights", text="• My music has reached more than [170 countries](#in-how-many-countries-has-my-music-been-heard) and has accumulated [over 137 million streams](#how-many-times-has-my-music-been-played) (!)<br>• I need [more than 200,000 plays](#how-many-streams-do-i-need-to-earn-a-single-dollar) from Instagram/Facebook to earn $1.<br>• Amazon Unlimited and Tidal offer the highest [pay rates per stream](#what-s-the-best-and-worst-paying-service).<br>• Spotify’s “modernised” royalty system [will hurt emerging artists](#how-much-would-i-have-lost-with-spotify-s-new-pay-model).") }}
 
 My parents gifted me my first piano keyboard when I was four. It was small, with a single octave, but it was enough for me to start creating.
 

@@ -1,6 +1,7 @@
 +++
 title = "Notes sobre notes: analitzant set anys de dades de streaming de música"
 date = 2024-03-15
+updated = 2024-03-27
 description = "D'un teclat d'una octava a ser escoltat a més de 170 països. He analitzat i visualitzat set anys de dades de royalties per veure com s'ha escoltat la meva música, quant paguen realment per stream Spotify, Apple Music, TikTok, Instagram, etc., i molt més"
 
 [taxonomies]
@@ -16,6 +17,8 @@ enable_csp = false
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5" defer></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6" defer></script>
 <script type="text/javascript" src="js/embedCharts.ca.min.js" defer></script>
+
+{{ admonition(type="note", title="Punts clau", text="• La meva música ha arribat a més de [170 països](#en-quants-paisos-s-ha-escoltat-la-meva-musica) i ha acumulat [més de 137 milions de reproduccions](#quantes-vegades-s-ha-reproduit-la-meva-musica) (!)<br>• Necessito [més de 200.000 reproduccions](#quants-streams-necessito-per-aconseguir-un-dolar) a Instagram/Facebook per guanyar un dòlar.<br>• Amazon Unlimited i Tidal ofereixen les millors taxes de pagament.<br>• El sistema de royalties “modernitzat” de Spotify [perjudicarà els artistes emergents](#quant-hauria-perdut-amb-el-nou-sistema-de-royalties-de-spotify).") }}
 
 Els meus pares em van regalar el meu primer teclat de piano quan tenia quatre anys. Era petit, d'una sola octava, però va ser suficient perquè comencés a crear.
 

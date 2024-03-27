@@ -1,7 +1,7 @@
 +++
 title = "Notas sobre notas: analizando siete años de datos de streaming de música"
 date = 2024-03-15
-updated = 2024-03-22
+updated = 2024-03-27
 description = "De un teclado de una octava a ser escuchado en más de 170 países. He analizado y visualizado siete años de datos de royalties para ver cómo se ha escuchado mi música, cuánto pagan realmente por stream Spotify, Apple Music, TikTok, Instagram, etc., y mucho más."
 
 [taxonomies]
@@ -17,6 +17,8 @@ enable_csp = false
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5" defer></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6" defer></script>
 <script type="text/javascript" src="js/embedCharts.es.min.js" defer></script>
+
+{{ admonition(type="note", title="Puntos clave", text="• Mi música ha llegado a más de [170 países](#en-cuantos-paises-se-ha-escuchado-mi-musica) y ha acumulado [más de 137 millones de reproducciones](#cuantas-veces-se-ha-reproducido-mi-musica) (!)<br>• Necesito [más de 200.000 reproducciones](#cuantos-streams-necesito-para-conseguir-un-dolar) en Instagram/Facebook para ganar un dólar.<br>• Amazon Unlimited y Tidal ofrecen las tarifas de pago por stream más altas.<br>• El sistema de royalties “modernizado” de Spotify [perjudicará a los artistas emergentes](#cuanto-habria-perdido-con-el-nuevo-modelo-de-pago-de-spotify).") }}
 
 Mis padres me regalaron mi primer teclado de piano cuando tenía cuatro años. Era pequeño, de una sola octava, pero fue suficiente para que empezara a crear.
 
