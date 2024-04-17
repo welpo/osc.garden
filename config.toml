@@ -245,5 +245,5 @@ max_comments_top = "inf"  # Number of top level comments to show by default. If 
 max_comments_nested = "5"  # Number of nested comments to show by default. If some comments are not shown, an “X Hidden” link is shown.
 avatar = false
 voting = true
-page_author_hashes = "b3beac436af5"  # hash (or list of hashes) of the author.
+page_author_hashes = " 91c8fbce5e09"  # hash (or list of hashes) of the author.
 lazy_loading = true  # Loads when the comments are in the viewport (using the Intersection Observer API).
