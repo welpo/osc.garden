@@ -1,7 +1,7 @@
 +++
 title = "Notes sobre notes: analitzant set anys de dades de streaming de música"
 date = 2024-03-15
-updated = 2024-03-27
+updated = 2024-04-18
 description = "D'un teclat d'una octava a ser escoltat a més de 170 països. He analitzat i visualitzat set anys de dades de royalties per veure com s'ha escoltat la meva música, quant paguen realment per stream Spotify, Apple Music, TikTok, Instagram, etc., i molt més"
 
 [taxonomies]
@@ -613,7 +613,9 @@ Vols saber quantes reproduccions es necessiten per aconseguir el salari mínim? 
 
 ## Distribució de pagaments per servei
 
-La mitjana no ho diu tot: vegem la dispersió dels pagaments al voltant d'aquesta mitjana. Varia en funció del servei?
+Les plataformes de streaming no tenen una tarifa fixa. Factors com la ubicació geogràfica de l’usuari, el tipus de subscripció (de pagament o no) i el volum general de streaming de la regió afecten la taxa pagament.
+
+Per tant, la mitjana no ho diu tot: vegem la dispersió dels pagaments al voltant d'aquesta mitjana. Varia en funció del servei?
 
 <details>
 <summary>Fes clic per veure el codi</summary>

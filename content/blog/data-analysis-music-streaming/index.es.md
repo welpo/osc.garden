@@ -1,7 +1,7 @@
 +++
 title = "Notas sobre notas: analizando siete años de datos de streaming de música"
 date = 2024-03-15
-updated = 2024-03-27
+updated = 2024-04-18
 description = "De un teclado de una octava a ser escuchado en más de 170 países. He analizado y visualizado siete años de datos de royalties para ver cómo se ha escuchado mi música, cuánto pagan realmente por stream Spotify, Apple Music, TikTok, Instagram, etc., y mucho más."
 
 [taxonomies]
@@ -613,7 +613,9 @@ Un dólar por 100-400 reproducciones no suena muy bien. En el peor de los casos,
 
 ## Distribución de pagos por servicio
 
-La tasa media no lo dice todo: veamos la dispersión de los pagos en torno a esta media. ¿Varía en función del servicio?
+Las plataformas de streaming no tienen una tasa fija. Factores como la ubicación geográfica del usuario, su tipo de suscripción (de pago o no) y el volumen general de streaming de la región afectan al pago por stream.
+
+Por lo tanto, la tasa media no lo dice todo: veamos la dispersión de los pagos en torno a esta media. ¿Varía en función del servicio?
 
 <details>
 <summary>Haz clic para ver el código</summary>

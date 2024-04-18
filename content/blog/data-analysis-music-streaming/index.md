@@ -1,7 +1,7 @@
 +++
 title = "Notes on Notes: Analysing Seven Years of Music Streaming Data"
 date = 2024-03-15
-updated = 2024-03-27
+updated = 2024-04-18
 description = "From a childhood keyboard to streaming in over 170 countries. I've analysed and visualised seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and much more."
 
 [taxonomies]
@@ -613,7 +613,9 @@ Curious about how many streams are needed to make minimum wage? Or a million dol
 
 ## Distribution of payments per service
 
-The average pay rate doesn’t tell the whole story: how spread are the payments around this mean? Does this differ by service?
+Streaming platforms don’t have a fixed pay rate. Factors like the listener's geographic location, their subscription status (paid or free user), and the overall streaming volume from the listener's region affect the pay rate.
+
+Thus, the average pay rate doesn’t tell the whole story: how spread are the payments around the calculated mean? Does this differ by service?
 
 <details>
 <summary>Click to view code</summary>
