@@ -1,6 +1,7 @@
 +++
 title = "Building a Tool To Add Dynamic Content to My GitHub Profile"
 date = 2024-04-30
+updated = 2024-05-23
 description = "How I built dōteki, a plugin-based tool to add dynamic content to GitHub profiles. Inspiration, thought process, and future plans."
 
 [taxonomies]
@@ -10,13 +11,13 @@ tags = ["code", "automation"]
 social_media_card = "img/social_cards/projects_doteki.jpg"
 +++
 
-[Simon Wilson](https://simonwillison.net/)’s GitHub profile inspired me to build a tool to add dynamic content to my profile. [His profile](https://github.com/simonw/simonw) looks like this:
+[Simon Willison](https://simonwillison.net/)’s GitHub profile inspired me to build a tool to add dynamic content to my profile. [His profile](https://github.com/simonw/simonw) looks like this:
 
-{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp" alt="A screenshot of Simon Wilson's GitHub profile, showing three columns: recent releases, on my blog, and TIL.", full_width=true) }}
+{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp" alt="A screenshot of Simon Willison's GitHub profile, showing three columns: recent releases, on my blog, and TIL.", full_width=true) }}
 
 {{ admonition(type="tip", text="To add content to your GitHub profile, create a repository with a name that matches your username (e.g. [github.com/welpo/welpo](https://github.com/welpo/welpo)) and add a `README.md` file to it. Its contents will be shown on your profile.") }}
 
-Wilson’s profile offers an overview of what he’s been writing, both in terms of prose and code. Looking at the [raw contents of his `README.md` file](https://raw.githubusercontent.com/simonw/simonw/main/README.md) I noticed these start/end markers:
+Willison’s profile offers an overview of what he’s been writing, both in terms of prose and code. Looking at the [raw contents of his `README.md` file](https://raw.githubusercontent.com/simonw/simonw/main/README.md) I noticed these start/end markers:
 
 ```txt,hl_lines=2 4
 ### Recent releases
@@ -25,7 +26,7 @@ Wilson’s profile offers an overview of what he’s been writing, both in terms
 <!-- recent_releases ends -->
 ```
 
-They are HTML comments—invisible but useful. Wilson is using a [Python script](https://github.com/simonw/simonw/blob/main/build_readme.py) to add his recent software releases and posts between the markers. The updates are automated through GitHub Actions.
+They are HTML comments—invisible but useful. Willison is using a [Python script](https://github.com/simonw/simonw/blob/main/build_readme.py) to add his recent software releases and posts between the markers. The updates are automated through GitHub Actions.
 
 Pretty clever, no? After seeing this, I felt like showcasing my latest blog posts and the music I’ve been listening to on my profile.
 

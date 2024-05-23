@@ -1,6 +1,7 @@
 +++
 title = "Creando una herramienta para añadir contenido dinámico a mi perfil de GitHub"
 date = 2024-04-30
+updated = 2024-05-23
 description = "Cómo construí dōteki, una herramienta basada en plugins para añadir contenido dinámico a perfiles de GitHub. Inspiración, proceso de pensamiento y planes futuros."
 
 [taxonomies]
@@ -10,13 +11,13 @@ tags = ["código", "automatización"]
 social_media_card = "img/social_cards/projects_doteki.jpg"
 +++
 
-El perfil de GitHub de [Simon Wilson](https://simonwillison.net/) me inspiró a construir una herramienta para añadir contenido dinámico a mi perfil. [Su perfil](https://github.com/simonw/simonw) se ve así:
+El perfil de GitHub de [Simon Willison](https://simonwillison.net/) me inspiró a construir una herramienta para añadir contenido dinámico a mi perfil. [Su perfil](https://github.com/simonw/simonw) se ve así:
 
-{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp", alt="Captura de pantalla del perfil de GitHub de Simon Wilson, mostrando tres columnas: lanzamientos recientes, en mi blog y TIL (Hoy Aprendí).", full_width=true) }}
+{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp", alt="Captura de pantalla del perfil de GitHub de Simon Willison, mostrando tres columnas: lanzamientos recientes, en mi blog y TIL (Hoy Aprendí).", full_width=true) }}
 
 {{ admonition(type="tip", text="Para añadir contenido a tu perfil de GitHub, crea un repositorio con un nombre que coincida con tu nombre de usuario (por ejemplo, [github.com/welpo/welpo](https://github.com/welpo/welpo)) y añade un archivo `README.md`. Su contenido se mostrará en tu perfil.") }}
 
-El perfil de Wilson ofrece una visión general de lo que ha estado escribiendo, tanto en términos de prosa como de código. Al explorar el [contenido en bruto de su archivo `README.md`](https://raw.githubusercontent.com/simonw/simonw/main/README.md), vi estos marcadores de inicio/fin:
+El perfil de Willison ofrece una visión general de lo que ha estado escribiendo, tanto en términos de prosa como de código. Al explorar el [contenido en bruto de su archivo `README.md`](https://raw.githubusercontent.com/simonw/simonw/main/README.md), vi estos marcadores de inicio/fin:
 
 ```txt,hl_lines=2 4
 ### Recent releases
@@ -25,7 +26,7 @@ El perfil de Wilson ofrece una visión general de lo que ha estado escribiendo, 
 <!-- recent_releases ends -->
 ```
 
-Son comentarios HTML —invisibles pero útiles. Wilson usa un [script de Python](https://github.com/simonw/simonw/blob/main/build_readme.py) para añadir sus actualizaciones recientes de software y publicaciones entre los marcadores. Una GitHub Action se encarga de que esté siempre al día.
+Son comentarios HTML —invisibles pero útiles. Willison usa un [script de Python](https://github.com/simonw/simonw/blob/main/build_readme.py) para añadir sus actualizaciones recientes de software y publicaciones entre los marcadores. Una GitHub Action se encarga de que esté siempre al día.
 
 Bastante ingenioso, ¿no? Después de ver esto tenía ganas de mostrar en mi perfil las últimas entradas de mi blog y la música que he estado escuchando.
 

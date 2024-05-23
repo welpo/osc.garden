@@ -1,7 +1,7 @@
 +++
 title = "From Bashful to Social Butterfly: Automating Link Previews for Zola Sites"
 date = 2023-09-06
-updated = 2024-03-18
+updated = 2024-05-23
 description = "In a quest to make Zola websites more social media-friendly, I've cracked the code for automating the creation of social media cards."
 
 [taxonomies]
@@ -19,7 +19,7 @@ Ever wondered how apps like WhatsApp, Telegram, or Mastodon show a link preview?
 
 Much better, no? These images, called **social media cards**, are retrieved from HTML tags, namely `og:image` and `twitter:image`. You can set them to any image you like.
 
-While working on this site's theme—[tabi](https://github.com/welpo/tabi)—I stumbled upon [a post by Simon Wilson](https://til.simonwillison.net/shot-scraper/social-media-cards) explaining how to use his tool [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) to generate these images.
+While working on this site's theme—[tabi](https://github.com/welpo/tabi)—I stumbled upon [a post by Simon Willison](https://til.simonwillison.net/shot-scraper/social-media-cards) explaining how to use his tool [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) to generate these images.
 
 I decided to explore if I could follow a similar approach to create the social media cards for all the articles in this site as well as in [tabi's demo](https://welpo.github.io/tabi/). And, even more fun, try to automate the process for new and modified posts.
 

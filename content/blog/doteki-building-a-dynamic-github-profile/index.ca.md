@@ -1,6 +1,7 @@
 +++
 title = "Creant una eina per afegir contingut dinàmic al meu perfil de GitHub"
 date = 2024-04-30
+updated = 2024-05-23
 description = "Creant una Com vaig construir dōteki, una eina basada en plugins per afegir contingut dinàmic a perfils de GitHub. Inspiració, procés de pensament i plans futurs afegir contingut dinàmic al meu perfil de GitHub."
 
 [taxonomies]
@@ -10,13 +11,13 @@ tags = ["codi", "automatització"]
 social_media_card = "img/social_cards/projects_doteki.jpg"
 +++
 
-El perfil de GitHub de Simon Wilson em va inspirar a construir una eina per afegir contingut dinàmic al meu perfil. El seu perfil es veu així:
+El perfil de GitHub de Simon Willison em va inspirar a construir una eina per afegir contingut dinàmic al meu perfil. El seu perfil es veu així:
 
-{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp", alt="Captura de pantalla del perfil de GitHub de Simon Wilson, mostrant tres columnes: llançaments recents, en el meu blog i TIL (Avui He Après).", full_width=true) }}
+{{ dual_theme_image(light_src="img/simonw_light.webp", dark_src="img/simonw_dark.webp", alt="Captura de pantalla del perfil de GitHub de Simon Willison, mostrant tres columnes: llançaments recents, en el meu blog i TIL (Avui He Après).", full_width=true) }}
 
 {{ admonition(type="tip", text="Per afegir contingut al teu perfil de GitHub, crea un repositori amb un nom que coincideixi amb el teu nom d'usuari (per exemple, [github.com/welpo/welpo](https://github.com/welpo/welpo)) i afegeix-hi un fitxer `README.md`. El seu contingut es mostrarà al teu perfil.") }}
 
-El perfil de Wilson ofereix una visió general del que ha estat escrivint, tant en termes de prosa com de codi. En explorar el [contingut en brut del seu fitxer `README.md`](https://raw.githubusercontent.com/simonw/simonw/main/README.md), vaig veure aquests marcadors d'inici/final:
+El perfil de Willison ofereix una visió general del que ha estat escrivint, tant en termes de prosa com de codi. En explorar el [contingut en brut del seu fitxer `README.md`](https://raw.githubusercontent.com/simonw/simonw/main/README.md), vaig veure aquests marcadors d'inici/final:
 
 ```txt,hl_lines=2 4
 ### Recent releases
@@ -25,7 +26,7 @@ El perfil de Wilson ofereix una visió general del que ha estat escrivint, tant 
 <!-- recent_releases ends -->
 ```
 
-Son comentaris HTML —invisibles però útils. Wilson utilitza un [script de Python](https://github.com/simonw/simonw/blob/main/build_readme.py) per afegir les seves actualitzacions recents de programari i publicacions entre els marcadors. Una GitHub Action s'encarrega que estigui sempre actualitzat.
+Son comentaris HTML —invisibles però útils. Willison utilitza un [script de Python](https://github.com/simonw/simonw/blob/main/build_readme.py) per afegir les seves actualitzacions recents de programari i publicacions entre els marcadors. Una GitHub Action s'encarrega que estigui sempre actualitzat.
 
 Força enginyós, no? Després de veure això, tenia ganes de mostrar en el meu perfil les últimes entrades del meu blog i la música que he estat escoltant.
 

@@ -1,7 +1,7 @@
 +++
 title = "De reservado a rey de las redes: automatizando las vistas previas de los enlaces con Zola"
 date = 2023-09-06
-updated = 2024-03-18
+updated = 2024-05-23
 description = "Con el objetivo de hacer los sitios web de Zola más compatibles con las redes sociales, he descifrado el código para automatizar la generación de las previsualizaciones de enlaces."
 
 [taxonomies]
@@ -19,7 +19,7 @@ social_media_card = "img/social_cards/es_blog_automating_social_media_cards_zola
 
 Mucho mejor, ¿no? Estas imágenes se obtienen de etiquetas HTML, concretamente `og:image` y `twitter:image`. Puedes asignar cualquier imagen a estas etiquetas.
 
-Mientras desarrollaba el tema de mi web —[tabi](https://github.com/welpo/tabi)—, me topé con [un artículo de Simon Wilson](https://til.simonwillison.net/shot-scraper/social-media-cards) que explica cómo utilizar su herramienta [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) para generar estas imágenes.
+Mientras desarrollaba el tema de mi web —[tabi](https://github.com/welpo/tabi)—, me topé con [un artículo de Simon Willison](https://til.simonwillison.net/shot-scraper/social-media-cards) que explica cómo utilizar su herramienta [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) para generar estas imágenes.
 
 Decidí explorar si podía seguir un enfoque similar para crear las miniaturas para todos los artículos de este sitio, así como los de [la demo de tabi](https://welpo.github.io/tabi/). Y, aún más divertido, intentar automatizar el proceso para las publicaciones nuevas y modificadas.
 

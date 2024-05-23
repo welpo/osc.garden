@@ -1,7 +1,7 @@
 +++
 title = "De reservat a rei de les xarxes: automatitzant les vistes prèvies dels enllaços amb Zola"
 date = 2023-09-06
-updated = 2024-03-18
+updated = 2024-05-23
 description = "Amb l'objectiu de fer els llocs web de Zola més compatibles amb les xarxes socials, he desxifrat el codi per automatitzar la generació de les previsualitzacions d'enllaços."
 
 [taxonomies]
@@ -19,7 +19,7 @@ T'has preguntat alguna vegada com aplicacions com WhatsApp, Telegram o Mastodon 
 
 Molt millor, oi? Aquestes imatges s'obtenen d'etiquetes HTML, concretament `og:image` i `twitter:image`. Pots assignar qualsevol imatge a aquestes etiquetes.
 
-Mentre desenvolupava el tema del meu lloc web —[tabi](https://github.com/welpo/tabi)—, em vaig topar amb [un article de Simon Wilson](https://til.simonwillison.net/shot-scraper/social-media-cards) que explica com utilitzar la seva eina [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) per generar aquestes imatges.
+Mentre desenvolupava el tema del meu lloc web —[tabi](https://github.com/welpo/tabi)—, em vaig topar amb [un article de Simon Willison](https://til.simonwillison.net/shot-scraper/social-media-cards) que explica com utilitzar la seva eina [`shot-scraper`](https://shot-scraper.datasette.io/en/stable/) per generar aquestes imatges.
 
 Vaig decidir explorar si podia seguir una enfocament similar per crear les miniatures per a tots els articles d'aquest lloc, així com els de [la demo de tabi](https://welpo.github.io/tabi/). I, encara més divertit, intentar automatitzar el procés per a futures publicacions.
 
