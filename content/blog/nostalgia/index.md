@@ -1,6 +1,7 @@
 +++
 title = "Returning"
 date = 2024-05-27
+updated = 2024-06-08
 description = "Reflecting on nostalgia."
 
 [taxonomies]
@@ -20,4 +21,4 @@ A few days later I read:
 
 {{ multilingual_quote(original="la contradiction que c'est de chercher dans la réalité les tableaux de la mémoire, auxquels manquerait toujours le charme qui leur vient de la mémoire même et de n'être pas perçus par les sens.", translated="how paradoxical it is to seek in reality for the pictures that are stored in one's memory, which must inevitably lose the charm that comes to them from memory itself and from their not being apprehended by the senses.", author="Marcel Proust") }}
 
-Today, remembering a sunset over a hostile sea, it hit me: in none of the memories I wanted to return to was I trying to replicate a memory.
+Today, remembering a sunset over a hostile sea, it hit me: in none of the memories I wanted to revisit was I trying to replicate a memory.
