@@ -150,17 +150,17 @@ fi
 ##################################################################
 
 # Get the newly added and modified files.
-all_changed_files=$(git diff --cached --name-only)
+mapfile -t all_changed_files < <(git diff --cached --name-only)
 
 # Loop through each newly added or modified .md or .png file for PNG optimization and draft checking.
-for file in $all_changed_files; do
+for file in "${all_changed_files[@]}"; do
     # Ignore this script.
     if [[ "$file" == "$0" ]]; then
         continue
     fi
 
     # If the file is a PNG and png_compressor is set, compress it and add it to the commit.
-    if [[ "$file" == *.png ]] && [[ -n "$png_compressor" ]]; then
+    if [[ "$file" =~ \.png$ ]] && [[ -n "$png_compressor" ]]; then
         $png_compressor "$file" || error_exit "Failed to compress PNG file $file"
         git add "$file" || error_exit "Failed to add compressed PNG file $file"
         continue
@@ -181,11 +181,11 @@ done
 
 # Use `social-cards-zola` to create/update the social media card for Markdown files.
 # See https://osc.garden/blog/automating-social-media-cards-zola/ for context.
-changed_md_files=$(echo "$all_changed_files" | grep '\.md$')
+# changed_md_files=$(echo "$all_changed_files" | grep '\.md$')
 # Use parallel to create the social media cards in parallel and commit them.
-if [[ -n "$changed_md_files" ]]; then
-    echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
-fi
+# if [[ -n "$changed_md_files" ]]; then
+#     echo "$changed_md_files" | parallel -j 8 generate_and_commit_card
+# fi
 
 #########################################################
 # Run subset_font if config.toml has been modified.     #
