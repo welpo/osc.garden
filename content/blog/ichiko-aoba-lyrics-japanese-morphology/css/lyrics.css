@@ -11,7 +11,7 @@ ruby {
     font-family: var(--sans-serif-font);
 }
 
-.gallery, .gallery2 {
+.gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
