@@ -9,7 +9,6 @@ tags = ["aprenentatge del dia", "Zola", "automatització"]
 
 [extra]
 copy_button = true
-footnote_backlinks = true
 social_media_card = "img/social_cards/ca_blog_automating_social_media_cards_zola.jpg"
 +++
 
@@ -275,7 +274,5 @@ L'script funciona, però és força fràgil: falla si l'uses fora de la ruta arr
 Estic content d'haver resolt el problema, però també ho veig com una oportunitat per convertir aquest script prou bo™ en un petit però sòlid programa en Rust —un bon primer projecte en Rust, no?
 
 Així que… continuarà, potser.
-
----
 
 [^1]: Inicialment, estava convertint les captures de pantalla PNG a WebP, ja que són significativament més petites (~40KB) que les JPEG d'aspecte similar (~100KB). Tanmateix, en intentar fer la captura per a la primera imatge de l'article, em vaig adonar que WhatsApp no admet miniatures per a xarxes socials en format WebP. Llàstima.

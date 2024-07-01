@@ -7,7 +7,6 @@ description = "Un sopar amb amics, una màquina expenedora i màgia… O com el 
 tags = ["les 8 idees estadístiques més importants", "ciència de dades", "estadística", "revisió d'article", "interactiu"]
 
 [extra]
-footnote_backlinks = true
 social_media_card = "img/social_card_ca.jpg"
 +++
 
@@ -171,8 +170,6 @@ En el pròxim article de la [sèrie](/ca/tags/les-8-idees-estadistiques-mes-impo
 **Video**: [Bootstrapping Main Idees!!! — StatQuest (2021)](https://www.youtube.com/watch?v=Xz0x-8-cgaQ). Josh Starmer té una molt bona introducció al bootstrapping al seu canal de YouTube [StatQuest](https://www.youtube.com/@statquest). Recomano molt aquest canal.
 
 **Article acadèmic**: [The frontier of simulation-based inference — Cranmer, Brehmer & Louppe (2020)](https://doi.org/10.1073/pnas.1912789117). Aquest article explora diferents mètodes d'inferència basada en la simulació, tot referenciant avenços recents en machine learning, i ofereix algunes recomanacions sobre quin enfocament triar.
-
----
 
 [^1]: No es tracta només de joguines; hi ha una mica de tot. He vist *gashapon* d'edificis, petites figures d'anime, models d'inodors japonesos (?), [claus i botons d'engegar cotxes](img/carignition.webp) (??), i un de [«gambes empanades i els seus amics» (part 2!!)](img/breaded_shrimp_and_co.webp). Fa poc, un amic em va dir que va aconseguir [un *gashapon* d'un *gashapon*](img/metagacha.webp). Meta.
 

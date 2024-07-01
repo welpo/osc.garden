@@ -7,7 +7,6 @@ description = "Una guía para mis padres y otros principantes que introduce los 
 tags = ["guía", "IA generativa"]
 
 [extra]
-footnote_backlinks = true
 social_media_card = "img/social_card_es.jpg"
 +++
 

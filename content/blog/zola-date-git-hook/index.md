@@ -8,7 +8,6 @@ tags = ["TIL", "Zola", "automation", "Git"]
 
 [extra]
 copy_button = true
-footnote_backlinks = true
 social_media_card = "img/social_cards/blog_zola_date_git_hook.jpg"
 +++
 
@@ -114,7 +113,5 @@ With these extra lines, if a PNG compressor is installed, the script will look t
 Now I can easily maintain accurate "Last updated" dates for Zola posts and optimise PNG images for faster loading times.
 
 Over time, I've added other features like preventing commits of drafts and files that include "TODO", and running optimisation scripts. You can take a look at the hook I'm currently using [here](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
-
-<hr>
 
 [^1]: If you prefer to maintain separate functionality and use multiple files for your pre-commit scripts, you can create a `pre-commit` file that invokes all the other scripts (which you could put inside a `pre-commit.d` directory, for example).

@@ -7,7 +7,6 @@ description = "Una cena con amigos, una máquina expendedora y magia… O cómo 
 tags = ["las 8 ideas estadísticas más importantes", "ciencia de datos", "estadística", "revisión de artículo", "interactivo"]
 
 [extra]
-footnote_backlinks = true
 social_media_card = "img/social_card_es.jpg"
 +++
 
@@ -171,8 +170,6 @@ En la próxima entrega de la [serie](/es/tags/las-8-ideas-estadisticas-mas-impor
 **Video**: [Bootstrapping Main Ideas!!! — StatQuest (2021)](https://www.youtube.com/watch?v=Xz0x-8-cgaQ). Josh Starmer tiene una muy buena introducción al bootstrapping en su canal de YouTube [StatQuest](https://www.youtube.com/@statquest). Recomiendo encarecidamente este canal.
 
 **Artículo académico**: [The frontier of simulation-based inference — Cranmer, Brehmer & Louppe (2020)](https://doi.org/10.1073/pnas.1912789117). Este artículo explora diferentes métodos de inferencia basada en la simulación, referenciando avances recientes en machine learning, y ofrece algunas recomendaciones sobre qué enfoque elegir.
-
----
 
 [^1]: No se trata sólo de juguetes; hay un poco de todo. He visto *gashapon* de edificios, pequeñas figuras de anime, modelos de inodoros japoneses (?), [llaves y botones de encendido de coches](img/carignition.webp) (¿?), y uno de [«gambas empanadas y sus amigos» (¡parte 2!)](img/breaded_shrimp_and_co.webp). Hace poco, un amigo me dijo que consiguió [un *gashapon* de un *gashapon*](img/metagacha.webp). Meta.
 

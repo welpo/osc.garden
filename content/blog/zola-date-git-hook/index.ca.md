@@ -8,7 +8,6 @@ tags = ["aprenentatge del dia", "Zola", "automatització", "Git"]
 
 [extra]
 copy_button = true
-footnote_backlinks = true
 social_media_card = "img/social_cards/ca_blog_zola_date_git_hook.jpg"
 +++
 
@@ -114,7 +113,5 @@ Amb aquestes línies addicionals, si s'ha instal·lat un compressor PNG, l'scrip
 Ara pots mantenir fàcilment les dates de «Última actualització» precises per a les entrades de Zola i optimitzar les imatges PNG per a uns temps de càrrega més ràpids.
 
 Amb el temps, he afegit altres funcionalitats com evitar commits d'esborranys o d'arxius que inclouen «TODO», i executar scripts d'optimització. Pots fer una ullada al hook que estic utilitzant actualment [aquí](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
-
-<hr>
 
 [^1]: Si prefereixes mantenir funcionalitats separades i utilitzar diversos fitxers per als scripts pre-commit, pots crear un fitxer `pre-commit` que invoqui tots els altres scripts (que pots dins d'un directori `pre-commit.d`, per exemple).

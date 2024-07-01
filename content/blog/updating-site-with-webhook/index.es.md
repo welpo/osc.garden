@@ -8,7 +8,6 @@ tags = ["aprendizaje del día", "Zola", "automatización"]
 
 [extra]
 copy_button = true
-footnote_backlinks = true
 social_media_card = "img/social_cards/es_blog_updating_site_with_webhook.jpg"
 +++
 
@@ -336,7 +335,5 @@ Las notificaciones se ven así (haz clic para alternar entre éxito y error):
 Tras aprender sobre la magia negra de los webhooks, investigué un poco sobre las notificaciones push —efectivamente, hay similitudes. Sin embargo, en lugar de escuchar en un puerto, los teléfonos dependen de conexiones duraderas a un servicio de notificaciones. Utilizan un mecanismo de *keep-alive* para mantener la conexión abierta y cuando el servidor tiene algo que notificar, manda la notificación a través de esta conexión preexistente.
 
 He aquí una analogía: los webhooks son como tus amigos enviándote un mensaje de texto (una nueva conexión cada vez) para decirte algo. Las notificaciones push, en contraposición, son como estar en una larga llamada de voz con un amigo —incluso cuando nadie habla, la conexión persiste. Cuando alguien tiene algo que decir, lo hace a través de la llamada existente en lugar de establecer una nueva conexión. El mecanismo de *keep-alive* —que mantiene la conexión abierta— sería como preguntar, después de unos minutos de silencio, «¿Sigues ahí?». «Sigo aquí».
-
----
 
 [^1]: Oracle eliminó mi cuenta de Free Tier sin advertencia, explicación o recurso (una práctica habitual, parece). Ahora estoy alojando el sitio en una instancia de Vultr asequible y fiable que he tenido durante más de 6 años. Si quieres probar Vultr, aquí está [mi enlace de registro de referencia](https://www.vultr.com/?ref=7123709), que te da $100 en crédito, mientras yo recibo $10.

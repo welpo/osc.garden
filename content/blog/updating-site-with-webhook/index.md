@@ -8,7 +8,6 @@ tags = ["TIL", "automation", "Zola"]
 
 [extra]
 copy_button = true
-footnote_backlinks = true
 social_media_card = "img/social_cards/blog_updating_site_with_webhook.jpg"
 +++
 
@@ -336,7 +335,5 @@ And that's it! After tinkering with some new tools, a lot of troubleshooting (da
 After learning about the webhook black magic, I researched a bit about push notifications—they're indeed similar to webhooks. However, instead of listening on a port, phones rely on long-lived connections to a notification service. They use a keep-alive mechanism to keep the connection open and when the server has something to notify, it pushes the notification payload over this preexisting connection.
 
 Here's an analogy: webhooks are like your friends sending you a text (a new connection each time) to tell you something. Push notifications are like being on a long voice call with a friend—even when no one is talking, the connection persists. Whenever someone wants to speak up, they use the existing call instead of setting up a new connection. The keep-alive mechanism would be akin to asking, after some minutes of silence, "You there?". "Yeah".
-
----
 
 [^1]: Oracle deleted my Free Tier account without warning, explanation or recourse (a common practice, it seems). I am now hosting the site on an affordable and reliable Vultr instance I've had for over six years. If you want to try Vultr, here's [my referral signup link](https://www.vultr.com/?ref=7123709), which gets you $100 in credit, while I get $10.

@@ -31,6 +31,7 @@ index_format = "elasticlunr_json"
 highlight_code = true
 highlight_theme = "css"
 smart_punctuation = true
+bottom_footnotes = true
 render_emoji = true
 
 [link_checker]

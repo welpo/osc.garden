@@ -7,7 +7,6 @@ description = "Una guia per als meus pares i altres principiants que introdueix 
 tags = ["guia", "IA generativa"]
 
 [extra]
-footnote_backlinks = true
 social_media_card = "img/social_card_ca.jpg"
 +++
 

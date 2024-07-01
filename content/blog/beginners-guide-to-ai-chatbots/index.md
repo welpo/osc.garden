@@ -7,7 +7,6 @@ description = "A guide for my parents and beginners alike, introducing the basic
 tags = ["guide", "generative AI"]
 
 [extra]
-footnote_backlinks = true
 social_media_card = "img/social_card_en.jpg"
 +++
 
