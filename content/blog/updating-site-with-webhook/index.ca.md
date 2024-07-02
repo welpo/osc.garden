@@ -2,6 +2,7 @@
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
 updated = 2023-12-02
+description= "Com que els fitxers d'aquesta web estan a GitHub, vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori."
 
 [taxonomies]
 tags = ["aprenentatge del dia", "Zola", "automatització"]
@@ -11,7 +12,7 @@ copy_button = true
 social_media_card = "img/social_cards/ca_blog_updating_site_with_webhook.jpg"
 +++
 
-Com que els fitxers d'aquesta web estan a [GitHub](https://github.com/welpo/osc.garden/), vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori.<!-- more -->
+Com que els fitxers d'aquesta web estan a [GitHub](https://github.com/welpo/osc.garden/), vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori.
 
 ## El meu sistema
 

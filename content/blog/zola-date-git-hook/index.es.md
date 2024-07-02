@@ -2,6 +2,7 @@
 title = "Zola Git Hook: actualizando las fechas de las publicaciones"
 date = 2023-04-17
 updated = 2023-08-30
+description = "Para que el campo «Última actualización» de las entradas sea siempre preciso, he automatizado su modificación con un hook Git pre-commit."
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola", "automatización", "Git" ]
@@ -11,7 +12,7 @@ copy_button = true
 social_media_card = "img/social_cards/es_blog_zola_date_git_hook.jpg"
 +++
 
-Para que el campo «Última actualización» de las entradas sea siempre preciso, he automatizado su modificación con un hook Git pre-commit.<!-- more -->
+Para que el campo «Última actualización» de las entradas sea siempre preciso, he automatizado su modificación con un hook Git pre-commit.
 
 Un hook (gancho) Git pre-commit es un script que se ejecuta automáticamente antes de cada commit. Puede realizar acciones personalizadas, como validar código, ejecutar pruebas o, en este caso, actualizar fechas de publicación.
 

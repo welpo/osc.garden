@@ -2,6 +2,7 @@
 title = "Zola Git Pre-Commit Hook: Updating Post Dates"
 date = 2023-04-17
 updated = 2023-08-30
+description = "In order to keep the 'Last updated' field of posts always accurate, I automated its modification with a custom Git pre-commit hook."
 
 [taxonomies]
 tags = ["TIL", "Zola", "automation", "Git"]
@@ -11,7 +12,7 @@ copy_button = true
 social_media_card = "img/social_cards/blog_zola_date_git_hook.jpg"
 +++
 
-In order to keep the "Last updated" field of posts always accurate, I automated its modification with a custom Git pre-commit hook.<!-- more -->
+In order to keep the "Last updated" field of posts always accurate, I automated its modification with a custom Git pre-commit hook.
 
 A Git pre-commit hook is a script that runs automatically before each commit. It can perform custom actions, such as validating code, running tests, or, in this case, updating post dates.
 

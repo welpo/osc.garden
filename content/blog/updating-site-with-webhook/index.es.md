@@ -2,6 +2,7 @@
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
 updated = 2023-12-02
+description = "Como los archivos de esta web están en GitHub, pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio."
 
 [taxonomies]
 tags = ["aprendizaje del día", "Zola", "automatización"]
@@ -11,7 +12,7 @@ copy_button = true
 social_media_card = "img/social_cards/es_blog_updating_site_with_webhook.jpg"
 +++
 
-Como los archivos de esta web están en [GitHub](https://github.com/welpo/osc.garden/), pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio.<!-- more -->
+Como los archivos de esta web están en [GitHub](https://github.com/welpo/osc.garden/), pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio.
 
 ## Mi sistema
 
