@@ -1,7 +1,7 @@
 +++
 title = "Zola Git Hook: actualizando las fechas de las publicaciones"
 date = 2023-04-17
-updated = 2023-08-30
+updated = 2024-07-11
 description = "Para que el campo «Última actualización» de las entradas sea siempre preciso, he automatizado su modificación con un hook Git pre-commit."
 
 [taxonomies]
@@ -40,10 +40,10 @@ function extract_date() {
 }
 
 # Obtiene los archivos .md modificados, ignorando los archivos "_index.md".
-modified_md_files=$(git diff --cached --name-only --diff-filter=M | grep -Ei '\.md$' | grep -v '_index.md$')
+mapfile -t modified_md_files < <(git diff --cached --name-only --diff-filter=M | grep -Ei '\.md$' | grep -v '_index.md$')
 
 # Recorre cada archivo .md modificado.
-for file in $modified_md_files; do
+for file in "${modified_md_files[@]}"; do
     # Obtiene la fecha de última modificación del sistema de archivos.
     last_modified_date=$(date -r "$file" +'%Y-%m-%d')
 

@@ -74,12 +74,12 @@ function generate_and_commit_card {
         echo "Failed to update social media card for $file"
         exit 1
     }
-    
+
     git add "$social_media_card" || {
         echo "Failed to add social media card $social_media_card"
         exit 1
     }
-    
+
     git add "$file" || {
         echo "Failed to add $file"
         exit 1
@@ -89,10 +89,10 @@ function generate_and_commit_card {
 export -f generate_and_commit_card
 
 # Get the modified .md to update the "updated" field in the front matter.
-modified_files=$(git diff --cached --name-only --diff-filter=M | grep -E '\.md$' | grep -v '_index.md$')
+mapfile -t modified_md_files < <(git diff --cached --name-only --diff-filter=M | grep -Ei '\.md$' | grep -v '_index.md$')
 
 # Loop through each modified .md file.
-for file in $modified_files; do
+for file in "${modified_md_files[@]}"; do
     # If changes are only in the front matter, skip the file.
     if ! has_body_changes "$file"; then
         continue

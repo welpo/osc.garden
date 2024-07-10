@@ -1,7 +1,7 @@
 +++
 title = "Zola Git Hook: actualitzant les dates de les publicacions"
 date = 2023-04-17
-updated = 2023-08-30
+updated = 2024-07-11
 description = "Per tal de mantenir l'atribut «Última actualització» de les publicacions sempre precís, he automatitzat la seva modificació amb un hook pre-commit de Git."
 
 [taxonomies]
@@ -43,10 +43,10 @@ function extract_date() {
 }
 
 # Obté els fitxers .md modificats, ignorant els fitxers "_index.md".
-modified_md_files=$(git diff --cached --name-only --diff-filter=M | grep -Ei '\.md$' | grep -v '_index.md$')
+mapfile -t modified_md_files < <(git diff --cached --name-only --diff-filter=M | grep -Ei '\.md$' | grep -v '_index.md$')
 
 # Recorre cada fitxer .md modificat.
-for file in $modified_md_files; do
+for file in "${modified_md_files[@]}"; do
     # Última data de modificació.
     last_modified_date=$(date -r "$file" +'%Y-%m-%d')
 
