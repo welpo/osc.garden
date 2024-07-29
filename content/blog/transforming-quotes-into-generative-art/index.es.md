@@ -1,6 +1,7 @@
 +++
 title = "La textura del texto: transformando mis citas favoritas en arte generativo"
 date = 2023-10-19
+updated = 2024-07-29
 description = "Explorando la intersección entre literatura y el aprendizaje profundo, he utilizado Stable Diffusion para convertir citas en arte visual. Un viaje a través de una galería donde las palabras se convierten en texturas, colores y formas."
 
 [taxonomies]
@@ -54,7 +55,14 @@ Espero que al menos una imagen o cita te haga sentir algo.
 
 ## Hiromi Kawakami — El cielo es azul, la tierra blanca
 
-> He recorrido un largo camino, el frío penetra mi ropa gastada. Esta tarde el cielo está despejado, ¡cómo me duele el corazón!
+{{ multilingual_quote(original="旅路はるけくさまよへば<br>
+<ruby>破<rt>や</rt></ruby>れし衣の寒けきに<br>
+こよひ<ruby>朗<rt>ほが</rt></ruby>らのそらにして<br>
+いとどし心痛むかな",
+translated="He recorrido un largo camino,<br>
+el frió penetra mi ropa gastada.<br>
+Esta tarde el cielo está despejado,<br>
+¡cómo me duele el corazón!")}}
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/coldseeps.webp") }}
 

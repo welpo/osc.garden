@@ -1,6 +1,7 @@
 +++
 title = "From Text to Texture: Transforming My Favourite Quotes into Generative Art"
 date = 2023-10-19
+updated = 2024-07-29
 description = "Exploring the intersection of literature and deep learning, I've used Stable Diffusion to turn cherished quotes into visual art. Journey through a gallery where words meet textures, colours, and forms."
 
 [taxonomies]
@@ -54,7 +55,14 @@ I hope at least one quote or image strikes a chord with you as well.
 
 ## Hiromi Kawakami — The Briefcase aka Strange Weather in Tokyo
 
-> I've come a long way, the cold seeps through my worn clothes. This afternoon the sky is clear, oh how my heart aches!
+{{ multilingual_quote(original="旅路はるけくさまよへば<br>
+<ruby>破<rt>や</rt></ruby>れし衣の寒けきに<br>
+こよひ<ruby>朗<rt>ほが</rt></ruby>らのそらにして<br>
+いとどし心痛むかな",
+translated="I've come a long way,<br>
+the cold seeps through my worn clothes.<br>
+This afternoon the sky is clear,<br>
+oh how my heart aches!") }}
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/coldseeps.webp") }}
 

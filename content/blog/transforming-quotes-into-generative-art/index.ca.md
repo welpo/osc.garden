@@ -1,6 +1,7 @@
 +++
 title = "La textura del text: transformant les meves cites preferides en art generatiu"
 date = 2023-10-19
+updated = 2024-07-29
 description = "Explorant la intersecció entre literatura i aprenentatge profund, he utilitzat Stable Diffusion per convertir frases en art visual. Un viatge a través d'una galeria on les paraules es converteixen en textures, colors i formes."
 
 [taxonomies]
@@ -54,7 +55,14 @@ Espero que almenys una imatge o frase et faci sentir alguna cosa.
 
 ## Hiromi Kawakami — El cel és blau, la terra blanca
 
-> He recorregut un llarg camí, el fred penetra les meves robes gastades. Aquesta tarda el cel és clar, quin mal em fa el cor!
+{{ multilingual_quote(original="旅路はるけくさまよへば<br>
+<ruby>破<rt>や</rt></ruby>れし衣の寒けきに<br>
+こよひ<ruby>朗<rt>ほが</rt></ruby>らのそらにして<br>
+いとどし心痛むかな",
+translated="He recorregut un llarg camí,<br>
+el fred penetra les meves robes gastades.<br>
+Aquesta tarda el cel és clar,<br>
+quin mal em fa el cor!")}}
 
 {{ full_width_image(src="blog/transforming-quotes-into-generative-art/img/coldseeps.webp") }}
 
