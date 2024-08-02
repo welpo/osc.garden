@@ -1,7 +1,7 @@
 +++
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
-updated = 2023-12-02
+updated = 2024-08-02
 description = "Como los archivos de esta web están en GitHub, pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio."
 
 [taxonomies]
@@ -306,13 +306,18 @@ trap 'trap_cleanup' EXIT
 echo "Actualizando el repositorio…"
 cd "$repo"
 git fetch || notify_failure "Git fetch ha fallado"
-git reset --hard origin || notify_failure "Git reset ha fallado" 
-git pull || notify_failure "Git pull ha fallado" 
+git reset --hard origin || notify_failure "Git reset ha fallado"
+git pull || notify_failure "Git pull ha fallado"
 git submodule update || notify_failure "Git submodule update ha fallado"
 
 # Build site in temporary directory.
 echo "Construyendo el sitio…"
 zola build --output-dir "$temp_dir" --force || notify_failure "Zola build ha fallado"
+
+# Minifica el HTML con https://github.com/terser/html-minifier-terser
+# La minificación nativa de Zola elimina las comillas necesarias para que las tarjetas de redes sociales funcionen de forma consistente en WhatsApp.
+echo "Minificando HTML…"
+find "$temp_dir" -name '*.html' -exec html-minifier-terser --collapse-whitespace --conservative-collapse --remove-comments --remove-optional-tags --use-short-doctype  -o {} {} \; || notify_failure "Minification failed"
 
 # Sincroniza los archivos al directorio final.
 echo "Sincronizando los archivos…"

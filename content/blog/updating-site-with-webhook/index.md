@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2023-12-02
+updated = 2024-08-02
 description = "Since this site's files are on GitHub, I thought it would be a nice idea to automatically update it whenever the repository is modified."
 
 [taxonomies]
@@ -306,13 +306,18 @@ trap 'trap_cleanup' EXIT
 echo "Updating repository…"
 cd "$repo"
 git fetch || notify_failure "Git fetch failed"
-git reset --hard origin || notify_failure "Git reset failed" 
-git pull || notify_failure "Git pull failed" 
+git reset --hard origin || notify_failure "Git reset failed"
+git pull || notify_failure "Git pull failed"
 git submodule update || notify_failure "Git submodule update failed"
 
 # Build site in temporary directory.
 echo "Running Zola build…"
 zola build --output-dir "$temp_dir" --force || notify_failure "Zola build failed"
+
+# Minify HTML with https://github.com/terser/html-minifier-terser
+# Native Zola minification strips quotes needed for social media cards to work consistently on WhatsApp.
+echo "Minifying HTML…"
+find "$temp_dir" -name '*.html' -exec html-minifier-terser --collapse-whitespace --conservative-collapse --remove-comments --remove-optional-tags --use-short-doctype  -o {} {} \; || notify_failure "Minification failed"
 
 # Sync files to the live directory.
 echo "Syncing files…"

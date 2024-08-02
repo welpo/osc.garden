@@ -1,7 +1,7 @@
 +++
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
-updated = 2023-12-02
+updated = 2024-08-02
 description= "Com que els fitxers d'aquesta web estan a GitHub, vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori."
 
 [taxonomies]
@@ -313,6 +313,11 @@ git submodule update || notify_failure "Git submodule update ha fallat"
 # Construeix el lloc en el directori temporal.
 echo "Construint el lloc…"
 zola build --output-dir "$temp_dir" --force || notify_failure "Zola build ha fallat"
+
+# Minifica l'HTML amb https://github.com/terser/html-minifier-terser
+# La minificació nativa de Zola elimina les cometes necessàries perquè les targetes de xarxes socials funcionin de forma consistent a WhatsApp.
+echo "Minificant HTML…"
+find "$temp_dir" -name '*.html' -exec html-minifier-terser --collapse-whitespace --conservative-collapse --remove-comments --remove-optional-tags --use-short-doctype  -o {} {} \; || notify_failure "Minification failed"
 
 # Sincronitza els arxius al directori final.
 echo "Sincronitzant els arxius…"
