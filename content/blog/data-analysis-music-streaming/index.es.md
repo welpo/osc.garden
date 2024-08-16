@@ -10,7 +10,6 @@ tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "m�
 [extra]
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]
 social_media_card = "/img/social_cards/es_blog_data_analysis_music_streaming.jpg"
-show_reading_time = false
 enable_csp = false
 +++
 

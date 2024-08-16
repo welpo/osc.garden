@@ -9,7 +9,6 @@ tags = ["data science", "data analysis", "data visualisation", "music", "natural
 [extra]
 stylesheets = ["blog/ichiko-aoba-lyrics-japanese-morphology/css/lyrics.min.css"]
 social_media_card = "/img/social_cards/blog_ichiko_aoba_lyrics_japanese_morphology.jpg"
-show_reading_time = false
 +++
 
 I recently started learning Japanese. I believe immersion is necessary for language acquisition; it’s how kids learn their mother tongue. Since it’ll require thousands of hours, I’m trying to make it fun with good films and music.

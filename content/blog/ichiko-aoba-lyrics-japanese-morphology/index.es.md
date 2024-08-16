@@ -9,7 +9,6 @@ tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "m�
 [extra]
 stylesheets = ["blog/ichiko-aoba-lyrics-japanese-morphology/css/lyrics.min.css"]
 social_media_card = "/img/social_cards/es_blog_ichiko_aoba_lyrics_japanese_morphology.jpg"
-show_reading_time = false
 +++
 
 Hace poco empecé a aprender japonés. Creo que la inmersión es necesaria para adquirir un idioma; así es como los niños aprenden su lengua materna. Como el proceso requiere miles de horas, intento hacerlo divertido con buenas películas y música.
