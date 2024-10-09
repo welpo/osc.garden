@@ -1,8 +1,8 @@
 +++
-title = "La textura del text: transformant les meves cites preferides en art generatiu"
+title = "Transformant les meves cites preferides en art generatiu"
 date = 2023-10-19
 updated = 2024-07-29
-description = "Explorant la intersecció entre literatura i aprenentatge profund, he utilitzat Stable Diffusion per convertir frases en art visual. Un viatge a través d'una galeria on les paraules es converteixen en textures, colors i formes."
+description = "Un experiment amb l'intel·ligència artificial generativa."
 
 [taxonomies]
 tags = ["experiment", "IA generativa"]

@@ -1,7 +1,7 @@
 +++
 title = "Nou consells il·lustrats per començar a utilitzar xatbots d'IA com ChatGPT"
 date = 2023-11-21
-description = "Una guia per als meus pares i altres principiants que introdueix els conceptes bàsics de la interacció amb xatbots d'intel·ligència artificial. Aquest recurs proporciona consells essencials sobre privadesa, precisió i tècniques de comunicació."
+description = "Una guia tant per als meus pares com per als principiants, que presenta els conceptes bàsics d'interacció amb els chatbots d'IA. Consells essencials sobre privadesa, precisió i tècniques de comunicació."
 
 [taxonomies]
 tags = ["guia", "IA generativa"]

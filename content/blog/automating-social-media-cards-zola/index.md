@@ -1,8 +1,8 @@
 +++
-title = "From Bashful to Social Butterfly: Automating Link Previews for Zola Sites"
+title = "Automating Link Previews for Zola Sites"
 date = 2023-09-06
 updated = 2024-05-23
-description = "In a quest to make Zola websites more social media-friendly, I've cracked the code for automating the creation of social media cards."
+description = "Developing a bash script to create social media cards for Zola sites."
 
 [taxonomies]
 tags = ["TIL", "Zola", "automation"]

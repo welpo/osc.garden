@@ -2,7 +2,7 @@
 title = "The 8 Most Important Statistical Ideas: Counterfactual Causal Inference"
 date = 2023-10-23
 updated = 2023-11-27
-description = "Exploring beyond the mantra \"correlation doesn't imply causation\", this post introduces how counterfactuals serve as the cornerstone for determining cause-and-effect relationships."
+description = "\"Correlation doesn't imply causation\". Can counterfactuals help determining cause-and-effect relationships?"
 
 [taxonomies]
 tags = ["top 8 statistical ideas", "data science", "statistics", "paper review"]
@@ -11,13 +11,13 @@ tags = ["top 8 statistical ideas", "data science", "statistics", "paper review"]
 social_media_card = "img/social_cards/blog_counterfactual_causal_inference.jpg"
 +++
 
-This article is the first in a [series of posts](/tags/top-8-statistical-ideas/) where I dive into the 8 most important statistical ideas of the past 50 years, as reviewed by [Gelman & Vehtari (2021)](https://arxiv.org/abs/2012.00174). I invite you to join me on this learning journey as we delve into the first concept: **counterfactual causal inference**.
+This article is the first in a [series of posts](/tags/top-8-statistical-ideas/) where I discuss the 8 most important statistical ideas of the past 50 years, as reviewed by [Gelman & Vehtari (2021)](https://arxiv.org/abs/2012.00174). Today's concept is **counterfactual causal inference**.
 
 <details>
   <summary>Introduction to the series: The 8 Most Important Statistical Ideas</summary>
   <p>The last 50 years have seen important advancements in the field of statistics, shaping the way we understand and analyse data. <a href="https://arxiv.org/abs/2012.00174">Gelman & Vehtari (2021)</a> reviewed the 8 most important statistical ideas of the past 50 years.</p>
 
-  <p>As part of my learning journey, I decided to deepen my understanding of these 8 ideas and share my findings with you. In each article, you'll find an introduction to the concept at hand, along with some of the learning resources. So, if you're keen to deepen your grasp of statistics, you're in the right place!</p>
+  <p>I was curious about the eight ideas, so I decided to write about them to deepen my understanding. Hopefully someone else finds it useful~</p>
 </details>
 
 ---
@@ -98,7 +98,7 @@ That's it for today! In the next article, we'll learn about **[bootstrapping and
 
 **Fun project**: [Spurious correlations](https://tylervigen.com/spurious-correlations) is a project by Tyler Vigen that showcases strong (but spurious) correlations between seemingly unrelated variables like the number of people who drowned by falling into a pool and the number of films Nicolas Cage appeared in each year.
 
-**Podcast**: [Alan Hájek on puzzles and paradoxes in probability and expected value — 80,000 Hours Podcast (2022)](https://80000hours.org/podcast/episodes/alan-hajek-probability-expected-value/#counterfactuals-021638). A deeply interesting discussion on probability, expected value, and counterfactuals. The discussion delves (starting in the 02:16:38 mark) into the nuances of counterfactual reasoning, and the need for precision in establishing logical rules for them. Hájek argues that most counterfactuals are essentially false but "approximately true and close enough to the truth that they convey useful information".
+**Podcast**: [Alan Hájek on puzzles and paradoxes in probability and expected value — 80,000 Hours Podcast (2022)](https://80000hours.org/podcast/episodes/alan-hajek-probability-expected-value/#counterfactuals-021638). A deeply interesting discussion on probability, expected value, and counterfactuals. It discusses (from the 02:16:38 mark) the nuances of counterfactual reasoning, and the need for precision in establishing logical rules for them. Hájek argues that most counterfactuals are essentially false but "approximately true and close enough to the truth that they convey useful information".
 
 **Academic paper**: [Causal inference based on counterfactuals — Höfler (2005)](https://doi.org/10.1186/1471-2288-5-28). A quick overview on the counterfactual and related approaches. Reviews imperfect experiments, adjustment for confounding, time-varying exposures, competing risks and the probability of causation.
 

@@ -10,13 +10,13 @@ tags = ["las 8 ideas estadísticas más importantes", "ciencia de datos", "estad
 social_media_card = "img/social_card_es.jpg"
 +++
 
-Este artículo es el segundo de una [serie de entradas](/es/tags/las-8-ideas-estadisticas-mas-importantes/) donde abordo las 8 ideas estadísticas más importantes de los últimos 50 años, según la revisión de [Gelman y Vehtari (2021)](https://arxiv.org/abs/2012.00174). Te invito a que me acompañes en este camino de aprendizaje mientras profundizamos en el tema de hoy: **bootstrapping y la inferencia basada en la simulación**.
+Este artículo es el segundo de una [serie de entradas](/es/tags/las-8-ideas-estadisticas-mas-importantes/) donde abordo las 8 ideas estadísticas más importantes de los últimos 50 años, según la revisión de [Gelman y Vehtari (2021)](https://arxiv.org/abs/2012.00174). El tema de hoy es **bootstrapping y la inferencia basada en la simulación**.
 
 <details>
   <summary>Introducción a la serie: Las 8 ideas estadísticas más importantes</summary>
   <p>Los últimos 50 años han visto avances significativos en el campo de la estadística, moldeando la forma de entender y analizar datos. <a href="https://arxiv.org/abs/2012.00174">Gelman y Vehtari (2021)</a> revisaron las 8 ideas más importantes en estadísticas de los últimos 50 años.</p>
 
-  <p>Como parte de mi camino de aprendizaje, he decidido profundizar en estas 8 ideas y compartir mis hallazgos. En cada artículo, encontrarás una introducción a un concepto, junto con algunos recursos de aprendizaje. Así que, si te interesa la estadística, ¡estás en el sitio correcto!</p>
+  <p>Sentía curiosidad por las ocho ideas, así que decidí escribir sobre ellas para profundizar mi comprensión. Espero que a alguien más le resulte útil.</p>
 </details>
 
 ---

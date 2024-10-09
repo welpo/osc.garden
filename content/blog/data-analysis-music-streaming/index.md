@@ -2,7 +2,7 @@
 title = "Notes on Notes: Analysing Seven Years of Music Streaming Data"
 date = 2024-03-15
 updated = 2024-04-18
-description = "From a childhood keyboard to streaming in over 170 countries. I've analysed and visualised seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and much more."
+description = "From a childhood keyboard to streaming in over 170 countries. An analysis and visualisation of seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and more."
 
 [taxonomies]
 tags = ["data science", "data analysis", "data visualisation", "music", "interactive"]

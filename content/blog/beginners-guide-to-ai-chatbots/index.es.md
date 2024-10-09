@@ -1,7 +1,7 @@
 +++
 title = "Nueve consejos ilustrados para empezar a usar chatbots de IA como ChatGPT"
 date = 2023-11-21
-description = "Una guía para mis padres y otros principantes que introduce los conceptos básicos de la interacción con chatbots de inteligencia artificial. Este recurso abarca consejos esenciales sobre privacidad, precisión y técnicas de comunicación."
+description = "Una guía para mis padres y otros principiantes presentando los conceptos básicos de la interacción con chatbots de inteligencia artificial. Consejos esenciales sobre privacidad, precisión y técnicas de comunicación."
 
 [taxonomies]
 tags = ["guía", "IA generativa"]

@@ -2,7 +2,7 @@
 title = "Autoalojamiento de GoatCounter con un proxy inverso nginx y SSL"
 date = 2023-12-14
 updated = 2023-12-24
-description = "Aprende a autogestionar GoatCounter —una herramienta de análisis web ligera y respetuosa con la privacidad— con un proxy inverso nginx y un certificado SSL."
+description = "Aprende a autoalojar GoatCounter —una herramienta de análisis web ligera y respetuosa con la privacidad— con un proxy inverso nginx y un certificado SSL."
 
 [taxonomies]
 tags = ["aprendizaje del día", "guía"]

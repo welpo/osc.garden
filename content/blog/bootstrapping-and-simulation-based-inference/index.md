@@ -10,13 +10,13 @@ tags = ["top 8 statistical ideas", "data science", "statistics", "paper review",
 social_media_card = "img/social_card_en.jpg"
 +++
 
-This article is the second in a [series of posts](/tags/top-8-statistical-ideas/) where I dive into the 8 most important statistical ideas of the past 50 years, as reviewed by [Gelman & Vehtari (2021)](https://arxiv.org/abs/2012.00174). I invite you to join me on this learning journey as we delve into today's topic: **bootstrapping and simulation-based inference**.
+This article is the second in a [series of posts](/tags/top-8-statistical-ideas/) where I discuss the 8 most important statistical ideas of the past 50 years, as reviewed by [Gelman & Vehtari (2021)](https://arxiv.org/abs/2012.00174). Today's concept is **bootstrapping and simulation-based inference**.
 
 <details>
   <summary>Introduction to the series: The 8 Most Important Statistical Ideas</summary>
   <p>The last 50 years have seen important advancements in the field of statistics, shaping the way we understand and analyse data. <a href="https://arxiv.org/abs/2012.00174">Gelman & Vehtari (2021)</a> reviewed the 8 most important statistical ideas of the past 50 years.</p>
 
-  <p>As part of my learning journey, I decided to deepen my understanding of these 8 ideas and share my findings with you. In each article, you'll find an introduction to the concept at hand, along with some of the learning resources. So, if you're keen to deepen your grasp of statistics, you're in the right place!</p>
+  <p>I was curious about the eight ideas, so I decided to write about them to deepen my understanding. Hopefully someone else finds it useful~</p>
 </details>
 
 ---

@@ -1,7 +1,7 @@
 +++
-title = "La paleta poética de Ichiko Aoba: aprendiendo japonés a través del análisis morfológico"
+title = "Aprendiendo japonés con música: analizando las letras de Ichiko Aoba"
 date = 2024-06-20
-description = "Una exploración de las letras de Ichiko Aoba basada en datos. Con análisis morfológico, nubes de palabras y un toque de magia 言霊 (kotodama)."
+description = "Explorando las letras de Ichiko Aoba. Incluye análisis morfológico, nubes de palabras y una pizca de magia 言霊 (kotodama)."
 
 [taxonomies]
 tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "música", "procesamiento de lenguaje natural", "lingüística", "japonés"]

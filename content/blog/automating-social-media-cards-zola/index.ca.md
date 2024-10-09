@@ -1,8 +1,8 @@
 +++
-title = "De reservat a rei de les xarxes: automatitzant les vistes prèvies dels enllaços amb Zola"
+title = "Automatitzant les vistes prèvies dels enllaços per Zola"
 date = 2023-09-06
 updated = 2024-05-23
-description = "Amb l'objectiu de fer els llocs web de Zola més compatibles amb les xarxes socials, he desxifrat el codi per automatitzar la generació de les previsualitzacions d'enllaços."
+description = "Desenvolupament d'un script de Bash per crear previsualitzacions d'enllaços per a xarxes socials."
 
 [taxonomies]
 tags = ["aprenentatge del dia", "Zola", "automatització"]

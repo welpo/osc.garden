@@ -2,7 +2,7 @@
 title = "Les 8 idees estadístiques més importants: inferència causal contrafactual"
 date = 2023-10-23
 updated = 2023-11-27
-description = "Explorant més enllà del mantra \"la correlació no implica causalitat\", aquesta entrada introdueix com els contrafactuals serveixen de fonament per entendre relacions causa-efecte."
+description = "«La correlació no implica causalitat». Com els contrafactuals ajuden a determinar relacions de causa i efecte."
 
 [taxonomies]
 tags = ["les 8 idees estadístiques més importants", "ciència de dades", "estadística", "revisió d'article"]
@@ -11,13 +11,13 @@ tags = ["les 8 idees estadístiques més importants", "ciència de dades", "esta
 social_media_card = "img/social_cards/ca_blog_counterfactual_causal_inference.jpg"
 +++
 
-Aquest article és el primer d'una [sèrie d'entrades](/ca/tags/les-8-idees-estadistiques-mes-importants/) on exploro les 8 idees estadístiques més importants dels últims 50 anys, segons la revisió de [Gelman i Vehtari (2021)](https://arxiv.org/abs/2012.00174). Et convido que m'acompanyis en aquest camí d'aprenentatge mentre aprofundim en el primer concepte: l'**inferència causal contrafactual**.
+Aquest article és el primer d'una [sèrie d'entrades](/ca/tags/les-8-idees-estadistiques-mes-importants/) on exploro les 8 idees estadístiques més importants dels últims 50 anys, segons la revisió de [Gelman i Vehtari (2021)](https://arxiv.org/abs/2012.00174). El primer concepte és l'**inferència causal contrafactual**.
 
 <details>
   <summary>Introducció a la sèrie: Les 8 idees estadístiques més importants</summary>
   <p>Els últims cinquanta anys han vist avenços significatius en el camp de l'estadística, canviant la manera d'entendre i analitzar dades. <a href="https://arxiv.org/abs/2012.00174">Gelman i Vehtari (2021)</a> han revisat les 8 idees més importants en estadística dels últims 50 anys.</p>
 
-  <p>Com a part del meu camí d'aprenentatge, he decidit aprofundir en aquestes 8 idees i compartir els meus descobriments. A cada article trobaràs una introducció a un concepte, així com alguns recursos per aprendre'n més. Així que, si t'interessa l'estadística, ets al lloc adequat!</p>
+   <p>Tenia curiositat per les vuit idees, així que vaig decidir escriure sobre elles per aprofundir en la meva comprensió. Tant de bo algú ho trobi útil~</p>
 </details>
 
 ---

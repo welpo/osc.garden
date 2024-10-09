@@ -1,7 +1,7 @@
 +++
 title = "Nine Illustrated Tips to Get Started with AI Chatbots like ChatGPT"
 date = 2023-11-21
-description = "A guide for my parents and beginners alike, introducing the basics of interacting with AI chatbots. This easy-to-follow resource covers essential tips on privacy, accuracy, and communication techniques."
+description = "A guide for my parents and beginners alike, introducing the basics of interacting with AI chatbots. Essential tips on privacy, accuracy, and communication techniques."
 
 [taxonomies]
 tags = ["guide", "generative AI"]

@@ -10,13 +10,13 @@ tags = ["les 8 idees estadístiques més importants", "ciència de dades", "esta
 social_media_card = "img/social_card_ca.jpg"
 +++
 
-Aquest article és el segon d'una [sèrie d'entrades](/ca/tags/les-8-idees-estadistiques-mes-importants/) on exploro les 8 idees estadístiques més importants dels últims 50 anys, segons la revisió de [Gelman i Vehtari (2021)](https://arxiv.org/abs/2012.00174). Et convido que m'acompanyis en aquest camí d'aprenentatge mentre aprofundim en el tema d'avui: **bootstrapping i la inferència basada en la simulació**.
+Aquest article és el segon d'una [sèrie d'entrades](/ca/tags/les-8-idees-estadistiques-mes-importants/) on exploro les 8 idees estadístiques més importants dels últims 50 anys, segons la revisió de [Gelman i Vehtari (2021)](https://arxiv.org/abs/2012.00174). El tema d'avui és **bootstrapping i la inferència basada en la simulació**.
 
 <details>
   <summary>Introducció a la sèrie: Les 8 idees estadístiques més importants</summary>
   <p>Els últims cinquanta anys han vist avenços significatius en el camp de l'estadística, canviant la manera d'entendre i analitzar dades. <a href="https://arxiv.org/abs/2012.00174">Gelman i Vehtari (2021)</a> han revisat les 8 idees més importants en estadística dels últims 50 anys.</p>
 
-  <p>Com a part del meu camí d'aprenentatge, he decidit aprofundir en aquestes 8 idees i compartir els meus descobriments. A cada article trobaràs una introducció a un concepte, així com alguns recursos per aprendre'n més. Així que, si t'interessa l'estadística, ets al lloc adequat!</p>
+  <p>Tenia curiositat per les vuit idees, així que vaig decidir escriure sobre elles per aprofundir en la meva comprensió. Tant de bo algú ho trobi útil~</p>
 </details>
 
 ---

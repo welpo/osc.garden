@@ -2,7 +2,7 @@
 title = "Self-Hosting GoatCounter with an nginx Reverse Proxy and SSL"
 date = 2023-12-14
 updated = 2023-12-24
-description = "Learn how to self-host GoatCounter, a lightweight, privacy-friendly web analytics tool, with an nginx reverse proxy and an SSL certificate."
+description = "How to self-host GoatCounter —a lightweight, privacy-friendly web analytics tool— with an nginx reverse proxy and an SSL certificate."
 
 [taxonomies]
 tags = ["TIL", "guide"]

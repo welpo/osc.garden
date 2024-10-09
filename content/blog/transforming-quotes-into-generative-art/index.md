@@ -1,8 +1,8 @@
 +++
-title = "From Text to Texture: Transforming My Favourite Quotes into Generative Art"
+title = "Transforming My Favourite Quotes into Generative Art"
 date = 2023-10-19
 updated = 2024-07-29
-description = "Exploring the intersection of literature and deep learning, I've used Stable Diffusion to turn cherished quotes into visual art. Journey through a gallery where words meet textures, colours, and forms."
+description = "An experiment with generative artificial intelligence."
 
 [taxonomies]
 tags = ["experiment", "generative AI"]
