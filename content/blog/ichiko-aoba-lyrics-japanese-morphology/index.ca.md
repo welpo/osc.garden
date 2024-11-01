@@ -1,6 +1,7 @@
 +++
 title = "Aprenent japonés a través de la música: una anàlisi de les lletres d'Ichiko Aoba"
 date = 2024-06-20
+updated = 2024-11-01
 description = "Explorant les lletres d'Ichiko Aoba. Amb anàlisi morfològica, núvols de paraules i una mica de màgia 言霊 (kotodama)."
 
 [taxonomies]
@@ -414,7 +415,7 @@ Vaig repetir el procés per a cada àlbum utilitzant el núvol de paraules com a
 
 Algunes observacions:
 
-- Moltes de les paraules més grans estan relacionades amb la natura: <ruby>風<rt>かぜ</rt></ruby> (vent), <ruby>光<rt>ひかり</rt></ruby> (llum), <ruby>星<rt>ほし</rt></ruby> (estrella), <ruby>海<rt>うみ</rt></ruby> (mar), <ruby>空<rt>そら</rt></ruby> (cel)… Aquestes, juntament amb altres com <ruby>静<rt>しず</rt>か</ruby> (tranquil), <ruby>夢<rt>ゆめ</rt></ruby> (somni), <ruby>消<rt>き</rt>える<rt>える</rt></ruby> (desaparèixer) i <ruby>ふわり</ruby> (suaument), encaixen amb les emocions que evoca la seva música.
+- Moltes de les paraules més grans estan relacionades amb la natura: <ruby>風<rt>かぜ</rt></ruby> (vent), <ruby>光<rt>ひかり</rt></ruby> (llum), <ruby>星<rt>ほし</rt></ruby> (estrella), <ruby>海<rt>うみ</rt></ruby> (mar), <ruby>空<rt>そら</rt></ruby> (cel)… Aquestes, juntament amb altres com <ruby>静<rt>しず</rt>か</ruby> (tranquil), <ruby>夢<rt>ゆめ</rt></ruby> (somni), <ruby>消<rt>き</rt>える</ruby> (desaparèixer) i <ruby>ふわり</ruby> (suaument), encaixen amb les emocions que evoca la seva música.
 - Més del 60% de les paraules extretes apareixen només una vegada. Aquests són [hàpax legòmena](https://ca.wikipedia.org/wiki/H%C3%A0pax): paraules que ocorren només una vegada en un context. Això coincideix amb la [llei de Zipf](https://ca.wikipedia.org/wiki/Llei_de_Zipf), que prediu que un petit nombre de paraules seran comunes, mentre que la majoria de les paraules rarament apareixeran.
 - <ruby>言霊<rt>ことだま</rt></ruby> ([kotodama](https://blog.oup.com/2014/05/kotodama-japanese-spirit-of-language/)) és un dels hàpax legòmenon. El seu significat literal és «esperit/ànima de la paraula», i es refereix al poder espiritual que es diu que posseeixen les paraules. Al Japó antic, es creia que les paraules tenien la mateixa essència que els objectes físics.
 

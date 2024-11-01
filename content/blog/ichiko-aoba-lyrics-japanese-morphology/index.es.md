@@ -1,6 +1,7 @@
 +++
 title = "Aprendiendo japonés con música: analizando las letras de Ichiko Aoba"
 date = 2024-06-20
+updated = 2024-11-01
 description = "Explorando las letras de Ichiko Aoba. Incluye análisis morfológico, nubes de palabras y una pizca de magia 言霊 (kotodama)."
 
 [taxonomies]
@@ -414,7 +415,7 @@ Repetí el proceso para cada álbum utilizando la nube de palabras como máscara
 
 Algunas observaciones:
 
-- Muchas de las palabras más grandes están relacionadas con la naturaleza: <ruby>風<rt>かぜ</rt></ruby> (viento), <ruby>光<rt>ひかり</rt></ruby> (luz), <ruby>星<rt>ほし</rt></ruby> (estrella), <ruby>海<rt>うみ</rt></ruby> (mar), <ruby>空<rt>そら</rt></ruby> (cielo)... Estas, junto con otras como <ruby>静<rt>しず</rt>か</ruby> (tranquilo), <ruby>夢<rt>ゆめ</rt></ruby> (sueño), <ruby>消<rt>き</rt>える<rt>える</rt></ruby> (desaparecer) y <ruby>ふわり</ruby> (suavemente), encajan con las emociones que evoca su música.
+- Muchas de las palabras más grandes están relacionadas con la naturaleza: <ruby>風<rt>かぜ</rt></ruby> (viento), <ruby>光<rt>ひかり</rt></ruby> (luz), <ruby>星<rt>ほし</rt></ruby> (estrella), <ruby>海<rt>うみ</rt></ruby> (mar), <ruby>空<rt>そら</rt></ruby> (cielo)... Estas, junto con otras como <ruby>静<rt>しず</rt>か</ruby> (tranquilo), <ruby>夢<rt>ゆめ</rt></ruby> (sueño), <ruby>消<rt>き</rt>える</ruby> (desaparecer) y <ruby>ふわり</ruby> (suavemente), encajan con las emociones que evoca su música.
 - Más del 60% de las palabras extraídas aparecen solo una vez. Estos son [hápax legómena](https://es.wikipedia.org/wiki/H%C3%A1pax): palabras que ocurren solo una vez en un contexto. Esto coincide con la [ley de Zipf](https://es.wikipedia.org/wiki/Ley_de_Zipf), que predice que un pequeño número de palabras serán comunes, mientras que la mayoría de las palabras raramenre aparecerán.
 - <ruby>言霊<rt>ことだま</rt></ruby> ([kotodama](https://blog.oup.com/2014/05/kotodama-japanese-spirit-of-language/)) es uno de los hápax legómenon. Su significado literal es «espíritu/alma de la palabra», y se refiere al poder espiritual que se dice que poseen las palabras. En el Japón antiguo, se creía que las palabras tenían la misma esencia que los objetos físicos.
 

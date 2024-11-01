@@ -1,6 +1,7 @@
 +++
 title = "Learning Japanese Through Music: An Analysis of Ichiko Aoba's Lyrics"
 date = 2024-06-20
+updated = 2024-11-01
 description = "Exploring Ichiko Aoba's lyrics. Featuring morphological analysis, word clouds, and a sprinkle of 言霊 (kotodama) magic."
 
 [taxonomies]
@@ -354,7 +355,7 @@ I repeated the process for each album using the word cloud as a mask and the cov
 
 Some observations:
 
-- Many of the big words are nature-related: <ruby>風<rt>かぜ</rt></ruby> (wind), <ruby>光<rt>ひかり</rt></ruby> (light), <ruby>星<rt>ほし</rt></ruby> (star), <ruby>海<rt>うみ</rt></ruby> (sea), <ruby>空<rt>そら</rt></ruby> (sky)… These, along others like <ruby>静<rt>しず</rt>か</ruby> (quiet), <ruby>夢<rt>ゆめ</rt></ruby> (dream), <ruby>消<rt>き</rt>える<rt>える</rt></ruby> (disappear), and <ruby>ふわり</ruby> (gently), match the feelings her music evokes.
+- Many of the big words are nature-related: <ruby>風<rt>かぜ</rt></ruby> (wind), <ruby>光<rt>ひかり</rt></ruby> (light), <ruby>星<rt>ほし</rt></ruby> (star), <ruby>海<rt>うみ</rt></ruby> (sea), <ruby>空<rt>そら</rt></ruby> (sky)… These, along others like <ruby>静<rt>しず</rt>か</ruby> (quiet), <ruby>夢<rt>ゆめ</rt></ruby> (dream), <ruby>消<rt>き</rt>える</ruby> (disappear), and <ruby>ふわり</ruby> (gently), match the feelings her music evokes.
 - Over 60% of the extracted words only appear once. These are [hapax legomena](https://simple.wikipedia.org/wiki/Hapax_legomenon): words that only occur once in a context. This matches [Zipf’s law](https://simple.wikipedia.org/wiki/Zipf%27s_law), which predicts that a small number of words will be common, while the majority words will rarely appear.
 - <ruby>言霊<rt>ことだま</rt></ruby> ([kotodama](https://blog.oup.com/2014/05/kotodama-japanese-spirit-of-language/)) is one of the hapax legomenon. Its literal meaning is “word spirit/soul”, and it refers to the spiritual power that words are said to possess. In ancient Japan words were seen as having the same essence as physical objects.
 
