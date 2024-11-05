@@ -5,7 +5,7 @@ updated = 2024-04-18
 description = "From a childhood keyboard to streaming in over 170 countries. An analysis and visualisation of seven years of royalties data to see how my music has been heard, how much Spotify, Apple Music, TikTok, Instagram, etc. really pay per stream, and more."
 
 [taxonomies]
-tags = ["data science", "data analysis", "data visualisation", "music", "interactive"]
+tags = ["data science", "data analysis", "data visualisation", "music", "interactive", "javascript", "python"]
 
 [extra]
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]

@@ -5,7 +5,7 @@ updated = 2024-04-18
 description = "D'un teclat d'una octava a ser escoltat a més de 170 països. He analitzat i visualitzat set anys de dades de royalties per veure com s'ha escoltat la meva música, quant paguen realment per stream Spotify, Apple Music, TikTok, Instagram, etc., i molt més"
 
 [taxonomies]
-tags = ["ciència de dades", "anàlisi de dades", "visualització de dades", "música", "interactiu"]
+tags = ["ciència de dades", "anàlisi de dades", "visualització de dades", "música", "interactiu", "javascript", "python"]
 
 [extra]
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]

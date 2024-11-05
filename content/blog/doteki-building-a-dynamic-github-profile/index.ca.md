@@ -5,7 +5,7 @@ updated = 2024-05-23
 description = "Creant una Com vaig construir dōteki, una eina basada en plugins per afegir contingut dinàmic a perfils de GitHub. Inspiració, procés de pensament i plans futurs afegir contingut dinàmic al meu perfil de GitHub."
 
 [taxonomies]
-tags = ["codi", "automatització"]
+tags = ["codi", "automatització", "python"]
 
 [extra]
 social_media_card = "img/social_cards/projects_doteki.jpg"

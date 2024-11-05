@@ -5,7 +5,7 @@ updated = 2024-04-18
 description = "De un teclado de una octava a ser escuchado en más de 170 países. He analizado y visualizado siete años de datos de royalties para ver cómo se ha escuchado mi música, cuánto pagan realmente por stream Spotify, Apple Music, TikTok, Instagram, etc., y mucho más."
 
 [taxonomies]
-tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "música", "interactivo"]
+tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "música", "interactivo", "javascript", "python"]
 
 [extra]
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]
