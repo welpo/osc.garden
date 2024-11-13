@@ -8,6 +8,7 @@ description = "D'un teclat d'una octava a ser escoltat a més de 170 països. He
 tags = ["ciència de dades", "anàlisi de dades", "visualització de dades", "música", "interactiu", "javascript", "python"]
 
 [extra]
+pinned = true
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]
 social_media_card = "/img/social_cards/ca_blog_data_analysis_music_streaming.jpg"
 enable_csp = false

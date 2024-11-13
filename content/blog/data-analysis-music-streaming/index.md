@@ -8,6 +8,7 @@ description = "From a childhood keyboard to streaming in over 170 countries. An 
 tags = ["data science", "data analysis", "data visualisation", "music", "interactive", "javascript", "python"]
 
 [extra]
+pinned = true
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]
 social_media_card = "/img/social_cards/blog_data_analysis_music_streaming.jpg"
 enable_csp = false

@@ -8,6 +8,7 @@ description = "De un teclado de una octava a ser escuchado en más de 170 paíse
 tags = ["ciencia de datos", "análisis de datos", "visualización de datos", "música", "interactivo", "javascript", "python"]
 
 [extra]
+pinned = true
 stylesheets = ["blog/data-analysis-music-streaming/css/music.min.css"]
 social_media_card = "/img/social_cards/es_blog_data_analysis_music_streaming.jpg"
 enable_csp = false
