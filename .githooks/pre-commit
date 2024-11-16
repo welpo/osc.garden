@@ -149,8 +149,8 @@ fi
 #   https://osc.garden/blog/automating-social-media-cards-zola   #
 ##################################################################
 
-# Get the newly added and modified files.
-mapfile -t all_changed_files < <(git diff --cached --name-only)
+# Get the newly added and modified files, but not deleted files.
+mapfile -t all_changed_files < <(git diff --cached --name-only --diff-filter=d)
 
 # Loop through each newly added or modified .md or .png file for PNG optimization and draft checking.
 for file in "${all_changed_files[@]}"; do
