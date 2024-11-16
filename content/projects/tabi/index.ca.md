@@ -3,6 +3,9 @@ title = "tabi"
 description = "Un tema de Zola ràpid, lleuger i modern amb suport multilingüe."
 weight = 30
 
+[taxonomies]
+tags = ["web", "JavaScript"]
+
 [extra]
 local_image = "projects/tabi/tabi.webp"
 social_media_card = "img/social_cards/ca_projects_tabi.jpg"
@@ -10,7 +13,7 @@ social_media_card = "img/social_cards/ca_projects_tabi.jpg"
 
 [**tabi**](https://github.com/welpo/tabi) és un tema modern i ric en funcionalitat per a [Zola](https://www.getzola.org/), un generador de llocs web estàtics molt ràpid.
 
-{{ full_width_image(src="light_dark_tabi.webp", alt="Modes clar i fosc de tabi") }}
+{{ full_width_image(src="https://cdn.jsdelivr.net/gh/welpo/tabi@main/light_dark_screenshot.png", alt="Modes clar i fosc de tabi") }}
 
 #### [Veure a GitHub](https://github.com/welpo/tabi) • [Demo i documentación](https://welpo.github.io/tabi/ca/) {.centered-text}
 
@@ -18,8 +21,8 @@ social_media_card = "img/social_cards/ca_projects_tabi.jpg"
 
 - [Estableix qualsevol idioma com a predeterminat](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-estableixo-la-llengua-predeterminada-del-meu-lloc). Configura el teu lloc en xinès, espanyol, francès, hindi… o qualsevol [altre idioma compatible](https://welpo.github.io/tabi/ca/blog/faq-languages/#quines-llengues-admet-tabi). La interfície del tema es traduirà en conseqüència.
 - [Integració amb repositoris remots](https://welpo.github.io/tabi/ca/blog/mastering-tabi-settings#integracio-amb-repositoris-git) a GitHub, GitLab, Gitea i Codeberg per a l'historial de commits i mostrar el codi font del lloc.
-- [Suport multilingüe complet](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-gestiona-tabi-el-suport-multilingue). Afegeix tants idiomes com vulguis i deixa que els teus usuaris triin amb el selector d'idioma.
 - Tema clar i fosc. S'adapta a la configuració del sistema operatiu, amb un interruptor a la barra de navegació.
+- [Suport multilingüe complet](https://welpo.github.io/tabi/ca/blog/faq-languages/#com-gestiona-tabi-el-suport-multilingue). Afegeix tants idiomes com vulguis i deixa que els teus usuaris triin amb el selector d'idioma.
 - [Suport per a sèries](https://welpo.github.io/tabi/ca/blog/series/) per crear contingut seqüencial com tutorials, cursos i històries multipart.
 - Puntuació perfecta en Lighthouse (Rendiment, Accessibilitat, Millors Pràctiques i SEO).
 - Suport per a [diagrames de Mermaid](https://welpo.github.io/tabi/ca/blog/shortcodes/#diagrames-de-mermaid) per a crear diagrames i gràfics amb text.

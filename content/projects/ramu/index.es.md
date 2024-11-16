@@ -1,10 +1,13 @@
 +++
 title = "ラム (ramu)"
 description = "Una aplicación web para practicar la lectura y comprensión auditiva de números en japonés."
-weight = 40
+weight = 30
+
+[taxonomies]
+tags = ["Japonés", "interactivo", "web app", "web", "PWA", "JavaScript"]
 
 [extra]
-local_image = "projects/ramu/ramu_logo.png"
+local_image = "projects/ramu/ramu_logo.webp"
 social_media_card = "img/social_cards/projects_ramu.jpg"
 +++
 
@@ -14,7 +17,7 @@ social_media_card = "img/social_cards/projects_ramu.jpg"
 <video controls src="media/ラム_demo.mp4" title="demo de ramu"></video>
 {% end %}
 
-#### [Pruébala ahora](https://ramu.osc.garden) • [GitHub](https://github.com/welpo/ramu) • [Artículo](/es/blog/ramu-japanese-numbers-practice-web-app) {.centered-text}
+#### [Pruébala ahora](https://ramu.osc.garden) • [GitHub](https://github.com/welpo/ramu) • [Artículo](https://osc.garden/es/blog/ramu-japanese-numbers-practice-web-app/) {.centered-text}
 
 ## Características
 

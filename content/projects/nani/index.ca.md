@@ -3,6 +3,9 @@ title = "nani"
 description = "Script Bash per crear URLs públiques a partir d'arxius o text en servidors remots."
 weight = 50
 
+[taxonomies]
+tags = ["bash", "CLI"]
+
 [extra]
 local_image = "projects/nani/nani_logo.webp"
 social_media_card = "img/social_cards/ca_projects_nani.jpg"

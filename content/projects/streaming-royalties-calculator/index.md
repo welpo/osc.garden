@@ -3,6 +3,9 @@ title = "Streaming Royalties Calculator"
 description = "A tool to calculate streaming royalties for musicians."
 weight = 45
 
+[taxonomies]
+tags = ["music", "web app", "web", "JavaScript", "data analysis"]
+
 [extra]
 local_image = "projects/streaming-royalties-calculator/streaming-royalties-calculator_logo.webp"
 social_media_card = "social_cards/projects_streaming_royalties_calculator.jpg"
