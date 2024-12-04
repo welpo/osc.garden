@@ -4,7 +4,7 @@ date = 2024-11-05
 description = "He desenvolupat una aplicació web per practicar els nombres en japonès. Durant el procés, vaig aprendre com testejar JavaScript vanilla, crear PWAs, accessibilitat, inconsistències entre navegadors i l'eliminació automàtica de memòria cau sense frameworks."
 
 [taxonomies]
-tags = ["codi", "japonès", "lingüística", "javascript"]
+tags = ["codi", "japonès", "lingüística", "javascript", "web app"]
 
 [extra]
 copy_button = true

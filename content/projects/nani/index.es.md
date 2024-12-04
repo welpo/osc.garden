@@ -1,7 +1,7 @@
 +++
 title = "nani"
 description = "Script Bash para crear URLs públicas a partir de archivos o texto en servidores remotos."
-weight = 50
+weight = 100
 
 [taxonomies]
 tags = ["bash", "CLI"]

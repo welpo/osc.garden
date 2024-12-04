@@ -1,7 +1,7 @@
 +++
 title = "dōteki"
 description = "Afegeix contingut dinàmic al teu perfil de GitHub amb un sistema intuïtiu de plugins."
-weight = 30
+weight = 20
 
 [taxonomies]
 tags = ["GitHub Actions", "automatització", "Python"]

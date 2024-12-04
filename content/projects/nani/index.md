@@ -1,7 +1,7 @@
 +++
 title = "nani"
 description = "Bash script to create public URLs from files or text on remote servers."
-weight = 50
+weight = 100
 
 [taxonomies]
 tags = ["bash", "CLI"]

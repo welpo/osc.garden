@@ -1,7 +1,7 @@
 +++
 title = "tabi"
 description = "A feature-rich modern Zola theme with first-class multi-language support."
-weight = 30
+weight = 20
 
 [taxonomies]
 tags = ["web", "JavaScript"]

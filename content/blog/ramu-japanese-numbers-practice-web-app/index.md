@@ -4,7 +4,7 @@ date = 2024-11-05
 description = "I built a web app to practice reading and listening to Japanese numbers. In the process, I learnt about testing vanilla JavaScript, creating PWAs, accessibility, browser inconsistencies, and automatic cache busting without frameworks."
 
 [taxonomies]
-tags = ["code", "japanese", "linguistics", "javascript"]
+tags = ["code", "japanese", "linguistics", "javascript", "web app"]
 
 [extra]
 copy_button = true

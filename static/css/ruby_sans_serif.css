@@ -1,0 +1,9 @@
+ruby {
+    ruby-align: center;
+    font-family: var(--sans-serif-font);
+}
+
+ruby rt {
+    font-size: 0.7em;
+    font-family: var(--sans-serif-font);
+}

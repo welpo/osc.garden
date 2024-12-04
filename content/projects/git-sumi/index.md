@@ -1,7 +1,7 @@
 +++
 title = "git-sumi"
 description = "The non-opinionated Rust-based commit message linter."
-weight = 10
+weight = 0
 
 [taxonomies]
 tags = ["Git", "Rust", "Continuous Integration", "GitHub Actions", "CLI", "automation"]
