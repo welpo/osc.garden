@@ -1,6 +1,7 @@
 +++
 title = "Condensing Media for Language Learning with shuku"
 date = 2024-12-24
+updated = 2024-12-26
 description = "I've built a tool that turns a 3-hour film into a 45-minute language learning resource. Keep the dialogue, skip the rest!"
 [taxonomies]
 tags = ["code", "python", "linguistics", "multimedia"]
@@ -58,6 +59,18 @@ shuku uses this timing to condense media. A summary of the process:
 4. Creates a list of speech segments (start/end timings from subs)
 5. Extracts the segments to a temporary directory
 6. Joins segments into audio file with metadata and a clean filename: `Blade Runner 2049 (2017) (condensed).mp3`
+
+## What does it look like?
+
+Here's a clip from Blade Runner 2049. The audio comes from the condensed version:
+
+{{ aside(text="The main use-case for shuku is condensed audio, not video.") }}
+
+<video controls preload="none" width="800" poster="media/blade_runner_2049_poster.webp" title="Blade Runner 2049 original vs condensed clip" src="media/blade_runner_2049_original_vs_condensed.mp4"></video>
+
+{{ admonition(type="info", text="By default, shuku [adds half a second around each line](https://github.com/welpo/shuku?tab=readme-ov-file#padding) to avoid abrupt cuts.") }}
+
+As you can see, the dialogue bits are almost identical, except there's less silence in the condensed version. The main difference is we skip the fighting and travelling.
 
 ## Source of the idea
 

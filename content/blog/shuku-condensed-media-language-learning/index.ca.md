@@ -1,6 +1,7 @@
 +++
 title = "Condensant multimèdia per a l'aprenentatge d'idiomes amb shuku"
 date = 2024-12-24
+updated = 2024-12-26
 description = "He creat una eina que converteix una pel·lícula de 3 hores en un recurs d'aprenentatge de 45 minuts. Conserva el diàleg, descarta la resta!"
 [taxonomies]
 tags = ["codi", "python", "lingüística", "multimèdia"]
@@ -58,6 +59,18 @@ shuku fa servir aquests temps per condensar el contingut. Un resum del procés:
 4. Crea una llista de segments de veu (temps d'inici/fi dels subtítols)
 5. Extreu els segments a un directori temporal
 6. Uneix els segments en un arxiu d'àudio amb metadades i un nom net: `Blade Runner 2049 (2017) (condensed).mp3`
+
+## Com es veu?
+
+Aquí tens un clip de Blade Runner 2049. L'àudio prové de la versió condensada:
+
+{{ aside(text="L'ús principal de shuku és l'àudio condensat, no el vídeo.") }}
+
+<video controls preload="none" width="800" poster="media/blade_runner_2049_poster.webp" title="Blade Runner 2049 original vs clip condensat" src="media/blade_runner_2049_original_vs_condensed.mp4"></video>
+
+{{ admonition(type="info", text="Per defecte, shuku [afegeix mig segon al principi i final de cada línia](https://github.com/welpo/shuku?tab=readme-ov-file#padding) per evitar talls bruscos.") }}
+
+Com pots veure, els fragments de diàleg són gairebé idèntics, excepte que hi ha menys silenci a la versió condensada. La principal diferència és que ens saltem la lluita i el viatge.
 
 ## Origen de la idea
 
