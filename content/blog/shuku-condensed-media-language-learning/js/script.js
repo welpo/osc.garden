@@ -21,9 +21,6 @@ const ANIMATION_TIMINGS = {
   TOTAL_LOOP: 8500 / ANIMATION_SETTINGS.ANIMATION_SPEED,
 };
 
-let isPaused = false;
-let currentTimeout = null;
-
 function formatDuration(seconds) {
   const hours = Math.floor(seconds / 3600);
   const minutes = Math.floor((seconds % 3600) / 60);
@@ -163,37 +160,19 @@ function runAnimationSequence() {
   let index = 0;
 
   function animateNext() {
-    if (isPaused) {
-      currentTimeout = setTimeout(animateNext, 100); // Check again in 100ms
-      return;
-    }
-
     if (index < filesData.length) {
       runAnimation(filesData[index].name, filesData[index].data);
       index++;
-      currentTimeout = setTimeout(animateNext, ANIMATION_TIMINGS.TOTAL_LOOP);
+      setTimeout(animateNext, ANIMATION_TIMINGS.TOTAL_LOOP);
     } else {
       index = 0;
-      currentTimeout = setTimeout(animateNext, ANIMATION_TIMINGS.PAUSE_BETWEEN_FILES);
+      setTimeout(animateNext, ANIMATION_TIMINGS.PAUSE_BETWEEN_FILES);
     }
   }
 
   animateNext();
 }
 
-function togglePlayPause() {
-  isPaused = !isPaused;
-  if (!isPaused && currentTimeout === null) {
-    runAnimationSequence();
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("animation-container");
-  container.addEventListener("click", togglePlayPause);
-  container.addEventListener("touchend", (e) => {
-    e.preventDefault();
-    togglePlayPause();
-  });
   runAnimationSequence();
 });
