@@ -155,6 +155,8 @@ I’m happy to report that my schedule was smoothly and almost painlessly shifte
 
 Before creating nemui, I made a little web-app to check when the next DST change is (inspired by a [Claude artifact created by Simon Willison](https://tools.simonwillison.net/california-clock-change)), based on your device timezone. Here’s a screenshot:
 
+<a href="https://dst.osc.garden">
 {{ dual_theme_image(light_src="img/dst-light.webp", dark_src="img/dst-dark.webp" alt="Apple Health Sleep interface") }}
+</a>
 
 Visit [dst.osc.garden](https://dst.osc.garden/) to see when the next DST change is in your timezone.

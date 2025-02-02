@@ -402,7 +402,7 @@ input[type="time"].time-value {
 
 @media (max-width: 1000px) {
     :root {
-        --base-unit: 14px;
+        --base-unit: 13px;
     }
 
     .container {
