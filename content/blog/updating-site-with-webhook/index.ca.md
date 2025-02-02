@@ -1,7 +1,7 @@
 +++
 title = "Automatitzant l'actualització de la meva web amb un webhook"
 date = 2023-08-28
-updated = 2024-08-02
+updated = 2025-02-02
 description= "Com que els fitxers d'aquesta web estan a GitHub, vaig pensar que seria bona idea actualitzar-la automàticament amb cada canvi al repositori."
 
 [taxonomies]
@@ -233,6 +233,9 @@ Restart=on-failure
 RestartSec=5s
 StandardOutput=journal
 StandardError=journal
+# Reinicia cada 30 dies per renovar els certificats.
+Restart=always
+RuntimeMaxSec=30d
 
 # Seguretat.
 ReadWritePaths=/var/www/osc.garden /opt/osc.garden/repo

@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2024-08-02
+updated = 2025-02-02
 description = "Since this site's files are on GitHub, I thought it would be a nice idea to automatically update it whenever the repository is modified."
 
 [taxonomies]
@@ -233,6 +233,9 @@ Restart=on-failure
 RestartSec=5s
 StandardOutput=journal
 StandardError=journal
+# Restart every 30 days to renew the SSL certificate.
+Restart=always
+RuntimeMaxSec=30d
 
 # Security.
 ReadWritePaths=/var/www/osc.garden /opt/osc.garden/repo
