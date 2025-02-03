@@ -1,6 +1,7 @@
 +++
 title = "I Fixed My Sleep Schedule With Code"
 date = 2025-02-02
+updated = 2025-02-03
 description = "I copied Apple's UI/UX to gradually adjust my sleep schedule while handling every time zone quirk in the world (including that one island with 30-minute DST)."
 [taxonomies]
 tags = ["code", "javascript", "web app", "sleep"]
@@ -16,13 +17,11 @@ Sleep science recommends slowly shifting one’s sleep schedule. I had a deadlin
 
 ## The interface and user experience
 
-I schedule my sleep through the iOS Health app. It allows me to set a sleep goal (hours of sleep I need), bedtime and wake up hours. It looks like this:
+I schedule my sleep through the iOS Health app. It allows me to set a sleep goal (hours of sleep I need), bedtime and wake up hours.
 
-{{ dual_theme_image(light_src="img/apple-light.webp", dark_src="img/apple-dark.webp" alt="Apple Health Sleep interface") }}
+I wanted to replicate Apple’s UI: it’s a good design and user experience, I’m used to it, and I liked the challenge. This took 60% of the time spent on the project.
 
-I wanted to replicate the UI: it’s a good design and user experience, I’m used to it, and I liked the challenge.
-
-This took 60% of the time spent on the project. Here, have fun dragging the handles around:
+Here’s the result. Have fun dragging the handles around:
 
 <div class="container" id="clockContainer">
 <!-- Sleep Duration Input -->
