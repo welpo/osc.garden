@@ -1,7 +1,7 @@
 +++
 title = "I Fixed My Sleep Schedule With Code"
 date = 2025-02-02
-updated = 2025-02-03
+updated = 2025-02-08
 description = "I copied Apple's UI/UX to gradually adjust my sleep schedule while handling every time zone quirk in the world (including that one island with 30-minute DST)."
 [taxonomies]
 tags = ["code", "javascript", "web app", "sleep"]
@@ -155,7 +155,7 @@ I’m happy to report that my schedule was smoothly and almost painlessly shifte
 Before creating nemui, I made a little web-app to check when the next DST change is (inspired by a [Claude artifact created by Simon Willison](https://tools.simonwillison.net/california-clock-change)), based on your device timezone. Here’s a screenshot:
 
 <a href="https://dst.osc.garden">
-{{ dual_theme_image(light_src="img/dst-light.webp", dark_src="img/dst-dark.webp" alt="Apple Health Sleep interface") }}
+{{ dual_theme_image(light_src="img/dst-light.webp", dark_src="img/dst-dark.webp" alt="Next DST date screenshot") }}
 </a>
 
 Visit [dst.osc.garden](https://dst.osc.garden/) to see when the next DST change is in your timezone.
