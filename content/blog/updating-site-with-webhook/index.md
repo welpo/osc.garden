@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2025-02-02
+updated = 2025-02-08
 description = "Since this site's files are on GitHub, I thought it would be a nice idea to automatically update it whenever the repository is modified."
 
 [taxonomies]
@@ -264,7 +264,7 @@ After confirming it worked, I set the service to auto-start on boot with `sudo s
 
 ## The Final Script
 
-I added logging, error messages, and my favourite: push notifications to my phone with [`ntfy`](https://ntfy.sh/):
+I added logging, error messages, and my favourite: push notifications to my phone with [`ntfy`](@/notes/self-hosting-ntfy.md):
 
 ```bash
 #!/usr/bin/env bash

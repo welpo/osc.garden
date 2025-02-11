@@ -170,6 +170,7 @@ social_media_card = "img/social_cards/index.jpg"
 menu = [
     { name = "blog", url = "blog/" },
     { name = "archive", url = "archive/" },
+    { name = "notes", url = "notes/" },
     { name = "projects", url = "projects/" },
 ]
 
