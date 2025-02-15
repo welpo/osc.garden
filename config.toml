@@ -31,6 +31,8 @@ index_format = "elasticlunr_json"
 highlight_code = true
 highlight_theme = "css"
 smart_punctuation = true
+# Set to 'external' to add an indicator next to external links.
+external_links_class = "external"
 bottom_footnotes = true
 render_emoji = true
 
