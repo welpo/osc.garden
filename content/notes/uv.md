@@ -1,6 +1,7 @@
 +++
 title = "Getting Started With uv, the Python Package & Project Manager"
 date = 2025-02-11
+updated = 2025-02-15
 description = "A quick reference guide covering uv basics and some cool tricks."
 
 [extra]
@@ -183,13 +184,13 @@ uv run https://example.com/script.py
 
 > Many Python packages provide applications that can be used as tools. uv has specialized support for [easily invoking and installing tools](https://docs.astral.sh/uv/guides/tools/).
 
-If you want a globally available tool for your user (e.g. [ruff](https://astral.sh/ruff)), run:
+If you want a globally available tool for your user (e.g. [git-sumi](https://github.com/welpo/git-sumi)), run:
 
 ```bash
-uv tool install ruff
+uv tool install git-sumi
 ```
 
-Now you can use `ruff` from anywhere on your system, as it's installed in a bin directory in your `PATH`.
+Now you can use `git-sumi` from anywhere on your system, as it's installed in a bin directory in your `PATH`.
 
 ### Running tools without installing them
 
@@ -201,7 +202,7 @@ uvx pycowsay 'be kind!'
 
 `uvx` is an alias for `uv tool run`.
 
-If you want to quickly format a file with `ruff` without installing it:
+If you want to quickly format a file with [`ruff`](https://astral.sh/ruff) without installing it:
 
 ```bash
 uvx ruff script.py
