@@ -1,7 +1,7 @@
 +++
 title = "Automatically Updating My Zola Site Using a Webhook"
 date = 2023-08-28
-updated = 2025-02-08
+updated = 2025-02-15
 description = "Since this site's files are on GitHub, I thought it would be a nice idea to automatically update it whenever the repository is modified."
 
 [taxonomies]
@@ -312,6 +312,9 @@ git fetch || notify_failure "Git fetch failed"
 git reset --hard origin || notify_failure "Git reset failed"
 git pull || notify_failure "Git pull failed"
 git submodule update || notify_failure "Git submodule update failed"
+
+# Print version for debugging.
+zola --version
 
 # Build site in temporary directory.
 echo "Running Zola build…"

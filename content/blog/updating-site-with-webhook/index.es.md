@@ -1,7 +1,7 @@
 +++
 title = "Automatizando la actualización de mi web con un webhook"
 date = 2023-08-28
-updated = 2025-02-02
+updated = 2025-02-15
 description = "Como los archivos de esta web están en GitHub, pensé que sería buena idea actualizarla automáticamente con cada cambio en el repositorio."
 
 [taxonomies]
@@ -314,6 +314,7 @@ git pull || notify_failure "Git pull ha fallado"
 git submodule update || notify_failure "Git submodule update ha fallado"
 
 # Build site in temporary directory.
+zola --version
 echo "Construyendo el sitio…"
 zola build --output-dir "$temp_dir" --force || notify_failure "Zola build ha fallado"
 
