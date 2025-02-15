@@ -9,7 +9,7 @@ insert_anchor_links = "left"
 post_listing_date = "both"
 series = true
 [extra.series_intro_templates]
-default = "> 📝 From my [notes]($SERIES_PERMALINK): living personal cheatsheets."
+default = "> 📝 From my <a href=\"$SERIES_PERMALINK\">notes</a>: living personal cheatsheets."
 +++
 
 Mostly notes for my future self. Always pruning, always growing.
