@@ -275,4 +275,6 @@ I'm happy to have worked out the problem, but I also see this as an opportunity 
 
 So… to be continued, maybe.
 
+---
+
 [^1]: Initially, I was converting the PNG screenshots to WebP, as these are significantly smaller (~40KB) than similar looking JPEGs (~100KB). However, as I tried to take the screenshot for the first image of the article, I realised WhatsApp doesn't support WebP social media cards. Unfortunate.

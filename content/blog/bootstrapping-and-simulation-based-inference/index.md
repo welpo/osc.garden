@@ -171,6 +171,8 @@ Next up in the [series](/tags/top-8-statistical-ideas/) we'll be learning about 
 
 **Academic paper**: [The frontier of simulation-based inference — Cranmer, Brehmer & Louppe (2020)](https://doi.org/10.1073/pnas.1912789117). This article explores different simulation-based inference methods in light of recent advances in machine learning and offers some recommendations as to which approach to choose.
 
+---
+
 [^1]: It's not just toys; there's a bit of everything. I've seen *gashapon* of buildings, small anime figurines, Japanese toilet models (huh?), [car ignition buttons and keys](img/carignition.webp) (?), and one of ["breaded shrimp and friends" (part 2!)](img/breaded_shrimp_and_co.webp). Just a few days ago, my friend told me he got [a *gashapon* of a *gashapon*](img/metagacha.webp). Meta.
 
 [^2]: The effect size is a measurement of the strength of a phenomena. In the context of research, this is the value that quantifies the effectiveness an intervention (for example, a new therapy). Since effect sizes are statistical estimates, it's always a good idea to provide confidence intervals when reporting them. We could use bootstrapping as an easy way to calculate these intervals.

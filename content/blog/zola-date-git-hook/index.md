@@ -115,4 +115,6 @@ Now I can easily maintain accurate "Last updated" dates for Zola posts and optim
 
 Over time, I've added other features like preventing commits of drafts and files that include "TODO", and running optimisation scripts. You can take a look at the hook I'm currently using [here](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
 
+---
+
 [^1]: If you prefer to maintain separate functionality and use multiple files for your pre-commit scripts, you can create a `pre-commit` file that invokes all the other scripts (which you could put inside a `pre-commit.d` directory, for example).

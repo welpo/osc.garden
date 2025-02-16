@@ -112,4 +112,6 @@ Ahora puedo mantener al día las fechas de «Última actualización» de las ent
 
 Con el tiempo, he añadido otras funcionalidades, como evitar commits de borradores o de archivos que contengan «TODO», y ejecutar scripts de optimización. Puedes echar un vistazo al hook que estoy utilizando actualmente [aquí](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
 
+---
+
 [^1]: Si prefieres mantener las funcionalidades separadas y utilizar múltiples archivos para tus scripts de pre-commit, puedes crear un archivo `pre-commit` que invoque a todos los demás scripts (que podrías almacenar en un directorio `pre-commit.d`, por ejemplo).

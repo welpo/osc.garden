@@ -346,4 +346,6 @@ Després d'aprendre sobre la màgia negra dels webhooks, vaig investigar una mic
 
 Com a analogia: els webhooks són com els teus amics enviant-te un missatge de text (una nova connexió cada cop) per dir-te alguna cosa. Les notificacions push, en contraposició, són com estar en una llarga trucada de veu amb un amic —inclús quan ningú parla, la connexió persisteix. Quan algú té alguna cosa a dir, ho fa a través de la trucada existent en lloc d'establir una nova connexió. El mecanisme de *keep-alive* —que manté la connexió oberta— seria com preguntar, després d'uns minuts de silenci, «Hi ets?». «Hi soc».
 
+---
+
 [^1]: Oracle va eliminar el meu compte de Free Tier sense avís, explicació o recurs (una pràctica habitual, sembla). Ara estic allotjant el lloc en una instància de Vultr assequible i fiable que tinc des de fa més de sis anys. Si vols provar Vultr, aquí tens [el meu enllaç de registre de referència](https://www.vultr.com/?ref=7123709), que et dona $100 en crèdit, mentre jo rebo $10.

@@ -104,4 +104,6 @@ That's it for today! In the next article, we'll learn about **[bootstrapping and
 
 **Book**: [The Book of Why — Judea Pearl (2018)](http://bayes.cs.ucla.edu/WHY/). A deep dive into the science of causal inference and discovery, exploring theories, methods, and real-world applications. Pearl argues that all potential outcomes can be derived from Structural Equation Models, and lays out the problems with other approaches like matching.
 
+---
+
 [^1]: Sadly, there are far too many real examples of unethical research. See the [Tuskegee syphilis experiment](https://simple.wikipedia.org/wiki/Tuskegee_syphilis_experiment), the [Guatemala syphilis experiments](https://en.wikipedia.org/wiki/Guatemala_syphilis_experiments), or the [many examples of pharmaceutical companies failing to respect the core principles of ethical research in African countries](https://en.wikipedia.org/wiki/Medical_experimentation_in_Africa). Counterfactual causal inference methods can offer an alternative when conducting an RCT is ethically problematic.

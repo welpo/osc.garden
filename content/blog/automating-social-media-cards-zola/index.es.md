@@ -275,4 +275,6 @@ Estoy contento de haber resuelto el problema, pero también lo veo como una opor
 
 Así que… continuará, quizás.
 
+---
+
 [^1]: Inicialmente, estaba convirtiendo las capturas de pantalla PNG a WebP, ya que son significativamente más pequeñas (~40KB) que las JPEG de aspecto similar (~100KB). Sin embargo, al intentar hacer la captura para la primera imagen del artículo, me di cuenta de que WhatsApp no admite miniaturas para redes sociales en formato WebP. Lástima.

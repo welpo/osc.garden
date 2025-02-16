@@ -102,4 +102,6 @@ Això és tot per avui! En el pròxim article aprendrem sobre **[bootstrapping i
 
 **Llibre**: [El libro del porqué — Judea Pearl (2018)](https://www.pasadopresente.com/component/booklibraries/bookdetails/2020-06-17-11-33-26). Una immersió profunda en la ciència de la inferència i el descobriment causal, explorant teories, mètodes i aplicacions en el món real. Pearl sosté que tots els resultats potencials poden derivar-se dels models d'equacions estructurals i exposa els problemes que plantegen altres enfocaments, com l'ajuntament.
 
+---
+
 [^1]: Lamentablement, hi ha massa exemples reals d'investigació no ètica. Vegeu l'[experiment Tuskegee](https://es.wikipedia.org/wiki/Experimento_Tuskegee), els [experiments de sífilis a Guatemala](https://es.wikipedia.org/wiki/Experimentos_sobre_s%C3%ADfilis_en_Guatemala), o els [nombrosos exemples d'empreses farmacèutiques que no respecten els principis fonamentals de la investigació ètica en països africans (en anglès)](https://en.wikipedia.org/wiki/Medical_experimentation_in_Africa). Els mètodes d'inferència causal contrafactual poden ser una alternativa quan la realització d'un RCT és èticament problemàtic.

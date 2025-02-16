@@ -102,4 +102,6 @@ Esta cita de Virgilio (29 a.C.) nos recuerda que la búsqueda de las «causas de
 
 **Libro**: [El libro del porqué — Judea Pearl (2018)](https://www.pasadopresente.com/component/booklibraries/bookdetails/2020-06-17-11-33-26). Una inmersión profunda en la ciencia de la inferencia y el descubrimiento causal, explorando teorías, métodos y aplicaciones en el mundo real. Pearl sostiene que todos los resultados potenciales pueden derivarse de los modelos de ecuaciones estructurales y expone los problemas que plantean otros enfoques, como el emparejamiento.
 
+---
+
 [^1]: Lamentablemente, hay demasiados ejemplos reales de investigación no ética. Véase el [experimento Tuskegee](https://es.wikipedia.org/wiki/Experimento_Tuskegee), los [experimentos de sífilis en Guatemala](https://es.wikipedia.org/wiki/Experimentos_sobre_s%C3%ADfilis_en_Guatemala), o los [numerosos ejemplos de empresas farmacéuticas que no respetan los principios fundamentales de la investigación ética en países africanos (en inglés)](https://en.wikipedia.org/wiki/Medical_experimentation_in_Africa). Los métodos de inferencia causal contrafactual pueden ser una alternativa cuando la realización de un RCT es éticamente problemático.

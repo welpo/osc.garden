@@ -115,4 +115,6 @@ Ara pots mantenir fàcilment les dates de «Última actualització» precises pe
 
 Amb el temps, he afegit altres funcionalitats com evitar commits d'esborranys o d'arxius que inclouen «TODO», i executar scripts d'optimització. Pots fer una ullada al hook que estic utilitzant actualment [aquí](https://github.com/welpo/osc.garden/blob/main/.githooks/pre-commit).
 
+---
+
 [^1]: Si prefereixes mantenir funcionalitats separades i utilitzar diversos fitxers per als scripts pre-commit, pots crear un fitxer `pre-commit` que invoqui tots els altres scripts (que pots dins d'un directori `pre-commit.d`, per exemple).

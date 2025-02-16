@@ -348,4 +348,6 @@ After learning about the webhook black magic, I researched a bit about push noti
 
 Here's an analogy: webhooks are like your friends sending you a text (a new connection each time) to tell you something. Push notifications are like being on a long voice call with a friend—even when no one is talking, the connection persists. Whenever someone wants to speak up, they use the existing call instead of setting up a new connection. The keep-alive mechanism would be akin to asking, after some minutes of silence, "You there?". "Yeah".
 
+---
+
 [^1]: Oracle deleted my Free Tier account without warning, explanation or recourse (a common practice, it seems). I am now hosting the site on an affordable and reliable Vultr instance I've had for over six years. If you want to try Vultr, here's [my referral signup link](https://www.vultr.com/?ref=7123709), which gets you $100 in credit, while I get $10.

@@ -171,6 +171,8 @@ En el pròxim article de la [sèrie](/ca/tags/les-8-idees-estadistiques-mes-impo
 
 **Article acadèmic**: [The frontier of simulation-based inference — Cranmer, Brehmer & Louppe (2020)](https://doi.org/10.1073/pnas.1912789117). Aquest article explora diferents mètodes d'inferència basada en la simulació, tot referenciant avenços recents en machine learning, i ofereix algunes recomanacions sobre quin enfocament triar.
 
+---
+
 [^1]: No es tracta només de joguines; hi ha una mica de tot. He vist *gashapon* d'edificis, petites figures d'anime, models d'inodors japonesos (?), [claus i botons d'engegar cotxes](img/carignition.webp) (??), i un de [«gambes empanades i els seus amics» (part 2!!)](img/breaded_shrimp_and_co.webp). Fa poc, un amic em va dir que va aconseguir [un *gashapon* d'un *gashapon*](img/metagacha.webp). Meta.
 
 [^2]: La grandària de l'efecte és una mesura de la força d'un fenomen. En el context de la recerca, és el valor que quantifica l'efectivitat d'una intervenció (per exemple, una nova teràpia). Com que les grandàries de l'efecte són estimacions estadístiques, es recomana proporcionar intervals de confiança en comunicar-les. El bootstrapping seria una manera senzilla de calcular aquests intervals.

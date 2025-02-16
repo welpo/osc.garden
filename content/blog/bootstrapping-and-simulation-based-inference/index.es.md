@@ -171,6 +171,8 @@ En la próxima entrega de la [serie](/es/tags/las-8-ideas-estadisticas-mas-impor
 
 **Artículo académico**: [The frontier of simulation-based inference — Cranmer, Brehmer & Louppe (2020)](https://doi.org/10.1073/pnas.1912789117). Este artículo explora diferentes métodos de inferencia basada en la simulación, referenciando avances recientes en machine learning, y ofrece algunas recomendaciones sobre qué enfoque elegir.
 
+---
+
 [^1]: No se trata sólo de juguetes; hay un poco de todo. He visto *gashapon* de edificios, pequeñas figuras de anime, modelos de inodoros japoneses (?), [llaves y botones de encendido de coches](img/carignition.webp) (¿?), y uno de [«gambas empanadas y sus amigos» (¡parte 2!)](img/breaded_shrimp_and_co.webp). Hace poco, un amigo me dijo que consiguió [un *gashapon* de un *gashapon*](img/metagacha.webp). Meta.
 
 [^2]: El tamaño del efecto es una medida de la fuerza de un fenómeno. En el contexto de la investigación, es el valor que cuantifica la efectividad de una intervención (por ejemplo, una nueva terapia). Dado que los tamaños de efecto son estimaciones estadísticas, es una buena idea proporcionar intervalos de confianza al comunicarlos. El bootstrapping sería una forma sencilla de calcular estos intervalos.
