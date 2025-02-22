@@ -1,7 +1,7 @@
 +++
 title = "Getting Started With uv, the Python Package & Project Manager"
 date = 2025-02-11
-updated = 2025-02-15
+updated = 2025-02-22
 description = "A quick reference guide covering uv basics and some cool tricks."
 
 [extra]
@@ -191,6 +191,8 @@ uv tool install git-sumi
 ```
 
 Now you can use `git-sumi` from anywhere on your system, as it's installed in a bin directory in your `PATH`.
+
+Tools' dependencies are installed in an isolated virtual environment.
 
 ### Running tools without installing them
 
