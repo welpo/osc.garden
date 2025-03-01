@@ -348,4 +348,4 @@ He aquí una analogía: los webhooks son como tus amigos enviándote un mensaje 
 
 ---
 
-[^1]: Oracle eliminó mi cuenta de Free Tier sin advertencia, explicación o recurso (una práctica habitual, parece). Ahora estoy alojando el sitio en una instancia de Vultr asequible y fiable que he tenido durante más de 6 años. Si quieres probar Vultr, aquí está [mi enlace de registro de referencia](https://www.vultr.com/?ref=7123709), que te da $100 en crédito, mientras yo recibo $10.
+[^1]: Oracle eliminó mi cuenta de Free Tier sin advertencia, explicación o recurso (una práctica habitual, parece). Ahora estoy alojando el sitio en una instancia de Vultr asequible y fiable que he tenido durante más de 6 años. Si quieres probar Vultr, aquí está [mi enlace de registro de referencia](https://www.vultr.com/?ref=9729705-9J), que te da $100 en crédito, mientras yo recibo $10.

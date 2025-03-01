@@ -350,4 +350,4 @@ Here's an analogy: webhooks are like your friends sending you a text (a new conn
 
 ---
 
-[^1]: Oracle deleted my Free Tier account without warning, explanation or recourse (a common practice, it seems). I am now hosting the site on an affordable and reliable Vultr instance I've had for over six years. If you want to try Vultr, here's [my referral signup link](https://www.vultr.com/?ref=7123709), which gets you $100 in credit, while I get $10.
+[^1]: Oracle deleted my Free Tier account without warning, explanation or recourse (a common practice, it seems). I am now hosting the site on an affordable and reliable Vultr instance I've had for over six years. If you want to try Vultr, here's [my referral signup link](https://www.vultr.com/?ref=9729705-9J), which gets you $100 in credit, while I get $10.

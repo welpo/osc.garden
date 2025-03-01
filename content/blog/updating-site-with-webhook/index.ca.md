@@ -348,4 +348,4 @@ Com a analogia: els webhooks són com els teus amics enviant-te un missatge de t
 
 ---
 
-[^1]: Oracle va eliminar el meu compte de Free Tier sense avís, explicació o recurs (una pràctica habitual, sembla). Ara estic allotjant el lloc en una instància de Vultr assequible i fiable que tinc des de fa més de sis anys. Si vols provar Vultr, aquí tens [el meu enllaç de registre de referència](https://www.vultr.com/?ref=7123709), que et dona $100 en crèdit, mentre jo rebo $10.
+[^1]: Oracle va eliminar el meu compte de Free Tier sense avís, explicació o recurs (una pràctica habitual, sembla). Ara estic allotjant el lloc en una instància de Vultr assequible i fiable que tinc des de fa més de sis anys. Si vols provar Vultr, aquí tens [el meu enllaç de registre de referència](https://www.vultr.com/?ref=9729705-9J), que et dona $100 en crèdit, mentre jo rebo $10.
