@@ -1,7 +1,7 @@
 +++
 title = "Getting Started With uv, the Python Package & Project Manager"
 date = 2025-02-11
-updated = 2025-02-22
+updated = 2025-05-17
 description = "A quick reference guide covering uv basics and some cool tricks."
 
 [extra]
@@ -175,6 +175,12 @@ uv run --isolated python
 
 # Run from a remote repository.
 uvx --from git+https://github.com/httpie/cli https example.com
+
+# Run a specific version of a package.
+uvx ty@0.0.1-alpha.4 check
+
+# Run a specific executable from a package.
+uvx --from dbt-core@1.9.0 dbt --help
 
 # Run a remote script (be careful!)
 uv run https://example.com/script.py
