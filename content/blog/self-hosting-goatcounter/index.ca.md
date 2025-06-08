@@ -1,7 +1,7 @@
 +++
 title = "Autoallotjament de GoatCounter amb un proxy invers nginx i SSL"
 date = 2023-12-14
-updated = 2023-12-24
+updated = 2025-06-08
 description = "Aprèn a autoallotjar GoatCounter —una eina d'anàlisi web lleugera i respectuosa amb la privadesa— amb un proxy invers nginx i un certificat SSL."
 
 [taxonomies]
@@ -36,7 +36,7 @@ Descarrega el binari de GoatCounter. Obtingues l'URL per al teu sistema des de l
 Jo vaig utilitzar:
 
 ```bash
-wget https://github.com/arp242/goatcounter/releases/download/v2.5.0/goatcounter-v2.5.0-linux-amd64.gz
+wget https://github.com/arp242/goatcounter/releases/download/v2.6.0/goatcounter-v2.6.0-linux-amd64.gz
 ```
 
 Si no estàs segur de quin sistema tens, pots executar la comanda `arch`. Si veus `x86_64`, necessitaràs el paquet `amd64`, com jo.
