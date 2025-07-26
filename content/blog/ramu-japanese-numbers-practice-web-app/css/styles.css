@@ -119,15 +119,15 @@ ruby rt {
     font-family: var(--sans-serif-font);
 }
 
-.number {
+.ramu-content .number {
     color: var(--color-number);
 }
 
-.counter {
+.ramu-content .counter {
     color: var(--color-counter);
 }
 
-.noun {
+.ramu-content .noun {
     color: var(--color-noun);
 }
 

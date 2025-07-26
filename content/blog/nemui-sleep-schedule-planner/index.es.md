@@ -22,7 +22,7 @@ Quise replicar la interfaz de Apple: tiene un buen diseño y experiencia de usua
 
 Aquí está el resultado. Prueba a jugar:
 
-<div class="container" id="clockContainer">
+<div class="nemui-container" id="clockContainer">
 <!-- Sleep Duration Input -->
 <div class="sleep-goal">
 <label>I want to sleep for</label>

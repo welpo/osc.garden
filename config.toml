@@ -109,6 +109,8 @@ copy_button = true
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://github.com/welpo/tabi/pull/128
 show_reading_time = true
 
+iine = true
+
 # Adds backlinks to footnotes (loads ~500 bytes of JavaScripts).
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://github.com/welpo/tabi/pull/128
 footnote_backlinks = false
@@ -222,6 +224,7 @@ allowed_domains = [
     { directive = "script-src", domains = ["'self'"] },
     { directive = "style-src", domains = ["'self'"] },
     { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
+    { directive = "connect-src", domains = ["'self'", "*.supabase.co"] },
 ]
 
 # Enable the CSP directives configured (or default).

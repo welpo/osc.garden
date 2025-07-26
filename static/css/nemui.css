@@ -81,7 +81,7 @@
     }
 }
 
-.container {
+.nemui-container {
     margin-right: auto;
     margin-bottom: 2rem;
     margin-left: auto;
@@ -93,7 +93,7 @@
     overflow: hidden;
 }
 
-ruby {
+.nemui-container ruby {
     font-size: 1.2rem;
     font-family: var(--sans-serif-font);
 }
@@ -242,7 +242,7 @@ ruby {
 }
 
 /* Icons */
-.icon {
+.nemui-container .icon {
     display: inline-block;
     background-color: currentColor;
     width: calc(var(--base-unit) * 1.25);
@@ -405,7 +405,7 @@ input[type="time"].time-value {
         --base-unit: 13px;
     }
 
-    .container {
+    .nemui-container {
         box-shadow: none;
         padding: var(--spacing-md);
     }

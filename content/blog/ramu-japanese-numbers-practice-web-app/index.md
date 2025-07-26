@@ -22,7 +22,7 @@ Numbers were one of the first things I learnt in Japanese. Learning to count fro
 
 Beyond 99, you need to learn the name for 100 (<ruby>百<rt>hyaku</rt></ruby>), 1,000 (<ruby>千<rt>sen</rt></ruby>), and 10,000 (<ruby>万<rt>man</rt></ruby>). After 10,000, numbers are created by grouping digits into myriads (every 10,000). This means 40,000 is not "forty thousands" (<span class="strike-through"><ruby>四<rt>yon</rt></ruby><ruby>十<rt>juu</rt></ruby><ruby>千<rt>sen</rt></ruby></span>), but "four ten-thousands" (<ruby>四<rt>yon</rt></ruby><ruby>万<rt>man</rt></ruby>). 100,000 is <ruby>十<rt>juu</rt></ruby><ruby>万<rt>man</rt></ruby>: "ten ten-thousands". Every myriad gets a new unit:
 
-<div class="container full-width" id="myriads">
+<div class="ramu-content container full-width" id="myriads">
 <div class="number-chain">
 <div class="number-unit">
 <div class="reading">ichi</div>
@@ -75,7 +75,11 @@ Beyond 99, you need to learn the name for 100 (<ruby>百<rt>hyaku</rt></ruby>), 
 
 But that's not all. Japanese, like Korean and Chinese, has "counters": nouns added as suffix to numbers. They indicate what that number refers to: books (<ruby>冊<rt>satsu</rt></ruby>), people (<ruby>人<rt>ri/nin</rt></ruby> or <ruby>名<rt>mei</rt></ruby>), machinery (<ruby>台<rt>dai</rt></ruby>), sentences (<ruby>文<rt>bun</rt></ruby>), years of age (<ruby>歳<rt>sai</rt></ruby>), countries (<ruby>箇国<rt>kakoku</rt></ruby>), locations (<ruby>箇所<rt>kasho</rt></ruby>), cans (<ruby>缶<rt>kan</rt></ruby>)…
 
+<div class="ramu-content">
+
 An example: <span class="number">three</span> is <span class="no-wrap"><ruby class="number">三<rt>san</rt></ruby></span>. <span class="noun">Frog</span> is <span class="no-wrap"><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span>. You'd think "<span class="number">three</span> <span class="noun">frogs</span>" is <span class="no-wrap"><ruby class="number">三<rt>san</rt></ruby><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span> or <span class="no-wrap"><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby><ruby class="number">三<rt>san</rt></ruby></span>. But that's not right; you're missing the counter (and the possessive <ruby>の<rt>no</rt></ruby>). In this case, we'd use the counter for small animals: <ruby class="counter">匹<rt>hiki</rt></ruby>. "<span class="number">Three</span> <span class="noun">frogs</span>" becomes "<span class="number">three</span> <span class="counter">small-animal</span>'s <span class="noun">frog</span>": <span class="phrase"><ruby class="number">三<rt>san</rt></ruby><ruby class="counter">匹<rt>biki</rt></ruby><ruby>の<rt>no</rt></ruby><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span>. ("<ruby class="counter">hiki<rt>ひき</rt></ruby>" becomes "<ruby class="counter">biki<rt>びき</rt></ruby>" through <a href="https://en.wikipedia.org/wiki/Rendaku"><ruby>連<rt>ren</rt></ruby><ruby>濁<rt>daku</rt></ruby> or sequential voicing</a>.)
+
+</div>
 
 There are [over 300 counters](https://www.tofugu.com/japanese/japanese-counters-list/), though you can get by with a couple dozen.
 

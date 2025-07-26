@@ -23,7 +23,7 @@ I wanted to replicate Apple’s UI: it’s a good design and user experience, I�
 
 Here’s the result. Have fun dragging the handles around:
 
-<div class="container" id="clockContainer">
+<div class="nemui-container" id="clockContainer">
 <!-- Sleep Duration Input -->
 <div class="sleep-goal">
 <label>I want to sleep for</label>

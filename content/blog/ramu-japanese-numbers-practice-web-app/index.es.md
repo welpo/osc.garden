@@ -22,7 +22,7 @@ Los números fueron una de las primeras cosas que aprendí en japonés. Aprender
 
 Más allá del 99, necesitas aprender el nombre para 100 (<ruby>百<rt>hyaku</rt></ruby>), 1.000 (<ruby>千<rt>sen</rt></ruby>) y 10.000 (<ruby>万<rt>man</rt></ruby>). Después de 10.000, los números se crean agrupando dígitos en miríadas (cada 10.000). Esto significa que 40.000 no es «cuarenta miles» (<span class="strike-through"><ruby>四<rt>yon</rt></ruby><ruby>十<rt>juu</rt></ruby><ruby>千<rt>sen</rt></ruby></span>), sino «cuatro diez-miles» (<ruby>四<rt>yon</rt></ruby><ruby>万<rt>man</rt></ruby>). 100.000 es <ruby>十<rt>juu</rt></ruby><ruby>万<rt>man</rt></ruby>: «diez diez-miles». Cada miríada tiene una nueva unidad:
 
-<div class="container full-width" id="myriads">
+<div class="ramu-content container full-width" id="myriads">
 <div class="number-chain">
 <div class="number-unit">
 <div class="reading">ichi</div>
@@ -75,7 +75,11 @@ Más allá del 99, necesitas aprender el nombre para 100 (<ruby>百<rt>hyaku</rt
 
 Pero eso no es todo. El japonés, al igual que el coreano y el chino, tiene «contadores»: sustantivos que se añaden como sufijo a los números. Indican a qué se refiere ese número: libros (<ruby>冊<rt>satsu</rt></ruby>), personas (<ruby>人<rt>ri/nin</rt></ruby> o <ruby>名<rt>mei</rt></ruby>), maquinaria (<ruby>台<rt>dai</rt></ruby>), oraciones (<ruby>文<rt>bun</rt></ruby>), años de edad (<ruby>歳<rt>sai</rt></ruby>), países (<ruby>箇国<rt>kakoku</rt></ruby>), ubicaciones (<ruby>箇所<rt>kasho</rt></ruby>), latas (<ruby>缶<rt>kan</rt></ruby>)…
 
+<div class="ramu-content">
+
 Un ejemplo: <span class="number">tres</span> es <span class="no-wrap"><ruby class="number">三<rt>san</rt></ruby></span>. <span class="noun">Rana</span> es <span class="no-wrap"><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span>. Podrías pensar que «<span class="number">tres</span> <span class="noun">ranas</span>» es <span class="no-wrap"><ruby class="number">三<rt>san</rt></ruby><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span> o <span class="no-wrap"><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby><ruby class="number">三<rt>san</rt></ruby></span>. Pero no; falta el contador (y el posesivo <ruby>の<rt>no</rt></ruby>). En este caso, usaríamos el contador para animales pequeños: <ruby class="counter">匹<rt>hiki</rt></ruby>. «<span class="number">Tres</span> <span class="noun">ranas</span>» se convierte en «<span class="number">tres</span> <span class="counter">animal-pequeño</span> de <span class="noun">rana</span>»: <span class="phrase"><ruby class="number">三<rt>san</rt></ruby><ruby class="counter">匹<rt>biki</rt></ruby><ruby>の<rt>no</rt></ruby><ruby class="noun">カ<rt>ka</rt></ruby><ruby class="noun">エ<rt>e</rt></ruby><ruby class="noun">ル<rt>ru</rt></ruby></span>. («<ruby class="counter">hiki<rt>ひき</rt></ruby>» se convierte en «<ruby class="counter">biki<rt>びき</rt></ruby>» mediante <a href="https://es.wikipedia.org/wiki/Rendaku"><ruby>連<rt>ren</rt></ruby><ruby>濁<rt>daku</rt></ruby> o sonorización secuencial</a>.)
+
+</div>
 
 Hay [más de 300 contadores](https://www.tofugu.com/japanese/japanese-counters-list/), pero te puedes apañar con un par de docenas.
 

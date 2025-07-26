@@ -9,6 +9,7 @@ tags = ["master's thesis", "psychology", "research"]
 [extra]
 toc_ignore_pattern = "(?i)^(Table|Figure|Table of Contents)"
 social_media_card = "img/social_cards/blog_rsfmri_adhd_meta_analysis.jpg"
+iine = false
 +++
 
 This is my Master's Thesis from the Master's Program in General Health Psychology at the University of Barcelona (2019-2021 academic year), supervised by Joan Guàrdia Olmos. Translated from the [original in Spanish](@/blog/rsfmri-adhd-meta-analysis/index.es.md).
