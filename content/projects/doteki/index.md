@@ -1,7 +1,7 @@
 +++
 title = "dōteki"
 description = "Add dynamic content to your GitHub profile through an intuitive plugin system."
-weight = 10
+weight = 20
 
 [taxonomies]
 tags = ["GitHub Actions", "automation", "Python"]

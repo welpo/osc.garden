@@ -1,7 +1,7 @@
 +++
 title = "shuku"
 description = "Shrink media to keep only the dialogue. For immersion language learning."
-weight = 20
+weight = 10
 
 [taxonomies]
 tags = ["Python", "media", "linguistics", "CLI"]

@@ -1,7 +1,7 @@
 +++
 title = "shuku"
 description = "Condensa películas y series para quedarte solo con el diálogo. Diseñado para aprender idiomas."
-weight = 20
+weight = 10
 
 [taxonomies]
 tags = ["Python", "media", "linguistics", "CLI"]
