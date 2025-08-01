@@ -9,6 +9,7 @@ tags = ["web", "JavaScript"]
 [extra]
 local_image = "projects/tabi/tabi.webp"
 social_media_card = "img/social_cards/ca_projects_tabi.jpg"
+iine_icon = '🌱'
 +++
 
 [**tabi**](https://github.com/welpo/tabi) és un tema modern i ric en funcionalitat per a [Zola](https://www.getzola.org/), un generador de llocs web estàtics molt ràpid.
