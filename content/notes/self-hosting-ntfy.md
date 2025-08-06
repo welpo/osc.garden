@@ -1,6 +1,7 @@
 +++
 title = "Self-hosting ntfy on Debian with nginx"
 date = 2023-07-22
+updated = 2025-08-06
 description = "A guide to self-hosting ntfy, a simple HTTP-based pub-sub notification service, on Debian with nginx."
 
 [extra]
@@ -23,11 +24,11 @@ toc_ignore_pattern = "^Docs.*"
 This guide is for Debian-based systems using nginx. For other distributions, refer to the [official installation guide](https://docs.ntfy.sh/install/).
 {% end %}
 
-Check the [ntfy releases page](https://github.com/binwiederhier/ntfy/releases) for the latest version. Replace `v2.11.0` in the following commands with the current version:
+Check the [ntfy releases page](https://github.com/binwiederhier/ntfy/releases) for the latest version. Replace `v2.14.0` in the following commands with the current version:
 
 ```bash
-wget https://github.com/binwiederhier/ntfy/releases/download/v2.11.0/ntfy\_2.11.0\_linux\_amd64.deb
-sudo dpkg -i ntfy\_\*.deb
+wget https://github.com/binwiederhier/ntfy/releases/download/v2.14.0/ntfy_2.14.0_linux_amd64.deb
+sudo dpkg -i ntfy_*.deb
 sudo systemctl enable ntfy
 sudo systemctl start ntfy
 ```
@@ -125,6 +126,45 @@ ntfy token add osc
 ```
 
 Use these tokens to authenticate when [publishing messages](https://docs.ntfy.sh/publish/#access-tokens).
+
+## Updating ntfy
+
+{% admonition(type="tip") %}
+Review the [release notes](https://github.com/binwiederhier/ntfy/releases) before updating to check for any breaking changes or new configuration options.
+{% end %}
+
+To update ntfy to a newer version, the process is similar to the initial installation:
+
+1. **Check for the latest version** on the [ntfy releases page](https://github.com/binwiederhier/ntfy/releases)
+
+2. **Download and install the new version:**
+
+   ```bash
+   wget https://github.com/binwiederhier/ntfy/releases/download/v2.14.0/ntfy_2.14.0_linux_amd64.deb
+   sudo dpkg -i ntfy_*.deb
+   ```
+
+3. **Handle configuration file conflicts:** You'll be prompted about the configuration file if you've made changes:
+
+   ```
+   Configuration file '/etc/ntfy/server.yml'
+    ==> Modified (by you or by a script) since installation.
+    ==> Package distributor has shipped an updated version.
+      What would you like to do about it ?  Your options are:
+       Y or I  : install the package maintainer's version
+       N or O  : keep your currently-installed version
+         D     : show the differences between the versions
+         Z     : start a shell to examine the situation
+   ```
+
+    After making your choice —I recommend `N` after reviewing with `D`—, ntfy should restart.
+
+4. **Verify the update:**
+
+   ```bash
+   ntfy --version
+   sudo systemctl status ntfy
+   ```
 
 ## Troubleshooting
 
