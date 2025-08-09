@@ -1,7 +1,7 @@
 +++
 title = "Getting Started With uv, the Python Package & Project Manager"
 date = 2025-02-11
-updated = 2025-05-17
+updated = 2025-08-09
 description = "A quick reference guide covering uv basics and some cool tricks."
 
 [extra]
@@ -29,7 +29,7 @@ brew install uv
 ### Windows
 
 ```powershell
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 ## Drop-in compatible API
