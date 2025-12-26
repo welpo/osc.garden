@@ -1,7 +1,7 @@
 +++
 title = "Self-Hosting GoatCounter with an nginx Reverse Proxy and SSL"
 date = 2023-12-14
-updated = 2025-06-08
+updated = 2025-12-26
 description = "How to self-host GoatCounter —a lightweight, privacy-friendly web analytics tool— with an nginx reverse proxy and an SSL certificate."
 
 [taxonomies]
@@ -36,7 +36,7 @@ Download the GoatCounter binary. Get the URL for your system from the [GoatCount
 I used:
 
 ```bash
-wget https://github.com/arp242/goatcounter/releases/download/v2.6.0/goatcounter-v2.6.0-linux-amd64.gz
+wget https://github.com/arp242/goatcounter/releases/download/v2.7.0/goatcounter-v2.7.0-linux-amd64.gz
 ```
 
 If you're unsure about which system you're on, you can run the `arch` command. If you get `x86_64`, you'll need the `amd64` package, like me.
