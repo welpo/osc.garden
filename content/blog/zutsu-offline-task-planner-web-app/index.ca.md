@@ -4,7 +4,7 @@ date = 2024-12-04
 description = "He creat una aplicació web per planificar les meves sessions d'estudi. Inclou utilitats com la visualització de tasques completades en el passat o un temporitzador pomodoro."
 
 [taxonomies]
-tags = ["codi", "javascript", "productivitat", "web app"]
+tags = ["codi", "javascript", "productivitat", "web app", "PWA"]
 
 [extra]
 tldr = "He creat [<ruby>ずつ<rt>zutsu</rt></ruby>](https://zutsu.osc.garden), una aplicació de planificació de tasques completament offline. [Repositori](https://github.com/welpo/zutsu) i [demostració en vídeo](#demo)."

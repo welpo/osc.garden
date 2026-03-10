@@ -3,7 +3,7 @@ title = "Building a Minimal Time Management Web App"
 date = 2024-12-04
 description = "I built a local-first web app to plan my study sessions. Featuring utilities like past activity visualisation or a pomodoro timer."
 [taxonomies]
-tags = ["code", "javascript", "productivity", "web app"]
+tags = ["code", "javascript", "productivity", "web app", "PWA"]
 
 [extra]
 tldr = "I built [<ruby>ずつ<rt>zutsu</rt></ruby>](https://zutsu.osc.garden), a fully offline task-planning app. [Repository](https://github.com/welpo/zutsu) and [video demo](#demo)."

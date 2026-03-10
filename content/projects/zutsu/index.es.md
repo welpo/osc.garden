@@ -4,7 +4,7 @@ description = "Una aplicación minimalista y privada de gestión de tareas."
 weight = 30
 
 [taxonomies]
-tags = ["interactivo", "productividad", "web app", "web", "JavaScript"]
+tags = ["interactivo", "productividad", "web app", "web", "JavaScript", "PWA"]
 
 [extra]
 local_image = "projects/zutsu/zutsu_logo.webp"
