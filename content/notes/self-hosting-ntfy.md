@@ -1,7 +1,7 @@
 +++
 title = "Self-hosting ntfy on Debian with nginx"
 date = 2023-07-22
-updated = 2025-08-06
+updated = 2026-08-04
 description = "A guide to self-hosting ntfy, a simple HTTP-based pub-sub notification service, on Debian with nginx."
 
 [extra]
@@ -24,10 +24,10 @@ toc_ignore_pattern = "^Docs.*"
 This guide is for Debian-based systems using nginx. For other distributions, refer to the [official installation guide](https://docs.ntfy.sh/install/).
 {% end %}
 
-Check the [ntfy releases page](https://github.com/binwiederhier/ntfy/releases) for the latest version. Replace `v2.14.0` in the following commands with the current version:
+Check the [ntfy releases page](https://github.com/binwiederhier/ntfy/releases) for the latest version. Replace `v2.27.0` in the following commands with the current version:
 
 ```bash
-wget https://github.com/binwiederhier/ntfy/releases/download/v2.14.0/ntfy_2.14.0_linux_amd64.deb
+wget https://github.com/binwiederhier/ntfy/releases/download/v2.27.0/ntfy_2.27.0_linux_amd64.deb
 sudo dpkg -i ntfy_*.deb
 sudo systemctl enable ntfy
 sudo systemctl start ntfy
@@ -140,7 +140,7 @@ To update ntfy to a newer version, the process is similar to the initial install
 2. **Download and install the new version:**
 
    ```bash
-   wget https://github.com/binwiederhier/ntfy/releases/download/v2.14.0/ntfy_2.14.0_linux_amd64.deb
+   wget https://github.com/binwiederhier/ntfy/releases/download/v2.27.0/ntfy_2.27.0_linux_amd64.deb
    sudo dpkg -i ntfy_*.deb
    ```
 
